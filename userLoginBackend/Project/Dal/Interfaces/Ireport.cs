@@ -11,7 +11,7 @@ namespace DAL.Interfaces
     {
         List<Report> GetAll();
         Report Add(Report report);
-        Report Update(Report report, string id);
-        int Delete(Report report);
+        bool Update(Report report);
+        bool Delete(Report report);
     }
 }

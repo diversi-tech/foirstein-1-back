@@ -23,13 +23,13 @@ public partial class LoginContext : DbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-        => optionsBuilder.UseSqlServer("Server=DESKTOP-L9S4R74;Database=Login;Trusted_Connection=True;TrustServerCertificate=True;");
+        => optionsBuilder.UseSqlServer("Server=DESKTOP-AEGJR0O;Database=Login;Trusted_Connection=True;TrustServerCertificate=True;");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.Entity<ActivityLog>(entity =>
         {
-            entity.HasKey(e => e.LogId).HasName("PK__Activity__7839F64DB11CC6A9");
+            entity.HasKey(e => e.LogId).HasName("PK__Activity__7839F64D69C36AC9");
 
             entity.ToTable("Activity_Logs");
 
@@ -46,12 +46,12 @@ public partial class LoginContext : DbContext
 
             entity.HasOne(d => d.User).WithMany(p => p.ActivityLogs)
                 .HasForeignKey(d => d.UserId)
-                .HasConstraintName("FK__Activity___userI__403A8C7D");
+                .HasConstraintName("FK__Activity___userI__2E1BDC42");
         });
 
         modelBuilder.Entity<Report>(entity =>
         {
-            entity.HasKey(e => e.ReportId).HasName("PK__Reports__1C9B4E2DB70235FA");
+            entity.HasKey(e => e.ReportId).HasName("PK__Reports__1C9B4E2D91C6EDED");
 
             entity.Property(e => e.ReportId).HasColumnName("reportId");
             entity.Property(e => e.GeneratedAt)
@@ -70,18 +70,16 @@ public partial class LoginContext : DbContext
 
             entity.HasOne(d => d.GeneratedByNavigation).WithMany(p => p.Reports)
                 .HasForeignKey(d => d.GeneratedBy)
-                .HasConstraintName("FK__Reports__generat__440B1D61");
+                .HasConstraintName("FK__Reports__generat__2F10007B");
         });
 
         modelBuilder.Entity<User>(entity =>
         {
-            entity.HasKey(e => e.UserId).HasName("PK__Users__CB9A1CFF8DDF7FA4");
+            entity.HasKey(e => e.UserId).HasName("PK__Users__CB9A1CFF04A9D072");
 
-            entity.ToTable(tb => tb.HasTrigger("trgUpdateTimestamp"));
+            entity.HasIndex(e => e.Email, "UQ__Users__AB6E61641546CD3F").IsUnique();
 
-            entity.HasIndex(e => e.Email, "UQ__Users__AB6E6164C826B575").IsUnique();
-
-            entity.HasIndex(e => e.Username, "UQ__Users__F3DBC5727FEB2F2D").IsUnique();
+            entity.HasIndex(e => e.Username, "UQ__Users__F3DBC5722B0BBB80").IsUnique();
 
             entity.Property(e => e.UserId).HasColumnName("userId");
             entity.Property(e => e.CreatedAt)

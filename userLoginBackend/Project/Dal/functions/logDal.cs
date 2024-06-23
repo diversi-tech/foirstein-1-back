@@ -11,25 +11,59 @@ namespace DAL.functions
 {
     public class logDal : Ilog
     {
+        LoginContext _LoginContext;
+
+        public logDal(LoginContext _LoginContext)
+        {
+            this._LoginContext = _LoginContext;
+        }
         public ActivityLog Add(ActivityLog log)
         {
-            throw new NotImplementedException();
+            try
+            {
+                _LoginContext.ActivityLogs.Add(log);
+                _LoginContext.SaveChanges();
+                //החזרת הקוד האוטומטי שנוסף
+                return log;
+            }
+            catch
+            {
+                return null;
+            }
         }
 
-        public int Delete(ActivityLog log)
+        public bool Delete(ActivityLog log)
         {
-            throw new NotImplementedException();
+            try
+            {
+                _LoginContext.Remove(log);
+                _LoginContext.SaveChanges();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
         }
 
         public List<ActivityLog> GetAll()
         {
-            throw new NotImplementedException();
+            return _LoginContext.ActivityLogs.ToList();
         }
 
-        public ActivityLog Update(ActivityLog log, string id)
+
+        bool Ilog.Update(ActivityLog log)
         {
-            throw new NotImplementedException();
+            try
+            {
+                _LoginContext.ActivityLogs.Update(log);
+                _LoginContext.SaveChanges();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
         }
-
     }
 }

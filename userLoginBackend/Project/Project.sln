@@ -14,8 +14,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		.editorconfig = .editorconfig
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DTO", "DTO\DTO.csproj", "{ED12CE18-12B4-41F5-9E6E-8F2462923971}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -34,10 +32,6 @@ Global
 		{86C3A150-6CDC-45B3-A042-12D3FF800219}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{86C3A150-6CDC-45B3-A042-12D3FF800219}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{86C3A150-6CDC-45B3-A042-12D3FF800219}.Release|Any CPU.Build.0 = Release|Any CPU
-		{ED12CE18-12B4-41F5-9E6E-8F2462923971}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{ED12CE18-12B4-41F5-9E6E-8F2462923971}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{ED12CE18-12B4-41F5-9E6E-8F2462923971}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{ED12CE18-12B4-41F5-9E6E-8F2462923971}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

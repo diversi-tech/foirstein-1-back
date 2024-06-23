@@ -1,3 +1,5 @@
+create database [Login]
+
 USE [Login]
 GO
 /****** Object:  Table [dbo].[Activity_Logs]    Script Date: 20/06/2024 13:26:04 ******/
