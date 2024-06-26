@@ -13,7 +13,8 @@ namespace DAL.Interfaces
         User Add(User user);
         bool Update(User user);
         bool Delete(User user);
-
+        public bool UserExists(string username);
+        public bool PasswordMatches(string username, string password);
 
     }
 }

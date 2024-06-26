@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -58,7 +59,31 @@ namespace DAL.functions
             loginContext.SaveChanges();
             return true;
         }
+
+        private string HashPassword(string password)
+        {
+            using (var sha256 = SHA256.Create())
+            {
+                var hashedBytes = sha256.ComputeHash(Encoding.UTF8.GetBytes(password.ToString()));
+                var hash = BitConverter.ToString(hashedBytes).Replace("-", "").ToLower();
+                return hash;
+            }
+        }
+
+        public bool UserExists(string username)
+        {
+           return loginContext.Users.Any(user => user.Username == username );
+
+        }
+        public bool PasswordMatches(string username, string password)
+        {
+            string hashedPassword = HashPassword(password);
+
+            return loginContext.Users.Any(user => user.Username == username && user.PasswordHash == hashedPassword);
+        }
+
     }
-}
+    }
+
 
 

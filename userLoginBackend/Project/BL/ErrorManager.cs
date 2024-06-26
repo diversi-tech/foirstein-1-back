@@ -1,77 +1,149 @@
-﻿using System;
+﻿using AutoMapper;
+using DAL.Interfaces;
+using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using static BLL.ErrorManager;
 
 namespace BLL
 {
-    internal class ErrorManager
+    public class ErrorManager
     {
+        Iuser user;
+        IMapper _mapper;
+       
 
-        public class ErrorManager
+        public ErrorManager(Iuser user, IMapper m)
         {
-            public static string CheckUser(string username)
-            {
-                if (string.IsNullOrEmpty(username))
-                {
-                    return "שם משתמש לא יכול להיות ריק";
-                }
 
-                //... אתה ממשיך להוסיף בדיקות נוספות לשם משתמש כאן ...
+            this.user = user;
+            _mapper = m;
 
-                return null;
-            }
-
-            public static string CheckPassword(string password)
-            {
-                if (string.IsNullOrEmpty(password))
-                {
-                    return "סיסמה לא יכולה להיות ריקה";
-                }
-
-                //... אתה ממשיך להוסיף בדיקות נוספות לסיסמה כאן ...
-
-                return null;
-            }
         }
-        שלב 2: בלוגיקה שלך, תזמין את מתודות מנהל השגיאות
 
-public class BusinessLogic
+        public string sighnin(string username, string password)
         {
-            public void Login(string username, string password)
+            // בדיקה אם שם המשתמש או הסיסמה ריקים
+            if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password))
             {
-                var errorMessage = ErrorManager.CheckUser(username);
-                if (errorMessage != null)
-                {
-                    throw new Exception(errorMessage);
-                }
-
-                errorMessage = ErrorManager.CheckPassword(password);
-                if (errorMessage != null)
-                {
-                    throw new Exception(errorMessage);
-                }
-
-                //... אתה ממשיך עם החלק שאחרי הבדיקות ...
+                return "שם משתמש או סיסמה לא יכולים להיות ריקים";
             }
-        }
-        שלב 3: ב-Controller שלך, כלול את השגיאות של מנהל השגיאות
 
-        [HttpPost("login")]
-public IActionResult Login(string username, string password)
+            // בדיקה אם שם המשתמש קיים
+            if (!user.UserExists(username))
+            {
+                return "שם משתמש זה לא קיים";
+            }
+            //בדיקה אם הסיסמה תואמת לשם המשתמש
+            if (!user.PasswordMatches(username, password))
+            {
+                return "סיסמה שגויה";
+            }
+            return null;
+
+        }
+
+        public bool IsValidId(string id)
         {
+            if (id.Length != 9)
+            {
+                return false;
+            }
+
+            int sum = 0;
+            for (int i = 0; i < 8; i++)
+            {
+                var digit = int.Parse(id[i].ToString()) * ((i % 2) + 1);
+                if (digit > 9)
+                {
+                    digit = digit / 10 + digit % 10;
+                }
+
+                sum += digit;
+            }
+
+            var checkDigit = (10 - (sum % 10)) % 10;
+            return checkDigit == int.Parse(id[8].ToString());
+             }
+        public bool IsValidEmail(string email)
+        {
+            if (string.IsNullOrWhiteSpace(email))
+                return false;
+
             try
             {
-                _businessLogic.Login(username, password);
-                // המשתמש התחבר בהצלחה, תכניס קוד להחזרת אימות מצליח כאן ...
+                // Normalize the domain
+                email = Regex.Replace(email, @"(@)(.+)$", DomainMapper, RegexOptions.None, TimeSpan.FromMilliseconds(200));
+
+                // Examines the domain part of the email and normalizes it.
+                string DomainMapper(Match match)
+                {
+                    var idn = new IdnMapping();
+
+                    string domainName = idn.GetAscii(match.Groups[2].Value);
+
+                    return match.Groups[1].Value + domainName;
+                }
             }
-            catch (Exception ex)
+            catch (RegexMatchTimeoutException)
             {
-                return BadRequest(new { message = ex.Message });
+                return false;
+            }
+            catch (ArgumentException)
+            {
+                return false;
+            }
+
+            try
+            {
+                return Regex.IsMatch(email,
+                    @"^(?("")("".+?(?<!\\)""@)|(([0-9a-z]((\.(?!\.))|[-!#\$%&'\*\+/=\?\^`\{\}\|~\w])*)(?<=[0-9a-z])@))" +
+                    @"(?(\[)(\[(\d{1,3}\.){3}\d{1,3}\])|(([0-9a-z][-0-9a-z]*[0-9a-z]*\.)+[a-z0-9][\-a-z0-9]{0,22}[a-z0-9]))$",
+                    RegexOptions.IgnoreCase, TimeSpan.FromMilliseconds(250));
+            }
+            catch (RegexMatchTimeoutException)
+            {
+                return false;
             }
         }
 
-    }
-}
+
+        public string sighnup(string username, string password, string confirmPassword
+            , string id, string? email,string? role)
+        {
+            // בדיקה אם שם המשתמש או הסיסמה ריקים
+            if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password))
+            {
+                return "שם משתמש או סיסמה לא יכולים להיות ריקים";
+            }
+            // בדיקה אם שם המשתמש כבר קיים
+            if (user.UserExists(username))
+            {
+                return "שם משתמש זה כבר קיים";
+            }
+            // בדיקה אם הסיסמאות תואמות
+            if (password != confirmPassword)
+            {
+                return "הסיסמאות לא תואמות";
+            }
+            // בדיקה אם מספר הזהות תקין
+            if (!IsValidId(id))
+            {
+                return "מספר הזהות לא חוקי";
+            }
+            // בדיקה אם הדוא"ל הוא חוקי  
+            if (!IsValidEmail(email))
+
+                return "הדואל אינו חוקי" ;
+           return null;
+            
+
+        }
+
+
+    } }
+
