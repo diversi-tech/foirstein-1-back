@@ -11,7 +11,7 @@ public partial class Report
 
     public string ReportData { get; set; }
 
-    public int? GeneratedBy { get; set; }
+    public string GeneratedBy { get; set; }
 
     public DateTime? GeneratedAt { get; set; }
 

@@ -20,7 +20,7 @@ builder.Services.AddScoped<Iuser_bll, User_bll>();
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-builder.Services.AddDbContext<LoginContext>(options => options.UseSqlServer("Server=DESKTOP-AEGJR0O;Database=Login;Trusted_Connection=True;TrustServerCertificate=True;"));
+builder.Services.AddDbContext<LoginContext>(options => options.UseSqlServer("Server=DESKTOP-AEGJR0O\\SQLEXPRESS;Database=Login;Trusted_Connection=True;TrustServerCertificate=True;"));
 builder.Services.AddCors(p => p.AddPolicy("corspolicy", builder =>
 {
     builder

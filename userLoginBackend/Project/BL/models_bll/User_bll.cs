@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DAL.models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,7 +9,7 @@ namespace BLL.models_bll
 {
     public class User_bll
     {
-        public int UserId { get; set; }
+        public string UserId { get; set; }
 
         public string Username { get; set; }
 
@@ -21,6 +22,16 @@ namespace BLL.models_bll
         public string ProfilePicture { get; set; }
 
         public DateTime? CreatedAt { get; set; }
+
         public DateTime? UpdatedAt { get; set; }
+
+        public DateTime UserDob { get; set; }
+
+        public string PhoneNumber { get; set; }
+        
     }
+
+
+
+
 }

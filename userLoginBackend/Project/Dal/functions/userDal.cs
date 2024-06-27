@@ -30,12 +30,12 @@ namespace DAL.functions
             return user;
         }
 
-        public bool Update(User user)
+        public User Update(User user)
         {
             var existingUser = loginContext.Users.Find(user.UserId);
             if (existingUser == null)
             {
-                return false;
+                return null;
             }
 
             existingUser.Username = user.Username;
@@ -44,12 +44,12 @@ namespace DAL.functions
 
             loginContext.Users.Update(existingUser);
             loginContext.SaveChanges();
-            return true;
+            return existingUser;
         }
 
-        public bool Delete(User user)
+        public bool Delete(string userId)
         {
-            var existingUser = loginContext.Users.Find(user.UserId);
+            User existingUser = loginContext.Users.Find(userId);
             if (existingUser == null)
             {
                 return false;
