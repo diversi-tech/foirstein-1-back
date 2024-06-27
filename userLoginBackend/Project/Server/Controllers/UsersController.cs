@@ -31,7 +31,7 @@ namespace userLoginBackend.Controllers
         }
        
 
-        [HttpPost("verify-security-questions")]
+        [HttpGet("verify-security-questions")]
         public ActionResult VerifySecurityQuestions([FromBody] VerifySecurityQuestionsRequest request)
         {
             var result = user.VerifySecurityQuestions(request.IdNumber);
@@ -43,10 +43,7 @@ namespace userLoginBackend.Controllers
         }
     }
 
-    public class ForgotPasswordRequest
-    {
-        public string Email { get; set; }
-    }
+
     public class VerifySecurityQuestionsRequest
     {
         public string IdNumber { get; set; }
