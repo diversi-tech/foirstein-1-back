@@ -50,12 +50,23 @@ using Microsoft.EntityFrameworkCore;
 using DAL.models;
 using DAL.Interfaces;
 using DAL.functions;
+using BLL.interfaces;
+using BLL.functions;
+using AutoMapper;
+using BLL.AutoMapper;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 
+builder.Services.AddAutoMapper(typeof(AutoMapperProfile));
+//builder.Services.AddScoped<IActivityLog_bll, ActivityLog_bll>();
+//builder.Services.AddScoped<IReport_bll, Report_bll>();
+builder.Services.AddScoped<Iuser_bll, User_bll>();
+
 builder.Services.AddScoped<Iuser, userDal>();
+//builder.Services.AddScoped<Ireport, reportDal>();
+//builder.Services.AddScoped<Ilog, logDal>();
 
 
 builder.Services.AddEndpointsApiExplorer();

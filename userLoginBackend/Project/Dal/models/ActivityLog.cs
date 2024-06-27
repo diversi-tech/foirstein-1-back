@@ -7,7 +7,7 @@ public partial class ActivityLog
 {
     public int LogId { get; set; }
 
-    public int? UserId { get; set; }
+    public string UserId { get; set; }
 
     public string Activity { get; set; }
 

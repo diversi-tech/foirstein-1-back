@@ -42,7 +42,10 @@ public partial class LoginContext : DbContext
             entity.Property(e => e.Timestamp)
                 .HasDefaultValueSql("(getdate())")
                 .HasColumnName("timestamp");
-            entity.Property(e => e.UserId).HasColumnName("userId");
+            entity.Property(e => e.UserId)
+                .HasMaxLength(50)
+                .IsUnicode(false)
+                .HasColumnName("userId");
 
             entity.HasOne(d => d.User).WithMany(p => p.ActivityLogs)
                 .HasForeignKey(d => d.UserId)
@@ -57,7 +60,10 @@ public partial class LoginContext : DbContext
             entity.Property(e => e.GeneratedAt)
                 .HasDefaultValueSql("(getdate())")
                 .HasColumnName("generatedAt");
-            entity.Property(e => e.GeneratedBy).HasColumnName("generatedBy");
+            entity.Property(e => e.GeneratedBy)
+                .HasMaxLength(50)
+                .IsUnicode(false)
+                .HasColumnName("generatedBy");
             entity.Property(e => e.ReportData)
                 .IsRequired()
                 .HasColumnType("text")
@@ -83,12 +89,14 @@ public partial class LoginContext : DbContext
 
             entity.HasIndex(e => e.Username, "UQ__Users__F3DBC5727FEB2F2D").IsUnique();
 
-            entity.Property(e => e.UserId).HasColumnName("userId");
+            entity.Property(e => e.UserId)
+                .HasMaxLength(50)
+                .IsUnicode(false)
+                .HasColumnName("userId");
             entity.Property(e => e.CreatedAt)
                 .HasDefaultValueSql("(getdate())")
                 .HasColumnName("createdAt");
             entity.Property(e => e.Email)
-                .IsRequired()
                 .HasMaxLength(100)
                 .IsUnicode(false)
                 .HasColumnName("email");
@@ -97,6 +105,10 @@ public partial class LoginContext : DbContext
                 .HasMaxLength(255)
                 .IsUnicode(false)
                 .HasColumnName("passwordHash");
+            entity.Property(e => e.PhoneNumber)
+                .IsRequired()
+                .HasMaxLength(10)
+                .IsFixedLength();
             entity.Property(e => e.ProfilePicture)
                 .HasMaxLength(255)
                 .IsUnicode(false)

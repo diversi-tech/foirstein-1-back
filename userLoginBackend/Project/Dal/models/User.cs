@@ -5,7 +5,7 @@ namespace DAL.models;
 
 public partial class User
 {
-    public int UserId { get; set; }
+    public string UserId { get; set; }
 
     public string Username { get; set; }
 
@@ -20,6 +20,8 @@ public partial class User
     public DateTime? CreatedAt { get; set; }
 
     public DateTime? UpdatedAt { get; set; }
+
+    public string PhoneNumber { get; set; }
 
     public virtual ICollection<ActivityLog> ActivityLogs { get; set; } = new List<ActivityLog>();
 

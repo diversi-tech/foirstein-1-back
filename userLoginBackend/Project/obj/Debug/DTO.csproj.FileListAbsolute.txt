@@ -1,0 +1,2 @@
+C:\Users\This User\Desktop\הנדסאים\פרקטיקום\foirstein-1-back\userLoginBackend\Project\obj\Debug\DTO.csproj.AssemblyReference.cache
+C:\Users\This User\Desktop\הנדסאים\פרקטיקום\foirstein-1-back\userLoginBackend\Project\obj\Debug\DTO.csproj.CoreCompileInputs.cache

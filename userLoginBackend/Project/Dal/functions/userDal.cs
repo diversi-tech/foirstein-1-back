@@ -1,5 +1,6 @@
 ﻿using DAL.Interfaces;
 using DAL.models;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,24 +18,60 @@ namespace DAL.functions
             this.loginContext = loginContext;
 
         }
-        public User Add(User user)
-        {
-            throw new NotImplementedException();
-        }
-
-        public int Delete(User user)
-        {
-            throw new NotImplementedException();
-        }
-
         public List<User> GetAll()
         {
-           return loginContext.Users.ToList();
+            return loginContext.Users.ToList();
         }
 
-        public User Update(User user, string id)
+        public User Add(User user)
         {
-            throw new NotImplementedException();
+            loginContext.Users.Add(user);
+            loginContext.SaveChanges();
+            return user;
+        }
+
+        public bool Update(User user)
+        {
+            var existingUser = loginContext.Users.Find(user.UserId);
+            if (existingUser == null)
+            {
+                return false;
+            }
+
+            existingUser.Username = user.Username;
+            existingUser.Email = user.Email;
+            
+
+            loginContext.Users.Update(existingUser);
+            loginContext.SaveChanges();
+            return true;
+        }
+
+        public bool Delete(User user)
+        {
+            var existingUser = loginContext.Users.Find(user.UserId);
+            if (existingUser == null)
+            {
+                return false;
+            }
+            loginContext.Users.Remove(existingUser);
+            loginContext.SaveChanges();
+            return true;
+        }
+
+        public bool UpdatePassword(User user)
+        {
+            var existingUser = loginContext.Users.Find(user.UserId);
+            if (existingUser == null)
+            {
+                return false;
+            }
+            existingUser.PasswordHash = user.PasswordHash;
+            loginContext.Users.Update(existingUser);
+            loginContext.SaveChanges();
+            return true;
         }
     }
 }
+
+

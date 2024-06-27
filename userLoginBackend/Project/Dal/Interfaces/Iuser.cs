@@ -11,9 +11,9 @@ namespace DAL.Interfaces
     {
         List<User> GetAll();
         User Add(User user);
-       User Update(User user, string id);
-        int Delete(User user);
-      
-   
+        bool Update(User user);
+        bool Delete(User user);
+        bool UpdatePassword(User user);
+
     }
 }

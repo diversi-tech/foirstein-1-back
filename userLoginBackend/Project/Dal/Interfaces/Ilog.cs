@@ -11,8 +11,8 @@ namespace DAL.Interfaces
     {
         List<ActivityLog> GetAll();
         ActivityLog Add(ActivityLog log);
-        ActivityLog Update(ActivityLog log, string id);
-        int Delete(ActivityLog log); 
+        bool Update(ActivityLog log);
+        bool Delete(ActivityLog log); 
  
     }
 }
