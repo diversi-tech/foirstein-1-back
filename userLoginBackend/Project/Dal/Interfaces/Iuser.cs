@@ -12,7 +12,7 @@ namespace DAL.Interfaces
         List<User> GetAll();
         User Add(User user);
         User Update(User user);
-        bool Delete(string userId);
+        bool Delete(int userId);
 
     }
 }

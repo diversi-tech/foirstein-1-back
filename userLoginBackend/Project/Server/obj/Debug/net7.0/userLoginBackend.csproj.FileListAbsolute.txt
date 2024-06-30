@@ -228,7 +228,6 @@ C:\Users\User\Desktop\פרטיקום\foirstein-1-back\userLoginBackend\Project\S
 C:\Users\User\Desktop\פרטיקום\foirstein-1-back\userLoginBackend\Project\Server\obj\Debug\net7.0\userLoginBackend.AssemblyInfoInputs.cache
 C:\Users\User\Desktop\פרטיקום\foirstein-1-back\userLoginBackend\Project\Server\obj\Debug\net7.0\userLoginBackend.AssemblyInfo.cs
 C:\Users\User\Desktop\פרטיקום\foirstein-1-back\userLoginBackend\Project\Server\obj\Debug\net7.0\userLoginBackend.csproj.CoreCompileInputs.cache
-C:\Users\User\Desktop\פרטיקום\foirstein-1-back\userLoginBackend\Project\Server\obj\Debug\net7.0\userLoginBackend.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\User\Desktop\פרטיקום\foirstein-1-back\userLoginBackend\Project\Server\obj\Debug\net7.0\userLoginBackend.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\User\Desktop\פרטיקום\foirstein-1-back\userLoginBackend\Project\Server\obj\Debug\net7.0\userLoginBackend.sourcelink.json
 C:\Users\User\Desktop\פרטיקום\foirstein-1-back\userLoginBackend\Project\Server\obj\Debug\net7.0\staticwebassets.build.json

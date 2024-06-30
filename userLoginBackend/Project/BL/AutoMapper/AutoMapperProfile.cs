@@ -22,7 +22,7 @@ namespace BLL.AutoMapper
 
             // המרה בין Report ו-Report_bll
             CreateMap<Report, Report_bll>()
-                .ForMember(dest => dest.GeneratedBy, opt => opt.MapFrom(src => src.GeneratedByNavigation.UserId))
+                //.ForMember(dest => dest.GeneratedBy, opt => opt.MapFrom(src => src.GeneratedByNavigation.UserId))
                 .ReverseMap();
                 //.ForMember(dest => dest.GeneratedByNavigation, opt => opt.MapFrom(src => new User { UserId = src.GeneratedBy }));
 

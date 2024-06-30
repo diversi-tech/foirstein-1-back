@@ -9,9 +9,16 @@ namespace BLL.models_bll
 {
     public class User_bll
     {
-        public string UserId { get; set; }
 
-        public string Username { get; set; }
+        public int UserId { get; set; }
+
+        public string Tz { get; set; }
+
+        public string UserName { get; set; }
+
+        public string Fname { get; set; }
+
+        public string Lname { get; set; }
 
         public string PasswordHash { get; set; }
 
@@ -28,7 +35,10 @@ namespace BLL.models_bll
         public DateTime UserDob { get; set; }
 
         public string PhoneNumber { get; set; }
-        
+
+        public string Megama { get; set; }
+
+
     }
 
 

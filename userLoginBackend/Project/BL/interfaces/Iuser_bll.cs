@@ -13,7 +13,7 @@ namespace BLL.interfaces
         List<models_bll.User_bll> getall();
         models_bll.User_bll Add(models_bll.User_bll user);
         models_bll.User_bll Update(models_bll.User_bll user);
-        bool Delete(string userId);
+        bool Delete(int userId);
 
     }
 }

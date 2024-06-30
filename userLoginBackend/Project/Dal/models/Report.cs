@@ -15,5 +15,7 @@ public partial class Report
 
     public DateTime? GeneratedAt { get; set; }
 
-    public virtual User GeneratedByNavigation { get; set; }
+    public int? GeneratedByNavigationUserId { get; set; }
+
+    public virtual User GeneratedByNavigationUser { get; set; }
 }

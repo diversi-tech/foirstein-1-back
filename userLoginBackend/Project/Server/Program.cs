@@ -11,8 +11,8 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 
 builder.Services.AddScoped<Iuser, userDal>();
-builder.Services.AddScoped<Ireport, reportDal>();
-builder.Services.AddScoped<Ilog, logDal>();
+//builder.Services.AddScoped<Ireport, reportDal>();
+//builder.Services.AddScoped<Ilog, logDal>();
 builder.Services.AddScoped<IActivityLog_bll, ActivityLog_bll>();
 builder.Services.AddScoped<IReport_bll, Report_bll>();
 builder.Services.AddScoped<Iuser_bll, User_bll>();
@@ -20,7 +20,7 @@ builder.Services.AddScoped<Iuser_bll, User_bll>();
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-builder.Services.AddDbContext<LoginContext>(options => options.UseSqlServer("Server=DESKTOP-AEGJR0O\\SQLEXPRESS;Database=Login;Trusted_Connection=True;TrustServerCertificate=True;"));
+builder.Services.AddDbContext<LiberiansDbContext>(options => options.UseSqlServer("Server=localhost,1433;Database=liberiansDB;Trusted_Connection=True;TrustServerCertificate=True;"));
 builder.Services.AddCors(p => p.AddPolicy("corspolicy", builder =>
 {
     builder

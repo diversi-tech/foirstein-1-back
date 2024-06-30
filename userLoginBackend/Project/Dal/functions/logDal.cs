@@ -11,18 +11,18 @@ namespace DAL.functions
 {
     public class logDal : Ilog
     {
-        LoginContext _LoginContext;
+        LiberiansDbContext LiberiansDbContext;
 
-        public logDal(LoginContext _LoginContext)
+        public logDal(LiberiansDbContext LiberiansDbContext)
         {
-            this._LoginContext = _LoginContext;
+            this.LiberiansDbContext = LiberiansDbContext;
         }
         public ActivityLog Add(ActivityLog log)
         {
             try
             {
-                _LoginContext.ActivityLogs.Add(log);
-                _LoginContext.SaveChanges();
+                LiberiansDbContext.ActivityLogs.Add(log);
+                LiberiansDbContext.SaveChanges();
                 //החזרת הקוד האוטומטי שנוסף
                 return log;
             }
@@ -36,8 +36,8 @@ namespace DAL.functions
         {
             try
             {
-                _LoginContext.Remove(log);
-                _LoginContext.SaveChanges();
+                LiberiansDbContext.Remove(log);
+                LiberiansDbContext.SaveChanges();
                 return true;
             }
             catch
@@ -48,7 +48,7 @@ namespace DAL.functions
 
         public List<ActivityLog> GetAll()
         {
-            return _LoginContext.ActivityLogs.ToList();
+            return LiberiansDbContext.ActivityLogs.ToList();
         }
 
 
@@ -56,8 +56,8 @@ namespace DAL.functions
         {
             try
             {
-                _LoginContext.ActivityLogs.Update(log);
-                _LoginContext.SaveChanges();
+                LiberiansDbContext.ActivityLogs.Update(log);
+                LiberiansDbContext.SaveChanges();
                 return true;
             }
             catch

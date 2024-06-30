@@ -8,15 +8,16 @@ namespace BLL.models_bll
 {
     public class Report_bll
     {
-        public int ReportId { get; set; }
 
         public string ReportName { get; set; }
 
         public string ReportData { get; set; }
 
-        public int? GeneratedBy { get; set; }
+        public string GeneratedBy { get; set; }
 
         public DateTime? GeneratedAt { get; set; }
+
+        public int? GeneratedByNavigationUserId { get; set; }
 
     }
 }

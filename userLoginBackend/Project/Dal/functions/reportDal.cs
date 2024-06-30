@@ -9,38 +9,38 @@ using System.Threading.Tasks;
 
 namespace DAL.functions
 {
-    public class reportDal: Ireport
+    public class reportDal : Ireport
     {
-        LoginContext _LoginContext;
+        LiberiansDbContext LiberiansDbContext;
 
-        public reportDal(LoginContext _LoginContext)
+        public reportDal(LiberiansDbContext LiberiansDbContext)
         {
-            this._LoginContext = _LoginContext;
+            this.LiberiansDbContext = LiberiansDbContext;
         }
 
         public List<Report> GetAll()
         {
-            return _LoginContext.Reports.ToList();
+            return LiberiansDbContext.Reports.ToList();
         }
 
         public Report Add(Report report)
         {
-            _LoginContext.Reports.Add(report);
-            _LoginContext.SaveChanges();
+            LiberiansDbContext.Reports.Add(report);
+            LiberiansDbContext.SaveChanges();
             return report;
         }
 
         public bool Update(Report report)
         {
-            var existingReport = _LoginContext.Reports.Find(report.ReportId);
+            var existingReport = LiberiansDbContext.Reports.Find(report.ReportId);
             if (existingReport == null)
             {
                 return false;
             }
             // עדכני תכונות נוספות לפי הצורך
 
-            _LoginContext.Reports.Update(existingReport);
-            _LoginContext.SaveChanges();
+            LiberiansDbContext.Reports.Update(existingReport);
+            LiberiansDbContext.SaveChanges();
             return true;
         }
 

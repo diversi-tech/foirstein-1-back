@@ -13,5 +13,7 @@ public partial class ActivityLog
 
     public DateTime? Timestamp { get; set; }
 
-    public virtual User User { get; set; }
+    public int? UserId1 { get; set; }
+
+    public virtual User UserId1Navigation { get; set; }
 }

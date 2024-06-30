@@ -46,7 +46,7 @@ namespace userLoginBackend.Controllers
         }
 
         [HttpDelete("dellUser/{id}")]
-        public ActionResult<bool> dell(string id)
+        public ActionResult<bool> dell(int id)
         {
             return Ok(user.Delete(id));
         }

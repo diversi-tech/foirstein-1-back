@@ -11,51 +11,51 @@ namespace DAL.functions
 {
     public class userDal : Iuser
     {
-        LoginContext loginContext;
-        public userDal(LoginContext loginContext)
+        LiberiansDbContext LiberiansDbContext;
+        public userDal(LiberiansDbContext LiberiansDbContext)
         {
 
-            this.loginContext = loginContext;
+            this.LiberiansDbContext = LiberiansDbContext;
 
         }
         public List<User> GetAll()
         {
-            return loginContext.Users.ToList();
+            return LiberiansDbContext.Users.ToList();
         }
 
         public User Add(User user)
         {
-            loginContext.Users.Add(user);
-            loginContext.SaveChanges();
+            LiberiansDbContext.Users.Add(user);
+            LiberiansDbContext.SaveChanges();
             return user;
         }
 
         public User Update(User user)
         {
-            var existingUser = loginContext.Users.Find(user.UserId);
+            var existingUser = LiberiansDbContext.Users.Find(user.UserId);
             if (existingUser == null)
             {
                 return null;
             }
 
-            existingUser.Username = user.Username;
+            existingUser.UserName = user.UserName;
             existingUser.Email = user.Email;
             // עדכני תכונות נוספות לפי הצורך
 
-            loginContext.Users.Update(existingUser);
-            loginContext.SaveChanges();
+            LiberiansDbContext.Users.Update(existingUser);
+            LiberiansDbContext.SaveChanges();
             return existingUser;
         }
 
-        public bool Delete(string userId)
+        public bool Delete(int userId)
         {
-            User existingUser = loginContext.Users.Find(userId);
+            User existingUser = LiberiansDbContext.Users.Find(userId);
             if (existingUser == null)
             {
                 return false;
             }
-            loginContext.Users.Remove(existingUser);
-            loginContext.SaveChanges();
+            LiberiansDbContext.Users.Remove(existingUser);
+            LiberiansDbContext.SaveChanges();
             return true;
         }
     }

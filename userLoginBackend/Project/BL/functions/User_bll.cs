@@ -54,7 +54,7 @@ namespace BLL.functions
             return mapper.Map<models_bll.User_bll>(userDal);
         }
 
-        public bool Delete(string userId)
+        public bool Delete(int userId)
         {
             return _Iuser.Delete(userId);
         }
