@@ -31,6 +31,7 @@ namespace BLL.functions
         public List<User_modelBll> getall()
         {
             List<User> users = _Iuser.GetAll();
+
             return mapper.Map<List<User_modelBll>>(users);
         }
 

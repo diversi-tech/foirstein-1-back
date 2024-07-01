@@ -1,15 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace DAL.models;
+namespace userLoginBackend.models;
 
 public partial class User
 {
-    //public User()
-    //{
-    //    ActivityLogs = new HashSet<ActivityLog>();
-    //}
-
     public int UserId { get; set; }
 
     public string Tz { get; set; }

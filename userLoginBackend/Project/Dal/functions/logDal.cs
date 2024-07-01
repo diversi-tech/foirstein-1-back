@@ -1,5 +1,6 @@
 ﻿using DAL.Interfaces;
 using DAL.models;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -48,7 +49,7 @@ namespace DAL.functions
 
         public List<ActivityLog> GetAll()
         {
-            return LiberiansDbContext.ActivityLogs.ToList();
+            return LiberiansDbContext.ActivityLogs.Include(k=>k.UserId1Navigation).ToList();
         }
 
 
