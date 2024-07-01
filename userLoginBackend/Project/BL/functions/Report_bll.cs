@@ -1,7 +1,9 @@
 ﻿using AutoMapper;
 using BLL.AutoMapper;
 using BLL.interfaces;
+using BLL.models_bll;
 using DAL.Interfaces;
+using DAL.models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -23,5 +25,11 @@ namespace BLL.functions
             });
             mapper = (IMapper)config.CreateMapper();
         }
+        public List<Report_modelBll> getall()
+        {
+            List<Report> reports = _Ireport.GetAll();
+            return mapper.Map<List<Report_modelBll>>(reports);
+        }
+
     }
 }

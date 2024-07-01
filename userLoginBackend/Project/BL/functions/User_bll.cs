@@ -26,19 +26,21 @@ namespace BLL.functions
             });
             mapper = (IMapper)config.CreateMapper();
         }
-        public List<models_bll.User_bll> getall()
+
+
+        public List<User_modelBll> getall()
         {
             List<User> users = _Iuser.GetAll();
-            return mapper.Map<List<models_bll.User_bll>>(users);
+            return mapper.Map<List<User_modelBll>>(users);
         }
 
-        public models_bll.User_bll Add(models_bll.User_bll user)
+        public User_modelBll Add(User_modelBll user)
         {
             try
             {
                 User u = _Iuser.Add(mapper.Map<User>(user));
 
-                return mapper.Map<models_bll.User_bll>(u);
+                return mapper.Map<User_modelBll>(u);
             }
             catch
             {
@@ -46,12 +48,12 @@ namespace BLL.functions
             }
         }
 
-        public models_bll.User_bll Update(models_bll.User_bll user)
+        public User_modelBll Update(User_modelBll user)
         {
             // מיפוי מ-User_bll ל-User
             User userDal=_Iuser.Update(mapper.Map<User>(user));
             // קריאה לפונקציה Update ב-DA
-            return mapper.Map<models_bll.User_bll>(userDal);
+            return mapper.Map<User_modelBll>(userDal);
         }
 
         public bool Delete(int userId)

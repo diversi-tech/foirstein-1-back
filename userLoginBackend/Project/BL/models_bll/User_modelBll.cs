@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace BLL.models_bll
 {
-    public class User_bll
+    public class User_modelBll
     {
 
         public int UserId { get; set; }
@@ -37,7 +37,6 @@ namespace BLL.models_bll
         public string PhoneNumber { get; set; }
 
         public string Megama { get; set; }
-
 
     }
 

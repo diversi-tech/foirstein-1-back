@@ -1,4 +1,5 @@
-﻿using DAL.functions;
+﻿using BLL.models_bll;
+using DAL.functions;
 using DAL.models;
 using System;
 using System.Collections.Generic;
@@ -10,9 +11,9 @@ namespace BLL.interfaces
 {
     public interface Iuser_bll
     {
-        List<models_bll.User_bll> getall();
-        models_bll.User_bll Add(models_bll.User_bll user);
-        models_bll.User_bll Update(models_bll.User_bll user);
+        List<User_modelBll> getall();
+        User_modelBll Add(User_modelBll user);
+       User_modelBll Update(User_modelBll user);
         bool Delete(int userId);
 
     }

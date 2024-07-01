@@ -15,19 +15,27 @@ namespace BLL.AutoMapper
         public AutoMapperProfile()
         {
             // המרה בין User ו-User_bll
-            CreateMap<User, User_bll>()
+            CreateMap<User, User_modelBll>()
                 .ReverseMap()
                 .ForMember(dest => dest.ActivityLogs, opt => opt.Ignore())
-                .ForMember(dest => dest.Reports, opt => opt.Ignore());
+                .ForMember(dest => dest.SearchLogs, opt => opt.Ignore())
+                .ForMember(dest => dest.Reports, opt => opt.Ignore())
+                .ForMember(dest => dest.RatingNotes, opt => opt.Ignore())
+                .ForMember(dest => dest.BorrowRequests, opt => opt.Ignore())
+                .ForMember(dest => dest.BorrowApprovalRequests, opt => opt.Ignore());
+
 
             // המרה בין Report ו-Report_bll
-            CreateMap<Report, Report_bll>()
-                //.ForMember(dest => dest.GeneratedBy, opt => opt.MapFrom(src => src.GeneratedByNavigation.UserId))
-                .ReverseMap();
-                //.ForMember(dest => dest.GeneratedByNavigation, opt => opt.MapFrom(src => new User { UserId = src.GeneratedBy }));
+            CreateMap<Report, Report_modelBll>()
+                .ForMember(dest => dest.GeneratedByNavigationUserId, opt => opt.MapFrom(src => src.GeneratedByNavigationUser.UserId));
+                //.ReverseMap()
+               
 
-           // המרה בין ActivityLog ו-ActivityLog_bll
-            CreateMap<ActivityLog, ActivityLog_bll>().ReverseMap();
+            // המרה בין ActivityLog ו-ActivityLog_bll
+            CreateMap<ActivityLog, ActivityLog_modelBll>()
+             .ForMember(dest => dest.UserId1, opt => opt.MapFrom(src => src.UserId1Navigation.UserId))
+             .ForMember(dest => dest.UserId, opt => opt.MapFrom(src => src.UserId1Navigation.Tz))
+             .ReverseMap();
         }
     }
 

@@ -20,22 +20,22 @@ namespace userLoginBackend.Controllers
             this.user = user;
         }
         [HttpGet("getUsers")]
-        public ActionResult<List<User_bll>> GetAll()
+        public ActionResult<List<User_modelBll>> GetAll()
         {
             return Ok(user.getall());
             
         }
         [HttpPost("addUser")]
-        public ActionResult<User_bll> add(User_bll u)
+        public ActionResult<User_modelBll> add(User_modelBll u)
         {
             return Ok(user.Add(u));
         }
         [HttpPut("updateUser")]
-        public ActionResult<User_bll> update(User_bll u)
+        public ActionResult<User_modelBll> update(User_modelBll u)
         {
             try
             {
-                User_bll result = user.Update(u);
+                User_modelBll result = user.Update(u);
                 return result;
             }
 

@@ -244,3 +244,4 @@ C:\Users\User\Desktop\פרטיקום\foirstein-1-back\userLoginBackend\Project\S
 C:\Users\User\Desktop\פרטיקום\foirstein-1-back\userLoginBackend\Project\Server\obj\Debug\net7.0\userLoginBackend.pdb
 C:\Users\User\Desktop\פרטיקום\foirstein-1-back\userLoginBackend\Project\Server\obj\Debug\net7.0\userLoginBackend.genruntimeconfig.cache
 C:\Users\User\Desktop\פרטיקום\foirstein-1-back\userLoginBackend\Project\Server\obj\Debug\net7.0\ref\userLoginBackend.dll
+C:\Users\User\Desktop\פרטיקום\foirstein-1-back\userLoginBackend\Project\Server\obj\Debug\net7.0\userLoginBackend.MvcApplicationPartsAssemblyInfo.cs

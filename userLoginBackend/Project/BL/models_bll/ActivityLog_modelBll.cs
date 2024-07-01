@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BLL.models_bll
 {
-    public class ActivityLog_bll
+    public class ActivityLog_modelBll
     {
         public int LogId { get; set; }
 

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BLL.models_bll;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,5 +9,6 @@ namespace BLL.interfaces
 {
     public interface IReport_bll
     {
+        List<Report_modelBll> getall();
     }
 }
