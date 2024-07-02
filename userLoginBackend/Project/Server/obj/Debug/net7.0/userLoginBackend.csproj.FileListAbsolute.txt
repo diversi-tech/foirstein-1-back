@@ -245,6 +245,7 @@ C:\Users\User\Desktop\פרטיקום\foirstein-1-back\userLoginBackend\Project\S
 C:\Users\User\Desktop\פרטיקום\foirstein-1-back\userLoginBackend\Project\Server\obj\Debug\net7.0\userLoginBackend.genruntimeconfig.cache
 C:\Users\User\Desktop\פרטיקום\foirstein-1-back\userLoginBackend\Project\Server\obj\Debug\net7.0\ref\userLoginBackend.dll
 C:\Users\User\Desktop\פרטיקום\foirstein-1-back\userLoginBackend\Project\Server\obj\Debug\net7.0\userLoginBackend.MvcApplicationPartsAssemblyInfo.cs
+<<<<<<< HEAD
 C:\Users\User\Desktop\פרטיקום\main_back\foirstein-1-back\userLoginBackend\Project\Server\bin\Debug\net7.0\appsettings.Development.json
 C:\Users\User\Desktop\פרטיקום\main_back\foirstein-1-back\userLoginBackend\Project\Server\bin\Debug\net7.0\appsettings.json
 C:\Users\User\Desktop\פרטיקום\main_back\foirstein-1-back\userLoginBackend\Project\Server\bin\Debug\net7.0\userLoginBackend.exe
@@ -411,3 +412,5 @@ C:\Users\user\Desktop\פרויקט פרקטיקום\foirstein-1-back\userLoginBa
 C:\Users\user\Desktop\פרויקט פרקטיקום\foirstein-1-back\userLoginBackend\Project\Server\obj\Debug\net7.0\userLoginBackend.pdb
 C:\Users\user\Desktop\פרויקט פרקטיקום\foirstein-1-back\userLoginBackend\Project\Server\obj\Debug\net7.0\userLoginBackend.genruntimeconfig.cache
 C:\Users\user\Desktop\פרויקט פרקטיקום\foirstein-1-back\userLoginBackend\Project\Server\obj\Debug\net7.0\ref\userLoginBackend.dll
+=======
+>>>>>>> tziviBranch
