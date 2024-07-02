@@ -26,7 +26,7 @@ namespace userLoginBackend.Controllers
             
         }
         [HttpPost("addUser")]
-        public ActionResult<User_modelBll> add(User_modelBll u)
+        public ActionResult<User_modelBll> add([FromForm] User_modelBll u)
         {
             return Ok(user.Add(u));
         }
@@ -63,6 +63,12 @@ namespace userLoginBackend.Controllers
         public ActionResult VerifySecurityQuestions([FromQuery] string idNumber)
         {
             return Ok(user.VerifySecurityQuestions(idNumber));
+        }
+        [HttpGet("{name}/{pass}")]
+        public ActionResult<string> getUser(string name, string pass)
+        {
+            return Ok(user.ValidateUser(name, pass));
+
         }
     }
 

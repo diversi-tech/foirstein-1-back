@@ -18,5 +18,6 @@ namespace BLL.interfaces
         public User_modelBll VerifySecurityQuestions(string idNumber);
 
         public User_modelBll ResetPassword(string IdNumber, string NewPassword);
+        public string ValidateUser(string UserName, string password);
     }
 }
