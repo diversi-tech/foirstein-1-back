@@ -87,5 +87,19 @@ namespace BLL.functions
             _Iuser.UpdatePassword(mapper.Map<User>(user_Bll));
             return user_Bll;
         }
+
+        public bool UpdateUserRole(int userId, string newRole)
+        {
+            var user = _Iuser.GetAll().FirstOrDefault(x => x.UserId == userId);
+            if (user == null)
+            {
+                return false; // אם המשתמש לא נמצא
+            }
+
+            user.Role = newRole;
+            _Iuser.Update(user); // אין צורך במיפוי כאן כי כבר יש לך את ה-user
+            return true;
+        }
+
     }
 }

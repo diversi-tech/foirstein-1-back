@@ -27,5 +27,15 @@ namespace userLoginBackend.Controllers
         {
             return Ok(_IActivityLog_bll.getall());
         }
+
+        //[HttpGet("activity-report")]
+        //public ActionResult<List<UserActivityCount>> GetActivityLogs([FromQuery] string reportName)
+        //{
+          
+        //        var activityLogs = _IActivityLog_bll.GetActivityLogs(reportName);
+        //        return Ok(activityLogs);
+          
+        //}
     }
 }
+

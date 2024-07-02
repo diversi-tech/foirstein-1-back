@@ -1,4 +1,5 @@
-﻿using BLL.models_bll;
+﻿using BLL.functions;
+using BLL.models_bll;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,6 +11,7 @@ namespace BLL.interfaces
     public interface IActivityLog_bll
     {
         List<ActivityLog_modelBll> getall();
+        //public List<UserActivityCount> GetActivityLogs(string reportName);
 
     }
 }
