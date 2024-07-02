@@ -15,11 +15,13 @@ namespace BLL.functions
     public class ActivityLog_bll:IActivityLog_bll
     {
 
-        Ilog Ilog;
+        Ilog _Ilog;
         static IMapper mapper;
         public ActivityLog_bll(Ilog Ilog)
         {
-            this.Ilog = Ilog;
+
+            _Ilog = Ilog;
+
             var config = new MapperConfiguration(cfg =>
             {
                 cfg.AddProfile<AutoMapperProfile>();
@@ -29,10 +31,11 @@ namespace BLL.functions
 
         public List<ActivityLog_modelBll> getall()
         {
-            List<ActivityLog> logs= Ilog.GetAll();
-            return mapper.Map<List<ActivityLog_modelBll>>(logs);
 
+            List<ActivityLog> activityLogs = _Ilog.GetAll();
+            return mapper.Map<List<ActivityLog_modelBll>>(activityLogs);
         }
+
     }
 
 
