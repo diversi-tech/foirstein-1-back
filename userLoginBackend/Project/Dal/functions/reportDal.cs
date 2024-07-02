@@ -20,7 +20,7 @@ namespace DAL.functions
 
         public List<Report> GetAll()
         {
-            return LiberiansDbContext.Reports.ToList();
+          return LiberiansDbContext.Reports.ToList();
         }
 
         public Report Add(Report report)
