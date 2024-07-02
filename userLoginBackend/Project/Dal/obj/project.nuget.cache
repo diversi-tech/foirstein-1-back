@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "tDDiNo9SuhsUPebi2TKty4InL0trh9HA4eyZUouJFMatJ1h62qqkHyRfJOIO5QJ3EKpuyO1eX4J+toIa8QWHOw==",
+  "dgSpecHash": "gsO4tR3wChUxAbrILgbV0YW2wY51HV2Whkt198MCyyguJSluNmYJdGJ460ZG/4purUTxP1QSwBWFPyFtg5APaw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\משתמש\\Documents\\משימות\\foirstein-1-back\\userLoginBackend\\Project\\Dal\\DAL.csproj",
+  "projectFilePath": "C:\\Users\\משתמש\\Documents\\משימות\\‏‏foirstein-1-back - עותק\\userLoginBackend\\Project\\Dal\\DAL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\משתמש\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\משתמש\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

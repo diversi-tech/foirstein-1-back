@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "rqAy6QndaKDbfepLdYBbA5rp+fWqgbmeNtyTMXdCDs6Pzr4DQgp+5IFLtdvzAlawUgVDdI1nRRMyW0oaGwMAcA==",
+  "dgSpecHash": "zsOHvLfzFRPCl/D7H/T4+7zDnlATVDlLAHo47mufCzC+yNIYo/eY1B01Luk0Ycq8ZJIPV4gvT4TrcheE/xLdsQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\משתמש\\Documents\\משימות\\foirstein-1-back\\userLoginBackend\\Project\\BL\\BLL.csproj",
+  "projectFilePath": "C:\\Users\\משתמש\\Documents\\משימות\\‏‏foirstein-1-back - עותק\\userLoginBackend\\Project\\BL\\BLL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\משתמש\\.nuget\\packages\\automapper\\9.0.0\\automapper.9.0.0.nupkg.sha512",
     "C:\\Users\\משתמש\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\7.0.0\\automapper.extensions.microsoft.dependencyinjection.7.0.0.nupkg.sha512",
