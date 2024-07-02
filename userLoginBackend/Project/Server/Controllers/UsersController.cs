@@ -50,7 +50,33 @@ namespace userLoginBackend.Controllers
         {
             return Ok(user.Delete(id));
         }
-      
 
+        [HttpPut("reset-password")]
+        public ActionResult ResetPassword([FromBody] ResetPasswordRequest request)
+        {
+            user.ResetPassword(request.IdNumber, request.NewPassword);
+            return Ok(new { message = "Password reset successfully." });
+        }
+
+
+        [HttpGet("verify-security-questions")]
+        public ActionResult VerifySecurityQuestions([FromQuery] string idNumber)
+        {
+            return Ok(user.VerifySecurityQuestions(idNumber));
+        }
     }
+
+
+    public class VerifySecurityQuestionsRequest
+    {
+        public string IdNumber { get; set; }
+    }
+    public class ResetPasswordRequest
+    {
+        public string IdNumber { get; set; }
+        public string NewPassword { get; set; }
+    }
+
+
 }
+

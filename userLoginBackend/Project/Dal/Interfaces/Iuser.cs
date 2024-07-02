@@ -13,6 +13,7 @@ namespace DAL.Interfaces
         User Add(User user);
         User Update(User user);
         bool Delete(int userId);
+        User UpdatePassword(User user);
 
     }
 }

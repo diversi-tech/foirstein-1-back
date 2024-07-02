@@ -58,6 +58,20 @@ namespace DAL.functions
             LiberiansDbContext.SaveChanges();
             return true;
         }
+
+        public User UpdatePassword(User user)
+        {
+            var existingUser = LiberiansDbContext.Users.Find(user.UserId);
+            if (existingUser == null)
+            {
+                return null;
+            }
+            existingUser.PasswordHash = user.PasswordHash;
+            LiberiansDbContext.Users.Update(existingUser);
+            LiberiansDbContext.SaveChanges();
+            return existingUser;
+
+        }
     }
 }
 

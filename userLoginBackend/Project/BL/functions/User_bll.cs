@@ -61,5 +61,31 @@ namespace BLL.functions
         {
             return _Iuser.Delete(userId);
         }
+
+        public User_modelBll VerifySecurityQuestions(string idNumber)
+        {
+            User user = _Iuser.GetAll().FirstOrDefault(u => u.Tz == idNumber);
+            if (user != null)
+            {
+                User_modelBll user_Bll = mapper.Map<User_modelBll>(user);
+                return user_Bll;
+            }
+            return null;
+        }
+
+        public User_modelBll ResetPassword(string IdNumber, string NewPassword)
+        {
+            var user = _Iuser.GetAll().FirstOrDefault(u => u.Tz == IdNumber);
+            if (user == null)
+            {
+                throw new Exception("User not found");
+            }
+
+            User_modelBll user_Bll = mapper.Map<User_modelBll>(user);
+            user_Bll.PasswordHash = NewPassword;
+            user_Bll.UpdatedAt = DateTime.Now;
+            _Iuser.UpdatePassword(mapper.Map<User>(user_Bll));
+            return user_Bll;
+        }
     }
 }
