@@ -3,6 +3,26 @@
   "WorkspaceRootPath": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\foirstein-1-back\\userLoginBackend\\Project\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{ACFFDEA1-1E10-4827-9896-1A411023D012}|Dal\\DAL.csproj|c:\\users\\user\\desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\foirstein-1-back\\userloginbackend\\project\\dal\\functions\\logdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACFFDEA1-1E10-4827-9896-1A411023D012}|Dal\\DAL.csproj|solutionrelative:dal\\functions\\logdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86C3A150-6CDC-45B3-A042-12D3FF800219}|BL\\BLL.csproj|c:\\users\\user\\desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\foirstein-1-back\\userloginbackend\\project\\bl\\models_bll\\user_modelbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86C3A150-6CDC-45B3-A042-12D3FF800219}|BL\\BLL.csproj|solutionrelative:bl\\models_bll\\user_modelbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACFFDEA1-1E10-4827-9896-1A411023D012}|Dal\\DAL.csproj|c:\\users\\user\\desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\foirstein-1-back\\userloginbackend\\project\\dal\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACFFDEA1-1E10-4827-9896-1A411023D012}|Dal\\DAL.csproj|solutionrelative:dal\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86C3A150-6CDC-45B3-A042-12D3FF800219}|BL\\BLL.csproj|c:\\users\\user\\desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\foirstein-1-back\\userloginbackend\\project\\bl\\functions\\user_bll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86C3A150-6CDC-45B3-A042-12D3FF800219}|BL\\BLL.csproj|solutionrelative:bl\\functions\\user_bll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86C3A150-6CDC-45B3-A042-12D3FF800219}|BL\\BLL.csproj|c:\\users\\user\\desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\foirstein-1-back\\userloginbackend\\project\\bl\\automapper\\automapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86C3A150-6CDC-45B3-A042-12D3FF800219}|BL\\BLL.csproj|solutionrelative:bl\\automapper\\automapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E4091DBF-74C8-49E2-87E1-DB87EEC296A2}|Server\\userLoginBackend.csproj|c:\\users\\user\\desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\foirstein-1-back\\userloginbackend\\project\\server\\controllers\\reportcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E4091DBF-74C8-49E2-87E1-DB87EEC296A2}|Server\\userLoginBackend.csproj|solutionrelative:server\\controllers\\reportcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -23,20 +43,8 @@
       "RelativeMoniker": "D:0:0:{ACFFDEA1-1E10-4827-9896-1A411023D012}|Dal\\DAL.csproj|solutionrelative:dal\\interfaces\\ireport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{86C3A150-6CDC-45B3-A042-12D3FF800219}|BL\\BLL.csproj|c:\\users\\user\\desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\foirstein-1-back\\userloginbackend\\project\\bl\\functions\\user_bll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{86C3A150-6CDC-45B3-A042-12D3FF800219}|BL\\BLL.csproj|solutionrelative:bl\\functions\\user_bll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{86C3A150-6CDC-45B3-A042-12D3FF800219}|BL\\BLL.csproj|c:\\users\\user\\desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\foirstein-1-back\\userloginbackend\\project\\bl\\interfaces\\iuser_bll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{86C3A150-6CDC-45B3-A042-12D3FF800219}|BL\\BLL.csproj|solutionrelative:bl\\interfaces\\iuser_bll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{86C3A150-6CDC-45B3-A042-12D3FF800219}|BL\\BLL.csproj|c:\\users\\user\\desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\foirstein-1-back\\userloginbackend\\project\\bl\\models_bll\\user_modelbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{86C3A150-6CDC-45B3-A042-12D3FF800219}|BL\\BLL.csproj|solutionrelative:bl\\models_bll\\user_modelbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{86C3A150-6CDC-45B3-A042-12D3FF800219}|BL\\BLL.csproj|c:\\users\\user\\desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\foirstein-1-back\\userloginbackend\\project\\bl\\automapper\\automapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{86C3A150-6CDC-45B3-A042-12D3FF800219}|BL\\BLL.csproj|solutionrelative:bl\\automapper\\automapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{86C3A150-6CDC-45B3-A042-12D3FF800219}|BL\\BLL.csproj|c:\\users\\user\\desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\foirstein-1-back\\userloginbackend\\project\\bl\\models_bll\\activitylog_modelbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -63,10 +71,6 @@
       "RelativeMoniker": "D:0:0:{ACFFDEA1-1E10-4827-9896-1A411023D012}|Dal\\DAL.csproj|solutionrelative:dal\\models\\ratingnote.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ACFFDEA1-1E10-4827-9896-1A411023D012}|Dal\\DAL.csproj|c:\\users\\user\\desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\foirstein-1-back\\userloginbackend\\project\\dal\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ACFFDEA1-1E10-4827-9896-1A411023D012}|Dal\\DAL.csproj|solutionrelative:dal\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E4091DBF-74C8-49E2-87E1-DB87EEC296A2}|Server\\userLoginBackend.csproj|c:\\users\\user\\desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\foirstein-1-back\\userloginbackend\\project\\server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E4091DBF-74C8-49E2-87E1-DB87EEC296A2}|Server\\userLoginBackend.csproj|solutionrelative:server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -77,10 +81,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{ACFFDEA1-1E10-4827-9896-1A411023D012}|Dal\\DAL.csproj|c:\\users\\user\\desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\foirstein-1-back\\userloginbackend\\project\\dal\\functions\\userdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ACFFDEA1-1E10-4827-9896-1A411023D012}|Dal\\DAL.csproj|solutionrelative:dal\\functions\\userdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ACFFDEA1-1E10-4827-9896-1A411023D012}|Dal\\DAL.csproj|c:\\users\\user\\desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\foirstein-1-back\\userloginbackend\\project\\dal\\functions\\logdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ACFFDEA1-1E10-4827-9896-1A411023D012}|Dal\\DAL.csproj|solutionrelative:dal\\functions\\logdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{ACFFDEA1-1E10-4827-9896-1A411023D012}|Dal\\DAL.csproj|c:\\users\\user\\desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\foirstein-1-back\\userloginbackend\\project\\dal\\interfaces\\iuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -122,72 +122,19 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Iuser_bll.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\foirstein-1-back\\userLoginBackend\\Project\\BL\\interfaces\\Iuser_bll.cs",
-              "RelativeDocumentMoniker": "BL\\interfaces\\Iuser_bll.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\foirstein-1-back\\userLoginBackend\\Project\\BL\\interfaces\\Iuser_bll.cs",
-              "RelativeToolTip": "BL\\interfaces\\Iuser_bll.cs",
-              "ViewState": "AQIAAAcAAAAAAAAAAAAAAA0AAAAlAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-24T15:56:19.298Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "User_modelBll.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\foirstein-1-back\\userLoginBackend\\Project\\BL\\models_bll\\User_modelBll.cs",
-              "RelativeDocumentMoniker": "BL\\models_bll\\User_modelBll.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\foirstein-1-back\\userLoginBackend\\Project\\BL\\models_bll\\User_modelBll.cs",
-              "RelativeToolTip": "BL\\models_bll\\User_modelBll.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAwAAAAZAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-24T17:47:34.361Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Report_bll.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\foirstein-1-back\\userLoginBackend\\Project\\BL\\functions\\Report_bll.cs",
-              "RelativeDocumentMoniker": "BL\\functions\\Report_bll.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\foirstein-1-back\\userLoginBackend\\Project\\BL\\functions\\Report_bll.cs",
-              "RelativeToolTip": "BL\\functions\\Report_bll.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAuwBsAAAAqAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-27T14:10:44.486Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "IReport_bll.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\foirstein-1-back\\userLoginBackend\\Project\\BL\\interfaces\\IReport_bll.cs",
-              "RelativeDocumentMoniker": "BL\\interfaces\\IReport_bll.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\foirstein-1-back\\userLoginBackend\\Project\\BL\\interfaces\\IReport_bll.cs",
-              "RelativeToolTip": "BL\\interfaces\\IReport_bll.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAgAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-30T12:14:10.013Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
               "Title": "User_bll.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\foirstein-1-back\\userLoginBackend\\Project\\BL\\functions\\User_bll.cs",
               "RelativeDocumentMoniker": "BL\\functions\\User_bll.cs",
               "ToolTip": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\foirstein-1-back\\userLoginBackend\\Project\\BL\\functions\\User_bll.cs",
               "RelativeToolTip": "BL\\functions\\User_bll.cs",
-              "ViewState": "AQIAABgAAAAAAAAAAAAMwB4AAAAGAAAA",
+              "ViewState": "AQIAACMAAAAAAAAAAAAWwB4AAAAGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-24T15:57:18.382Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-24T15:57:18.382Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 9,
               "Title": "Ireport.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\foirstein-1-back\\userLoginBackend\\Project\\Dal\\Interfaces\\Ireport.cs",
               "RelativeDocumentMoniker": "Dal\\Interfaces\\Ireport.cs",
@@ -195,12 +142,11 @@
               "RelativeToolTip": "Dal\\Interfaces\\Ireport.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAAAAAAkAAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-30T11:51:26.177Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-30T11:51:26.177Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "ReportController.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\foirstein-1-back\\userLoginBackend\\Project\\Server\\Controllers\\ReportController.cs",
               "RelativeDocumentMoniker": "Server\\Controllers\\ReportController.cs",
@@ -208,12 +154,96 @@
               "RelativeToolTip": "Server\\Controllers\\ReportController.cs",
               "ViewState": "AQIAAAIAAAAAAAAAAAAAABQAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-30T11:45:34.009Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-30T11:45:34.009Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AutoMapperProfile.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\foirstein-1-back\\userLoginBackend\\Project\\BL\\AutoMapper\\AutoMapperProfile.cs",
+              "RelativeDocumentMoniker": "BL\\AutoMapper\\AutoMapperProfile.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\foirstein-1-back\\userLoginBackend\\Project\\BL\\AutoMapper\\AutoMapperProfile.cs",
+              "RelativeToolTip": "BL\\AutoMapper\\AutoMapperProfile.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAQwCEAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-24T16:02:53.985Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\foirstein-1-back\\userLoginBackend\\Project\\Dal\\models\\User.cs",
+              "RelativeDocumentMoniker": "Dal\\models\\User.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\foirstein-1-back\\userLoginBackend\\Project\\Dal\\models\\User.cs",
+              "RelativeToolTip": "Dal\\models\\User.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAAA4wC0AAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-24T17:46:33.969Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "User_modelBll.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\foirstein-1-back\\userLoginBackend\\Project\\BL\\models_bll\\User_modelBll.cs",
+              "RelativeDocumentMoniker": "BL\\models_bll\\User_modelBll.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\foirstein-1-back\\userLoginBackend\\Project\\BL\\models_bll\\User_modelBll.cs",
+              "RelativeToolTip": "BL\\models_bll\\User_modelBll.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAYwAwAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-24T17:47:34.361Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "logDal.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\foirstein-1-back\\userLoginBackend\\Project\\Dal\\functions\\logDal.cs",
+              "RelativeDocumentMoniker": "Dal\\functions\\logDal.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\foirstein-1-back\\userLoginBackend\\Project\\Dal\\functions\\logDal.cs",
+              "RelativeToolTip": "Dal\\functions\\logDal.cs",
+              "ViewState": "AQIAACkAAAAAAAAAAAAAADIAAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-30T11:56:08.631Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IReport_bll.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\foirstein-1-back\\userLoginBackend\\Project\\BL\\interfaces\\IReport_bll.cs",
+              "RelativeDocumentMoniker": "BL\\interfaces\\IReport_bll.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\foirstein-1-back\\userLoginBackend\\Project\\BL\\interfaces\\IReport_bll.cs",
+              "RelativeToolTip": "BL\\interfaces\\IReport_bll.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-30T12:14:10.013Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Report_bll.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\foirstein-1-back\\userLoginBackend\\Project\\BL\\functions\\Report_bll.cs",
+              "RelativeDocumentMoniker": "BL\\functions\\Report_bll.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\foirstein-1-back\\userLoginBackend\\Project\\BL\\functions\\Report_bll.cs",
+              "RelativeToolTip": "BL\\functions\\Report_bll.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAuwBsAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-27T14:10:44.486Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Iuser_bll.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\foirstein-1-back\\userLoginBackend\\Project\\BL\\interfaces\\Iuser_bll.cs",
+              "RelativeDocumentMoniker": "BL\\interfaces\\Iuser_bll.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\foirstein-1-back\\userLoginBackend\\Project\\BL\\interfaces\\Iuser_bll.cs",
+              "RelativeToolTip": "BL\\interfaces\\Iuser_bll.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAAAA0AAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-24T15:56:19.298Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "UsersController.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\foirstein-1-back\\userLoginBackend\\Project\\Server\\Controllers\\UsersController.cs",
               "RelativeDocumentMoniker": "Server\\Controllers\\UsersController.cs",
@@ -221,25 +251,11 @@
               "RelativeToolTip": "Server\\Controllers\\UsersController.cs",
               "ViewState": "AQIAAAkAAAAAAAAAAAAAABoAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-24T16:08:22.513Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-24T16:08:22.513Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "AutoMapperProfile.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\foirstein-1-back\\userLoginBackend\\Project\\BL\\AutoMapper\\AutoMapperProfile.cs",
-              "RelativeDocumentMoniker": "BL\\AutoMapper\\AutoMapperProfile.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\foirstein-1-back\\userLoginBackend\\Project\\BL\\AutoMapper\\AutoMapperProfile.cs",
-              "RelativeToolTip": "BL\\AutoMapper\\AutoMapperProfile.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACEAAAA1AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-24T16:02:53.985Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "ActivityLog_modelBll.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\foirstein-1-back\\userLoginBackend\\Project\\BL\\models_bll\\ActivityLog_modelBll.cs",
               "RelativeDocumentMoniker": "BL\\models_bll\\ActivityLog_modelBll.cs",
@@ -247,12 +263,11 @@
               "RelativeToolTip": "BL\\models_bll\\ActivityLog_modelBll.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAAAAAAoAAAAHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-30T08:36:36.669Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-30T08:36:36.669Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "ActivityLog_bll.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\foirstein-1-back\\userLoginBackend\\Project\\BL\\functions\\ActivityLog_bll.cs",
               "RelativeDocumentMoniker": "BL\\functions\\ActivityLog_bll.cs",
@@ -260,12 +275,11 @@
               "RelativeToolTip": "BL\\functions\\ActivityLog_bll.cs",
               "ViewState": "AQIAAAwAAAAAAAAAAAAuwBQAAAA3AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-27T10:12:55.761Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-27T10:12:55.761Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "ActivityLog.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\foirstein-1-back\\userLoginBackend\\Project\\Dal\\models\\ActivityLog.cs",
               "RelativeDocumentMoniker": "Dal\\models\\ActivityLog.cs",
@@ -273,12 +287,11 @@
               "RelativeToolTip": "Dal\\models\\ActivityLog.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-30T12:13:37.479Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-30T12:13:37.479Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "Report_modelBll.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\foirstein-1-back\\userLoginBackend\\Project\\BL\\models_bll\\Report_modelBll.cs",
               "RelativeDocumentMoniker": "BL\\models_bll\\Report_modelBll.cs",
@@ -286,12 +299,11 @@
               "RelativeToolTip": "BL\\models_bll\\Report_modelBll.cs",
               "ViewState": "AQIAAAcAAAAAAAAAAAAAAAoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-25T10:53:29.76Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-25T10:53:29.76Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "Report.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\foirstein-1-back\\userLoginBackend\\Project\\Dal\\models\\Report.cs",
               "RelativeDocumentMoniker": "Dal\\models\\Report.cs",
@@ -299,12 +311,11 @@
               "RelativeToolTip": "Dal\\models\\Report.cs",
               "ViewState": "AQIAAAUAAAAAAAAAAAAAAAgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-25T10:53:15.201Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-25T10:53:15.201Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "IActivityLog_bll.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\foirstein-1-back\\userLoginBackend\\Project\\BL\\interfaces\\IActivityLog_bll.cs",
               "RelativeDocumentMoniker": "BL\\interfaces\\IActivityLog_bll.cs",
@@ -312,25 +323,11 @@
               "RelativeToolTip": "BL\\interfaces\\IActivityLog_bll.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-01T08:28:36.18Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-01T08:28:36.18Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\foirstein-1-back\\userLoginBackend\\Project\\Dal\\models\\User.cs",
-              "RelativeDocumentMoniker": "Dal\\models\\User.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\foirstein-1-back\\userLoginBackend\\Project\\Dal\\models\\User.cs",
-              "RelativeToolTip": "Dal\\models\\User.cs",
-              "ViewState": "AQIAACEAAAAAAAAAAAAiwC0AAAA0AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-24T17:46:33.969Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\foirstein-1-back\\userLoginBackend\\Project\\Server\\Program.cs",
               "RelativeDocumentMoniker": "Server\\Program.cs",
@@ -338,12 +335,11 @@
               "RelativeToolTip": "Server\\Program.cs",
               "ViewState": "AQIAAAwAAAAAAAAAAAAYwBsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-23T15:07:02.271Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-23T15:07:02.271Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "RatingNote.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\foirstein-1-back\\userLoginBackend\\Project\\Dal\\models\\RatingNote.cs",
               "RelativeDocumentMoniker": "Dal\\models\\RatingNote.cs",
@@ -351,12 +347,11 @@
               "RelativeToolTip": "Dal\\models\\RatingNote.cs",
               "ViewState": "AQIAAAkAAAAAAAAAAAA1wBAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-01T09:05:14.208Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-01T09:05:14.208Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "userDal.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\foirstein-1-back\\userLoginBackend\\Project\\Dal\\functions\\userDal.cs",
               "RelativeDocumentMoniker": "Dal\\functions\\userDal.cs",
@@ -364,8 +359,7 @@
               "RelativeToolTip": "Dal\\functions\\userDal.cs",
               "ViewState": "AQIAAA8AAAAAAAAAAAAAABYAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-24T16:05:38.501Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-24T16:05:38.501Z"
             },
             {
               "$type": "Document",
@@ -377,21 +371,7 @@
               "RelativeToolTip": "Dal\\Interfaces\\Iuser.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAAAAAAsAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-24T16:04:52.041Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "logDal.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\foirstein-1-back\\userLoginBackend\\Project\\Dal\\functions\\logDal.cs",
-              "RelativeDocumentMoniker": "Dal\\functions\\logDal.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\foirstein-1-back\\userLoginBackend\\Project\\Dal\\functions\\logDal.cs",
-              "RelativeToolTip": "Dal\\functions\\logDal.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAuwB0AAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-30T11:56:08.631Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-24T16:04:52.041Z"
             },
             {
               "$type": "Document",
