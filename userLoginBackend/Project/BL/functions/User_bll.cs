@@ -108,5 +108,17 @@ namespace BLL.functions
                 return "סיסמה שגויה";
             }
         }
+        public bool UpdateUserRole(int userId, string newRole)
+        {
+            var user = _Iuser.GetAll().FirstOrDefault(x => x.UserId == userId);
+            if (user == null)
+            {
+                return false; // אם המשתמש לא נמצא
+            }
+
+            user.Role = newRole;
+            _Iuser.Update(user); // אין צורך במיפוי כאן כי כבר יש לך את ה-user
+            return true;
+        }
     }
 }

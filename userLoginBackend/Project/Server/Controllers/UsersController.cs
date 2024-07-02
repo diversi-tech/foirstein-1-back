@@ -70,7 +70,22 @@ namespace userLoginBackend.Controllers
             return Ok(user.ValidateUser(name, pass));
 
         }
+        [HttpPut("{userId}/role")]
+        public IActionResult UpdateUserRole(int userId, [FromBody] User_modelBll userDto)
+        {
+            var succes = user.UpdateUserRole(userId, userDto.Role);
+            if (succes)
+            {
+                return Ok(new { succes = true });
+            }
+            else
+            {
+                return BadRequest(new { success = false, message = "Failed to update user role." });
+            }
+
+        }
     }
+
 
 
     public class VerifySecurityQuestionsRequest
