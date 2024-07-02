@@ -3,11 +3,11 @@
   "WorkspaceRootPath": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\foirstein-1-back\\userLoginBackend\\Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{86C3A150-6CDC-45B3-A042-12D3FF800219}|BL\\BLL.csproj|c:\\users\\user\\desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\foirstein-1-back\\userloginbackend\\project\\bl\\models_bll\\activitylog_modelbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{86C3A150-6CDC-45B3-A042-12D3FF800219}|BL\\BLL.csproj|solutionrelative:bl\\models_bll\\activitylog_modelbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{86C3A150-6CDC-45B3-A042-12D3FF800219}|BL\\BLL.csproj|c:\\users\\user\\desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\foirstein-1-back\\userloginbackend\\project\\bl\\models_bll\\activitylog_modelbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86C3A150-6CDC-45B3-A042-12D3FF800219}|BL\\BLL.csproj|solutionrelative:bl\\models_bll\\activitylog_modelbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{ACFFDEA1-1E10-4827-9896-1A411023D012}|Dal\\DAL.csproj|c:\\users\\user\\desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\foirstein-1-back\\userloginbackend\\project\\dal\\models\\report.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -129,17 +129,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Microsoft.Common.CurrentVersion.targets",
               "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
-              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets*",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets*",
-              "ViewState": "AQIAAJ8VAAAAAAAAAAAawKsVAAAEAAAA",
+              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "ViewState": "AQIAAJwVAAAAAAAAAAAawKsVAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
               "WhenOpened": "2024-07-02T06:52:49.326Z",
               "EditorCaption": ""
@@ -154,8 +154,7 @@
               "RelativeToolTip": "Dal\\models\\LiberiansDbContext.cs",
               "ViewState": "AQIAACMAAAAAAAAAAADwvycAAACQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-02T06:40:56.944Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-02T06:40:56.944Z"
             },
             {
               "$type": "Document",
@@ -167,8 +166,7 @@
               "RelativeToolTip": "BL\\functions\\User_bll.cs",
               "ViewState": "AQIAABoAAAAAAAAAAIAwwCEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-02T06:40:56.855Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-02T06:40:56.855Z"
             },
             {
               "$type": "Document",
@@ -180,8 +178,7 @@
               "RelativeToolTip": "Server\\Controllers\\ReportController.cs",
               "ViewState": "AQIAAAUAAAAAAAAAAAAAABIAAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-02T06:40:56.88Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-02T06:40:56.88Z"
             },
             {
               "$type": "Document",
@@ -193,18 +190,17 @@
               "RelativeToolTip": "Dal\\models\\Report.cs",
               "ViewState": "AQIAAAUAAAAAAAAAAAAuwAgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-02T06:40:56.923Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-02T06:40:56.923Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "ActivityLog_modelBll.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\foirstein-1-back\\userLoginBackend\\Project\\BL\\models_bll\\ActivityLog_modelBll.cs",
               "RelativeDocumentMoniker": "BL\\models_bll\\ActivityLog_modelBll.cs",
               "ToolTip": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\foirstein-1-back\\userLoginBackend\\Project\\BL\\models_bll\\ActivityLog_modelBll.cs",
               "RelativeToolTip": "BL\\models_bll\\ActivityLog_modelBll.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABUAAAAAAAAA",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAQwBUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-02T06:40:56.813Z",
               "EditorCaption": ""
@@ -243,8 +239,7 @@
               "RelativeToolTip": "Server\\Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-02T06:40:56.839Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-02T06:40:56.839Z"
             },
             {
               "$type": "Document",
