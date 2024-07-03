@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using BLL.models_bll;
-
+using static BLL.functions.User_bll;
 
 namespace userLoginBackend.Controllers
 {
@@ -64,12 +64,21 @@ namespace userLoginBackend.Controllers
         {
             return Ok(user.VerifySecurityQuestions(idNumber));
         }
-        [HttpGet("{name}/{pass}")]
-        public ActionResult<string> getUser(string name, string pass)
+        [HttpPost("login")]
+        public ActionResult<Response> getUser([FromBody] LoginInfo loginInfo)
         {
-            return Ok(user.ValidateUser(name, pass));
-
+            return Ok(user.ValidateUser(loginInfo.name, loginInfo.pass));
         }
+        //[HttpPost("validate-token")]
+        //public ActionResult<Response> validToken([FromBody] string token)
+        //{
+        //    return Ok(user.validToken(token));
+        //}
+    }
+    public class LoginInfo
+    {
+        public string name { get; set; }
+        public string pass { get; set; }
     }
 
 

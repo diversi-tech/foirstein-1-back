@@ -1,4 +1,5 @@
-﻿using BLL.models_bll;
+﻿using BLL.functions;
+using BLL.models_bll;
 using DAL.functions;
 using DAL.models;
 using System;
@@ -6,6 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static BLL.functions.User_bll;
 
 namespace BLL.interfaces
 {
@@ -18,6 +20,6 @@ namespace BLL.interfaces
         public User_modelBll VerifySecurityQuestions(string idNumber);
 
         public User_modelBll ResetPassword(string IdNumber, string NewPassword);
-        public string ValidateUser(string UserName, string password);
+        public Response ValidateUser(string UserName, string password);
     }
 }

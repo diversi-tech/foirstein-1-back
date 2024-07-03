@@ -5,9 +5,12 @@ using BLL.models_bll;
 using DAL.functions;
 using DAL.Interfaces;
 using DAL.models;
+using Microsoft.IdentityModel.Tokens;
 using System;
 using System.Collections.Generic;
+using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
+using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -52,7 +55,7 @@ namespace BLL.functions
         public User_modelBll Update(User_modelBll user)
         {
             // מיפוי מ-User_bll ל-User
-            User userDal=_Iuser.Update(mapper.Map<User>(user));
+            User userDal = _Iuser.Update(mapper.Map<User>(user));
             // קריאה לפונקציה Update ב-DA
             return mapper.Map<User_modelBll>(userDal);
         }
@@ -87,26 +90,78 @@ namespace BLL.functions
             _Iuser.UpdatePassword(mapper.Map<User>(user_Bll));
             return user_Bll;
         }
-        public string ValidateUser(string UserName, string password)
+        public Response ValidateUser(string UserName, string password)
         {
             List<User_modelBll> users = getall();
             var userDtos = mapper.Map<List<User_modelBll>>(users);
-
             var user = users.FirstOrDefault(u => u.UserName == UserName);
-
             if (user == null)
             {
-                return "משתמש לא קיים";
+                return null;
             }
-
             if (user.PasswordHash == password)
             {
-                return "משתמש קיים";
+                var token = GenerateJwtToken(user);
+                return new Response
+                {
+                    token = token,
+                    User = new UserLogin
+                    {
+                        Role = user.Role,
+                        UserName = user.UserName,
+                        Tz = user.Tz
+                    }
+                };
             }
             else
             {
-                return "סיסמה שגויה";
+                return new Response
+                {
+                    token = null,
+                    User = new UserLogin
+                    {
+                        Role = user.Role,
+                        UserName = user.UserName,
+                        Tz = user.Tz
+                    }
+                };
             }
+        }
+
+
+        private string GenerateJwtToken(User_modelBll user)
+        {
+            var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("YourSuperSecretKeyThatIsAtLeast32CharactersLong"));
+            var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);
+
+            var claims = new[]
+            {
+        new Claim(JwtRegisteredClaimNames.Sub, user.UserName),
+        new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
+        new Claim(ClaimTypes.Role, user.Role),
+        new Claim("tz", user.Tz)
+    };
+
+            var token = new JwtSecurityToken(
+                issuer: "yourdomain.com",
+                audience: "yourdomain.com",
+                claims: claims,
+                expires: DateTime.Now.AddHours(1),
+                signingCredentials: credentials
+            );
+
+            return new JwtSecurityTokenHandler().WriteToken(token);
+        }
+        public class UserLogin
+        {
+            public string Tz { get; set; }
+            public string UserName { get; set; }
+            public string Role { get; set; }
+        }
+        public class Response
+        {
+            public string token { get; set; }
+            public UserLogin User { get; set; }
         }
     }
 }
