@@ -90,6 +90,18 @@ namespace BLL.functions
             _Iuser.UpdatePassword(mapper.Map<User>(user_Bll));
             return user_Bll;
         }
+        public bool UpdateUserRole(int userId, string newRole)
+        {
+            var user = _Iuser.GetAll().FirstOrDefault(x => x.UserId == userId);
+            if (user == null)
+            {
+                return false; // אם המשתמש לא נמצא
+            }
+
+            user.Role = newRole;
+            _Iuser.Update(user); // אין צורך במיפוי כאן כי כבר יש לך את ה-user
+            return true;
+        }
         public Response ValidateUser(string UserName, string password)
         {
             List<User_modelBll> users = getall();
@@ -124,6 +136,52 @@ namespace BLL.functions
                         UserName = user.UserName,
                         Tz = user.Tz
                     }
+                };
+            }
+        }
+        public TokenValidationResponse ValidateToken(string token)
+        {
+            var tokenHandler = new JwtSecurityTokenHandler();
+            var key = Encoding.UTF8.GetBytes("YourSuperSecretKeyThatIsAtLeast32CharactersLong");
+            try
+            {
+                tokenHandler.ValidateToken(token, new TokenValidationParameters
+                {
+                    ValidateIssuerSigningKey = true,
+                    IssuerSigningKey = new SymmetricSecurityKey(key),
+                    ValidateIssuer = false,
+                    ValidateAudience = false,
+                    ClockSkew = TimeSpan.Zero
+                }, out SecurityToken validatedToken);
+
+                var jwtToken = (JwtSecurityToken)validatedToken;
+                var userName = jwtToken.Claims.First(x => x.Type == JwtRegisteredClaimNames.Sub).Value;
+                var user = getall().FirstOrDefault(u => u.UserName == userName);
+
+                if (user == null)
+                {
+                    return new TokenValidationResponse
+                    {
+                        IsValid = false
+                    };
+                }
+
+                return new TokenValidationResponse
+                {
+                    IsValid = true,
+                    User = new UserLogin
+                    {
+                        UserName = user.UserName,
+                        Role = user.Role,
+                        Tz = user.Tz
+                    }
+                };
+            }
+            catch
+            {
+                return new TokenValidationResponse
+                {
+                    IsValid = false
                 };
             }
         }
@@ -162,6 +220,14 @@ namespace BLL.functions
         {
             public string token { get; set; }
             public UserLogin User { get; set; }
+
+
         }
+        public class TokenValidationResponse
+        {
+            public bool IsValid { get; set; }
+            public UserLogin User { get; set; }
+        }
+
     }
 }

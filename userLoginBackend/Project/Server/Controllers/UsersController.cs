@@ -23,7 +23,7 @@ namespace userLoginBackend.Controllers
         public ActionResult<List<User_modelBll>> GetAll()
         {
             return Ok(user.getall());
-            
+
         }
         [HttpPost("addUser")]
         public ActionResult<User_modelBll> add([FromForm] User_modelBll u)
@@ -41,7 +41,7 @@ namespace userLoginBackend.Controllers
 
             catch (Exception ex)
             {
-                return null;   
+                return null;
             }
         }
 
@@ -69,29 +69,43 @@ namespace userLoginBackend.Controllers
         {
             return Ok(user.ValidateUser(loginInfo.name, loginInfo.pass));
         }
-        //[HttpPost("validate-token")]
-        //public ActionResult<Response> validToken([FromBody] string token)
-        //{
-        //    return Ok(user.validToken(token));
-        //}
-    }
-    public class LoginInfo
-    {
-        public string name { get; set; }
-        public string pass { get; set; }
-    }
+        [HttpPut("{userId}/role")]
+        public IActionResult UpdateUserRole(int userId, [FromBody] User_modelBll userDto)
+        {
+            var succes = user.UpdateUserRole(userId, userDto.Role);
+            if (succes)
+            {
+                return Ok(new { succes = true });
+            }
+            else
+            {
+                return BadRequest(new { success = false, message = "Failed to update user role." });
+            }
+          
+        }
+        [HttpPost("validate-token")]
+        public ActionResult<Response> validToken([FromBody] string token)
+        {
+            return Ok(user.ValidateToken(token));
+        }
+        public class LoginInfo
+        {
+            public string name { get; set; }
+            public string pass { get; set; }
+        }
 
 
-    public class VerifySecurityQuestionsRequest
-    {
-        public string IdNumber { get; set; }
-    }
-    public class ResetPasswordRequest
-    {
-        public string IdNumber { get; set; }
-        public string NewPassword { get; set; }
-    }
+        public class VerifySecurityQuestionsRequest
+        {
+            public string IdNumber { get; set; }
+        }
+        public class ResetPasswordRequest
+        {
+            public string IdNumber { get; set; }
+            public string NewPassword { get; set; }
+        }
 
 
+    }
 }
 
