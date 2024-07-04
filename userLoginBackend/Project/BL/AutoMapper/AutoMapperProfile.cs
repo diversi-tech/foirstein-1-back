@@ -36,6 +36,21 @@ namespace BLL.AutoMapper
              .ForMember(dest => dest.UserId1, opt => opt.MapFrom(src => src.UserId1Navigation.UserId))
              .ForMember(dest => dest.UserId, opt => opt.MapFrom(src => src.UserId1Navigation.Tz))
              .ReverseMap();
+            // המרה בין BorrowApprovalRequest ו-ApprovalRequestBll
+            CreateMap<BorrowApprovalRequest, ApprovalRequestBll>().ReverseMap()
+            .ForMember(dest => dest.User , opt => opt.Ignore());
+
+            // המרה בין Item ו-Item_bll
+            CreateMap<Item, Item_bll>().ReverseMap();
+            //.ForMember(dest => dest.BorrowRequests, opt => opt.Ignore())
+            //.ForMember(dest => dest.ItemTags, opt => opt.Ignore())
+            //.ForMember(dest => dest.RatingNotes, opt => opt.Ignore());
+
+            // המרה בין RatingNote ו-RatingNote_bll
+            CreateMap<RatingNote, RatingNote_bll>().ReverseMap()
+          .ForMember(dest => dest.User, opt => opt.Ignore())
+          .ForMember(dest => dest.Item, opt => opt.Ignore());
+
         }
     }
 

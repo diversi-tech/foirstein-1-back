@@ -22,9 +22,20 @@ builder.Services.AddControllers();
 builder.Services.AddScoped<Iuser, userDal>();
 builder.Services.AddScoped<Ireport, reportDal>();
 builder.Services.AddScoped<Ilog, logDal>();
+builder.Services.AddScoped<IapprovalRequest, ApprovalRequestDal>();
+builder.Services.AddScoped<Iitem, ItemDal>(); 
+builder.Services.AddScoped<Irating, ratingDal>();
+
+
 builder.Services.AddScoped<IActivityLog_bll, ActivityLog_bll>();
 builder.Services.AddScoped<IReport_bll, Report_bll>();
 builder.Services.AddScoped<Iuser_bll, User_bll>();
+builder.Services.AddScoped<IApprovalRequest_bll,ApprovalRequest_bll>();
+builder.Services.AddScoped<IItem_bll, Item_BLL>();
+builder.Services.AddScoped<IRatingNote_bll, RatingNote_bll>();
+
+
+
 builder.Services.AddAutoMapper(typeof(AutoMapperProfile));
 
 builder.Services.AddEndpointsApiExplorer();

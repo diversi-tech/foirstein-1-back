@@ -122,3 +122,19 @@ C:\Users\משתמש\Desktop\פרויקט סופי\foirstein-1-back\userLoginBack
 C:\Users\משתמש\Desktop\פרויקט סופי\foirstein-1-back\userLoginBackend\Project\BL\obj\Debug\net7.0\refint\BLL.dll
 C:\Users\משתמש\Desktop\פרויקט סופי\foirstein-1-back\userLoginBackend\Project\BL\obj\Debug\net7.0\BLL.pdb
 C:\Users\משתמש\Desktop\פרויקט סופי\foirstein-1-back\userLoginBackend\Project\BL\obj\Debug\net7.0\ref\BLL.dll
+C:\Users\LENOVO\Desktop\project\foirstein-1-back\userLoginBackend\Project\BL\bin\Debug\net7.0\BLL.deps.json
+C:\Users\LENOVO\Desktop\project\foirstein-1-back\userLoginBackend\Project\BL\bin\Debug\net7.0\BLL.dll
+C:\Users\LENOVO\Desktop\project\foirstein-1-back\userLoginBackend\Project\BL\bin\Debug\net7.0\BLL.pdb
+C:\Users\LENOVO\Desktop\project\foirstein-1-back\userLoginBackend\Project\BL\bin\Debug\net7.0\DAL.dll
+C:\Users\LENOVO\Desktop\project\foirstein-1-back\userLoginBackend\Project\BL\bin\Debug\net7.0\DAL.pdb
+C:\Users\LENOVO\Desktop\project\foirstein-1-back\userLoginBackend\Project\BL\obj\Debug\net7.0\BLL.csproj.AssemblyReference.cache
+C:\Users\LENOVO\Desktop\project\foirstein-1-back\userLoginBackend\Project\BL\obj\Debug\net7.0\BLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\LENOVO\Desktop\project\foirstein-1-back\userLoginBackend\Project\BL\obj\Debug\net7.0\BLL.AssemblyInfoInputs.cache
+C:\Users\LENOVO\Desktop\project\foirstein-1-back\userLoginBackend\Project\BL\obj\Debug\net7.0\BLL.AssemblyInfo.cs
+C:\Users\LENOVO\Desktop\project\foirstein-1-back\userLoginBackend\Project\BL\obj\Debug\net7.0\BLL.csproj.CoreCompileInputs.cache
+C:\Users\LENOVO\Desktop\project\foirstein-1-back\userLoginBackend\Project\BL\obj\Debug\net7.0\BLL.sourcelink.json
+C:\Users\LENOVO\Desktop\project\foirstein-1-back\userLoginBackend\Project\BL\obj\Debug\net7.0\BLL.csproj.Up2Date
+C:\Users\LENOVO\Desktop\project\foirstein-1-back\userLoginBackend\Project\BL\obj\Debug\net7.0\BLL.dll
+C:\Users\LENOVO\Desktop\project\foirstein-1-back\userLoginBackend\Project\BL\obj\Debug\net7.0\refint\BLL.dll
+C:\Users\LENOVO\Desktop\project\foirstein-1-back\userLoginBackend\Project\BL\obj\Debug\net7.0\BLL.pdb
+C:\Users\LENOVO\Desktop\project\foirstein-1-back\userLoginBackend\Project\BL\obj\Debug\net7.0\ref\BLL.dll

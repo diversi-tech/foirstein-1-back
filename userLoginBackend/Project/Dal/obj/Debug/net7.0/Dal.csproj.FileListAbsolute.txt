@@ -240,3 +240,18 @@ C:\Users\משתמש\Desktop\פרויקט סופי\foirstein-1-back\userLoginBack
 C:\Users\משתמש\Desktop\פרויקט סופי\foirstein-1-back\userLoginBackend\Project\Dal\obj\Debug\net7.0\DAL.pdb
 C:\Users\משתמש\Desktop\פרויקט סופי\foirstein-1-back\userLoginBackend\Project\Dal\obj\Debug\net7.0\DAL.genruntimeconfig.cache
 C:\Users\משתמש\Desktop\פרויקט סופי\foirstein-1-back\userLoginBackend\Project\Dal\obj\Debug\net7.0\ref\DAL.dll
+C:\Users\LENOVO\Desktop\project\foirstein-1-back\userLoginBackend\Project\Dal\bin\Debug\net7.0\DAL.deps.json
+C:\Users\LENOVO\Desktop\project\foirstein-1-back\userLoginBackend\Project\Dal\bin\Debug\net7.0\DAL.runtimeconfig.json
+C:\Users\LENOVO\Desktop\project\foirstein-1-back\userLoginBackend\Project\Dal\bin\Debug\net7.0\DAL.dll
+C:\Users\LENOVO\Desktop\project\foirstein-1-back\userLoginBackend\Project\Dal\bin\Debug\net7.0\DAL.pdb
+C:\Users\LENOVO\Desktop\project\foirstein-1-back\userLoginBackend\Project\Dal\obj\Debug\net7.0\DAL.csproj.AssemblyReference.cache
+C:\Users\LENOVO\Desktop\project\foirstein-1-back\userLoginBackend\Project\Dal\obj\Debug\net7.0\DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\LENOVO\Desktop\project\foirstein-1-back\userLoginBackend\Project\Dal\obj\Debug\net7.0\DAL.AssemblyInfoInputs.cache
+C:\Users\LENOVO\Desktop\project\foirstein-1-back\userLoginBackend\Project\Dal\obj\Debug\net7.0\DAL.AssemblyInfo.cs
+C:\Users\LENOVO\Desktop\project\foirstein-1-back\userLoginBackend\Project\Dal\obj\Debug\net7.0\DAL.csproj.CoreCompileInputs.cache
+C:\Users\LENOVO\Desktop\project\foirstein-1-back\userLoginBackend\Project\Dal\obj\Debug\net7.0\DAL.sourcelink.json
+C:\Users\LENOVO\Desktop\project\foirstein-1-back\userLoginBackend\Project\Dal\obj\Debug\net7.0\DAL.dll
+C:\Users\LENOVO\Desktop\project\foirstein-1-back\userLoginBackend\Project\Dal\obj\Debug\net7.0\refint\DAL.dll
+C:\Users\LENOVO\Desktop\project\foirstein-1-back\userLoginBackend\Project\Dal\obj\Debug\net7.0\DAL.pdb
+C:\Users\LENOVO\Desktop\project\foirstein-1-back\userLoginBackend\Project\Dal\obj\Debug\net7.0\DAL.genruntimeconfig.cache
+C:\Users\LENOVO\Desktop\project\foirstein-1-back\userLoginBackend\Project\Dal\obj\Debug\net7.0\ref\DAL.dll
