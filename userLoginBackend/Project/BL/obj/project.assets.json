@@ -3159,11 +3159,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mfr99\\OneDrive\\שולחן העבודה\\main_back\\foirstein-1-back\\userLoginBackend\\Project\\BL\\BLL.csproj",
+      "projectUniqueName": "C:\\Users\\mfr99\\OneDrive\\שולחן העבודה\\back_dvora\\foirstein-1-back\\userLoginBackend\\Project\\BL\\BLL.csproj",
       "projectName": "BLL",
-      "projectPath": "C:\\Users\\mfr99\\OneDrive\\שולחן העבודה\\main_back\\foirstein-1-back\\userLoginBackend\\Project\\BL\\BLL.csproj",
+      "projectPath": "C:\\Users\\mfr99\\OneDrive\\שולחן העבודה\\back_dvora\\foirstein-1-back\\userLoginBackend\\Project\\BL\\BLL.csproj",
       "packagesPath": "C:\\Users\\mfr99\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mfr99\\OneDrive\\שולחן העבודה\\main_back\\foirstein-1-back\\userLoginBackend\\Project\\BL\\obj\\",
+      "outputPath": "C:\\Users\\mfr99\\OneDrive\\שולחן העבודה\\back_dvora\\foirstein-1-back\\userLoginBackend\\Project\\BL\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -3185,8 +3185,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\mfr99\\OneDrive\\שולחן העבודה\\main_back\\foirstein-1-back\\userLoginBackend\\Project\\Dal\\DAL.csproj": {
-              "projectPath": "C:\\Users\\mfr99\\OneDrive\\שולחן העבודה\\main_back\\foirstein-1-back\\userLoginBackend\\Project\\Dal\\DAL.csproj"
+            "C:\\Users\\mfr99\\OneDrive\\שולחן העבודה\\back_dvora\\foirstein-1-back\\userLoginBackend\\Project\\Dal\\DAL.csproj": {
+              "projectPath": "C:\\Users\\mfr99\\OneDrive\\שולחן העבודה\\back_dvora\\foirstein-1-back\\userLoginBackend\\Project\\Dal\\DAL.csproj"
             }
           }
         }

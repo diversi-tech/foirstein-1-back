@@ -87,7 +87,21 @@ namespace BLL.functions
             _Iuser.UpdatePassword(mapper.Map<User>(user_Bll));
             return user_Bll;
         }
-        public string ValidateUser(string UserName, string password)
+        public class UserLogin
+        {
+            public string Tz { get; set; }
+            public string UserName { get; set; }
+            public string Role { get; set; }
+        }
+        public class Response
+        {
+            public string token { get; set; }
+            public UserLogin User { get; set; }
+          
+        }
+
+
+        public Response ValidateUser(string UserName, string password)
         {
             List<User_modelBll> users = getall();
             var userDtos = mapper.Map<List<User_modelBll>>(users);
@@ -96,17 +110,38 @@ namespace BLL.functions
 
             if (user == null)
             {
-                return "משתמש לא קיים";
+                return null;
             }
 
             if (user.PasswordHash == password)
             {
-                return "משתמש קיים";
+                return new Response
+                {
+         token = "1234",
+         User=new UserLogin
+         {
+             Role=user.Role,
+             UserName=user.UserName,
+              Tz=user.Tz
+         }
+
+                };
             }
             else
             {
-                return "סיסמה שגויה";
+               
+       return new Response
+       {
+           token = null,
+           User = new UserLogin
+           {
+               Role = user.Role,
+               UserName = user.UserName,
+               Tz = user.Tz
+           }
+       };
             }
         }
+
     }
 }
