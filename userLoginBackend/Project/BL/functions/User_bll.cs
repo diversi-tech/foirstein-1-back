@@ -106,27 +106,31 @@ namespace BLL.functions
         {
             List<User_modelBll> users = getall();
             var userDtos = mapper.Map<List<User_modelBll>>(users);
+
             var user = users.FirstOrDefault(u => u.UserName == UserName);
+
             if (user == null)
             {
                 return null;
             }
+
             if (user.PasswordHash == password)
             {
-                var token = GenerateJwtToken(user);
                 return new Response
                 {
-                    token = token,
+                    token = "1234",
                     User = new UserLogin
                     {
                         Role = user.Role,
                         UserName = user.UserName,
                         Tz = user.Tz
                     }
+
                 };
             }
             else
             {
+
                 return new Response
                 {
                     token = null,
