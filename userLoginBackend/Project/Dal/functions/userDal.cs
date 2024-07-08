@@ -23,11 +23,11 @@ namespace DAL.functions
             return LiberiansDbContext.Users.ToList();
         }
 
-        public User Add(User user)
+        public int Add(User user)
         {
             LiberiansDbContext.Users.Add(user);
             LiberiansDbContext.SaveChanges();
-            return user;
+            return user.UserId;
         }
 
         public User Update(User user)

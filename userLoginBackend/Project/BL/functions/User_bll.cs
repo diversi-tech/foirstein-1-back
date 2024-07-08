@@ -38,17 +38,17 @@ namespace BLL.functions
             return mapper.Map<List<User_modelBll>>(users);
         }
 
-        public User_modelBll Add(User_modelBll user)
+        public int Add(User_modelBll user)
         {
             try
             {
-                User u = _Iuser.Add(mapper.Map<User>(user));
+                int id = _Iuser.Add(mapper.Map<User>(user));
 
-                return mapper.Map<User_modelBll>(u);
+                return id;
             }
             catch
             {
-                return null;
+                return -1;
             }
         }
 

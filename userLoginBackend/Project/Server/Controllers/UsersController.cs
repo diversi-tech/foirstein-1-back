@@ -26,10 +26,17 @@ namespace userLoginBackend.Controllers
 
         }
         [HttpPost("addUser")]
-        public ActionResult<User_modelBll> add([FromForm] User_modelBll u)
+        public ActionResult add([FromForm] User_modelBll u)
         {
-            return Ok(user.Add(u));
+            var userId = user.Add(u);
+            var response = new
+            {
+                message = "User added successfully",
+                userId = userId
+            };
+            return Ok(response);
         }
+
         [HttpPut("updateUser")]
         public ActionResult<User_modelBll> update(User_modelBll u)
         {
@@ -46,9 +53,21 @@ namespace userLoginBackend.Controllers
         }
 
         [HttpDelete("dellUser/{id}")]
-        public ActionResult<bool> dell(int id)
+        public ActionResult dell(int id)
         {
-            return Ok(user.Delete(id));
+            var result = user.Delete(id);
+            if (result)
+            {
+                var response = new
+                {
+                    message = "User removed successfully"
+                };
+                return Ok(response);
+            }
+            else
+            {
+                return NotFound(new { message = "User not found" });
+            }
         }
 
         [HttpPut("reset-password")]

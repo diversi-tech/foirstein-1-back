@@ -1,125 +1,133 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\mfr99\\OneDrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\web\\foirstein-1-back\\userLoginBackend\\Project\\",
+  "WorkspaceRootPath": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\main_back\\foirstein-1-back\\userLoginBackend\\Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{86C3A150-6CDC-45B3-A042-12D3FF800219}|BL\\BLL.csproj|c:\\users\\mfr99\\onedrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\web\\foirstein-1-back\\userloginbackend\\project\\bl\\functions\\user_bll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{86C3A150-6CDC-45B3-A042-12D3FF800219}|BL\\BLL.csproj|c:\\users\\user\\desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\main_back\\foirstein-1-back\\userloginbackend\\project\\bl\\functions\\user_bll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{86C3A150-6CDC-45B3-A042-12D3FF800219}|BL\\BLL.csproj|solutionrelative:bl\\functions\\user_bll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{86C3A150-6CDC-45B3-A042-12D3FF800219}|BL\\BLL.csproj|c:\\users\\mfr99\\onedrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\web\\foirstein-1-back\\userloginbackend\\project\\bl\\interfaces\\iuser_bll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{86C3A150-6CDC-45B3-A042-12D3FF800219}|BL\\BLL.csproj|c:\\users\\user\\desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\main_back\\foirstein-1-back\\userloginbackend\\project\\bl\\interfaces\\iuser_bll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{86C3A150-6CDC-45B3-A042-12D3FF800219}|BL\\BLL.csproj|solutionrelative:bl\\interfaces\\iuser_bll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E4091DBF-74C8-49E2-87E1-DB87EEC296A2}|Server\\userLoginBackend.csproj|c:\\users\\mfr99\\onedrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\web\\foirstein-1-back\\userloginbackend\\project\\server\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E4091DBF-74C8-49E2-87E1-DB87EEC296A2}|Server\\userLoginBackend.csproj|solutionrelative:server\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{86C3A150-6CDC-45B3-A042-12D3FF800219}|BL\\BLL.csproj|c:\\users\\user\\desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\main_back\\foirstein-1-back\\userloginbackend\\project\\bl\\models_bll\\user_modelbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86C3A150-6CDC-45B3-A042-12D3FF800219}|BL\\BLL.csproj|solutionrelative:bl\\models_bll\\user_modelbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{86C3A150-6CDC-45B3-A042-12D3FF800219}|BL\\BLL.csproj|c:\\users\\mfr99\\onedrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\web\\foirstein-1-back\\userloginbackend\\project\\bl\\automapper\\automapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{86C3A150-6CDC-45B3-A042-12D3FF800219}|BL\\BLL.csproj|solutionrelative:bl\\automapper\\automapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{86C3A150-6CDC-45B3-A042-12D3FF800219}|BL\\BLL.csproj|c:\\users\\mfr99\\onedrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\web\\foirstein-1-back\\userloginbackend\\project\\bl\\functions\\ratingnote_bll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{86C3A150-6CDC-45B3-A042-12D3FF800219}|BL\\BLL.csproj|solutionrelative:bl\\functions\\ratingnote_bll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{86C3A150-6CDC-45B3-A042-12D3FF800219}|BL\\BLL.csproj|c:\\users\\mfr99\\onedrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\web\\foirstein-1-back\\userloginbackend\\project\\bl\\functions\\approvalrequest_bll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{86C3A150-6CDC-45B3-A042-12D3FF800219}|BL\\BLL.csproj|solutionrelative:bl\\functions\\approvalrequest_bll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{86C3A150-6CDC-45B3-A042-12D3FF800219}|BL\\BLL.csproj|c:\\users\\mfr99\\onedrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\web\\foirstein-1-back\\userloginbackend\\project\\bl\\functions\\item_bll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{86C3A150-6CDC-45B3-A042-12D3FF800219}|BL\\BLL.csproj|solutionrelative:bl\\functions\\item_bll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{86C3A150-6CDC-45B3-A042-12D3FF800219}|BL\\BLL.csproj|c:\\users\\mfr99\\onedrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\web\\foirstein-1-back\\userloginbackend\\project\\bl\\interfaces\\ireport_bll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{86C3A150-6CDC-45B3-A042-12D3FF800219}|BL\\BLL.csproj|solutionrelative:bl\\interfaces\\ireport_bll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E4091DBF-74C8-49E2-87E1-DB87EEC296A2}|Server\\userLoginBackend.csproj|c:\\users\\mfr99\\onedrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\web\\foirstein-1-back\\userloginbackend\\project\\server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E4091DBF-74C8-49E2-87E1-DB87EEC296A2}|Server\\userLoginBackend.csproj|solutionrelative:server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E4091DBF-74C8-49E2-87E1-DB87EEC296A2}|Server\\userLoginBackend.csproj|c:\\users\\mfr99\\onedrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\web\\foirstein-1-back\\userloginbackend\\project\\server\\controllers\\reportcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E4091DBF-74C8-49E2-87E1-DB87EEC296A2}|Server\\userLoginBackend.csproj|solutionrelative:server\\controllers\\reportcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E4091DBF-74C8-49E2-87E1-DB87EEC296A2}|Server\\userLoginBackend.csproj|c:\\users\\mfr99\\onedrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\web\\foirstein-1-back\\userloginbackend\\project\\server\\controllers\\ratingnotecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E4091DBF-74C8-49E2-87E1-DB87EEC296A2}|Server\\userLoginBackend.csproj|solutionrelative:server\\controllers\\ratingnotecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E4091DBF-74C8-49E2-87E1-DB87EEC296A2}|Server\\userLoginBackend.csproj|c:\\users\\mfr99\\onedrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\web\\foirstein-1-back\\userloginbackend\\project\\server\\controllers\\itemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E4091DBF-74C8-49E2-87E1-DB87EEC296A2}|Server\\userLoginBackend.csproj|solutionrelative:server\\controllers\\itemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E4091DBF-74C8-49E2-87E1-DB87EEC296A2}|Server\\userLoginBackend.csproj|c:\\users\\mfr99\\onedrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\web\\foirstein-1-back\\userloginbackend\\project\\server\\controllers\\approvalrequestcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E4091DBF-74C8-49E2-87E1-DB87EEC296A2}|Server\\userLoginBackend.csproj|solutionrelative:server\\controllers\\approvalrequestcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ACFFDEA1-1E10-4827-9896-1A411023D012}|Dal\\DAL.csproj|c:\\users\\mfr99\\onedrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\web\\foirstein-1-back\\userloginbackend\\project\\dal\\models\\ratingnote.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ACFFDEA1-1E10-4827-9896-1A411023D012}|Dal\\DAL.csproj|solutionrelative:dal\\models\\ratingnote.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ACFFDEA1-1E10-4827-9896-1A411023D012}|Dal\\DAL.csproj|c:\\users\\mfr99\\onedrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\web\\foirstein-1-back\\userloginbackend\\project\\dal\\models\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ACFFDEA1-1E10-4827-9896-1A411023D012}|Dal\\DAL.csproj|solutionrelative:dal\\models\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ACFFDEA1-1E10-4827-9896-1A411023D012}|Dal\\DAL.csproj|c:\\users\\mfr99\\onedrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\web\\foirstein-1-back\\userloginbackend\\project\\dal\\interfaces\\iitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ACFFDEA1-1E10-4827-9896-1A411023D012}|Dal\\DAL.csproj|solutionrelative:dal\\interfaces\\iitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ACFFDEA1-1E10-4827-9896-1A411023D012}|Dal\\DAL.csproj|c:\\users\\mfr99\\onedrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\web\\foirstein-1-back\\userloginbackend\\project\\dal\\functions\\logdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ACFFDEA1-1E10-4827-9896-1A411023D012}|Dal\\DAL.csproj|solutionrelative:dal\\functions\\logdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ACFFDEA1-1E10-4827-9896-1A411023D012}|Dal\\DAL.csproj|c:\\users\\mfr99\\onedrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\web\\foirstein-1-back\\userloginbackend\\project\\dal\\functions\\itemdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ACFFDEA1-1E10-4827-9896-1A411023D012}|Dal\\DAL.csproj|solutionrelative:dal\\functions\\itemdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{86C3A150-6CDC-45B3-A042-12D3FF800219}|BL\\BLL.csproj|c:\\users\\mfr99\\onedrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\web\\foirstein-1-back\\userloginbackend\\project\\bl\\models_bll\\ratingnote_bll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{86C3A150-6CDC-45B3-A042-12D3FF800219}|BL\\BLL.csproj|solutionrelative:bl\\models_bll\\ratingnote_bll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{86C3A150-6CDC-45B3-A042-12D3FF800219}|BL\\BLL.csproj|c:\\users\\mfr99\\onedrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\web\\foirstein-1-back\\userloginbackend\\project\\bl\\models_bll\\item_bll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{86C3A150-6CDC-45B3-A042-12D3FF800219}|BL\\BLL.csproj|solutionrelative:bl\\models_bll\\item_bll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{86C3A150-6CDC-45B3-A042-12D3FF800219}|BL\\BLL.csproj|c:\\users\\mfr99\\onedrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\web\\foirstein-1-back\\userloginbackend\\project\\bl\\interfaces\\iitem_bll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{86C3A150-6CDC-45B3-A042-12D3FF800219}|BL\\BLL.csproj|solutionrelative:bl\\interfaces\\iitem_bll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ACFFDEA1-1E10-4827-9896-1A411023D012}|Dal\\DAL.csproj|c:\\users\\mfr99\\onedrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\web\\foirstein-1-back\\userloginbackend\\project\\dal\\models\\borrowapprovalrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ACFFDEA1-1E10-4827-9896-1A411023D012}|Dal\\DAL.csproj|solutionrelative:dal\\models\\borrowapprovalrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ACFFDEA1-1E10-4827-9896-1A411023D012}|Dal\\DAL.csproj|c:\\users\\mfr99\\onedrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\web\\foirstein-1-back\\userloginbackend\\project\\dal\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ACFFDEA1-1E10-4827-9896-1A411023D012}|Dal\\DAL.csproj|solutionrelative:dal\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ACFFDEA1-1E10-4827-9896-1A411023D012}|Dal\\DAL.csproj|c:\\users\\mfr99\\onedrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\web\\foirstein-1-back\\userloginbackend\\project\\dal\\functions\\userdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{ACFFDEA1-1E10-4827-9896-1A411023D012}|Dal\\DAL.csproj|c:\\users\\user\\desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\main_back\\foirstein-1-back\\userloginbackend\\project\\dal\\functions\\userdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ACFFDEA1-1E10-4827-9896-1A411023D012}|Dal\\DAL.csproj|solutionrelative:dal\\functions\\userdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ACFFDEA1-1E10-4827-9896-1A411023D012}|Dal\\DAL.csproj|c:\\users\\mfr99\\onedrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\web\\foirstein-1-back\\userloginbackend\\project\\dal\\functions\\ratingdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{ACFFDEA1-1E10-4827-9896-1A411023D012}|Dal\\DAL.csproj|c:\\users\\user\\desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\main_back\\foirstein-1-back\\userloginbackend\\project\\dal\\interfaces\\iuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACFFDEA1-1E10-4827-9896-1A411023D012}|Dal\\DAL.csproj|solutionrelative:dal\\interfaces\\iuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4091DBF-74C8-49E2-87E1-DB87EEC296A2}|Server\\userLoginBackend.csproj|c:\\users\\user\\desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\main_back\\foirstein-1-back\\userloginbackend\\project\\server\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4091DBF-74C8-49E2-87E1-DB87EEC296A2}|Server\\userLoginBackend.csproj|solutionrelative:server\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86C3A150-6CDC-45B3-A042-12D3FF800219}|BL\\BLL.csproj|c:\\users\\user\\desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\main_back\\foirstein-1-back\\userloginbackend\\project\\bl\\automapper\\automapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86C3A150-6CDC-45B3-A042-12D3FF800219}|BL\\BLL.csproj|solutionrelative:bl\\automapper\\automapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86C3A150-6CDC-45B3-A042-12D3FF800219}|BL\\BLL.csproj|c:\\users\\user\\desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\main_back\\foirstein-1-back\\userloginbackend\\project\\bl\\functions\\ratingnote_bll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86C3A150-6CDC-45B3-A042-12D3FF800219}|BL\\BLL.csproj|solutionrelative:bl\\functions\\ratingnote_bll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86C3A150-6CDC-45B3-A042-12D3FF800219}|BL\\BLL.csproj|c:\\users\\user\\desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\main_back\\foirstein-1-back\\userloginbackend\\project\\bl\\functions\\approvalrequest_bll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86C3A150-6CDC-45B3-A042-12D3FF800219}|BL\\BLL.csproj|solutionrelative:bl\\functions\\approvalrequest_bll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86C3A150-6CDC-45B3-A042-12D3FF800219}|BL\\BLL.csproj|c:\\users\\user\\desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\main_back\\foirstein-1-back\\userloginbackend\\project\\bl\\functions\\item_bll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86C3A150-6CDC-45B3-A042-12D3FF800219}|BL\\BLL.csproj|solutionrelative:bl\\functions\\item_bll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86C3A150-6CDC-45B3-A042-12D3FF800219}|BL\\BLL.csproj|c:\\users\\user\\desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\main_back\\foirstein-1-back\\userloginbackend\\project\\bl\\interfaces\\ireport_bll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86C3A150-6CDC-45B3-A042-12D3FF800219}|BL\\BLL.csproj|solutionrelative:bl\\interfaces\\ireport_bll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4091DBF-74C8-49E2-87E1-DB87EEC296A2}|Server\\userLoginBackend.csproj|c:\\users\\user\\desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\main_back\\foirstein-1-back\\userloginbackend\\project\\server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4091DBF-74C8-49E2-87E1-DB87EEC296A2}|Server\\userLoginBackend.csproj|solutionrelative:server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4091DBF-74C8-49E2-87E1-DB87EEC296A2}|Server\\userLoginBackend.csproj|c:\\users\\user\\desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\main_back\\foirstein-1-back\\userloginbackend\\project\\server\\controllers\\reportcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4091DBF-74C8-49E2-87E1-DB87EEC296A2}|Server\\userLoginBackend.csproj|solutionrelative:server\\controllers\\reportcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4091DBF-74C8-49E2-87E1-DB87EEC296A2}|Server\\userLoginBackend.csproj|c:\\users\\user\\desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\main_back\\foirstein-1-back\\userloginbackend\\project\\server\\controllers\\ratingnotecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4091DBF-74C8-49E2-87E1-DB87EEC296A2}|Server\\userLoginBackend.csproj|solutionrelative:server\\controllers\\ratingnotecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4091DBF-74C8-49E2-87E1-DB87EEC296A2}|Server\\userLoginBackend.csproj|c:\\users\\user\\desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\main_back\\foirstein-1-back\\userloginbackend\\project\\server\\controllers\\itemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4091DBF-74C8-49E2-87E1-DB87EEC296A2}|Server\\userLoginBackend.csproj|solutionrelative:server\\controllers\\itemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4091DBF-74C8-49E2-87E1-DB87EEC296A2}|Server\\userLoginBackend.csproj|c:\\users\\user\\desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\main_back\\foirstein-1-back\\userloginbackend\\project\\server\\controllers\\approvalrequestcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4091DBF-74C8-49E2-87E1-DB87EEC296A2}|Server\\userLoginBackend.csproj|solutionrelative:server\\controllers\\approvalrequestcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACFFDEA1-1E10-4827-9896-1A411023D012}|Dal\\DAL.csproj|c:\\users\\user\\desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\main_back\\foirstein-1-back\\userloginbackend\\project\\dal\\models\\ratingnote.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACFFDEA1-1E10-4827-9896-1A411023D012}|Dal\\DAL.csproj|solutionrelative:dal\\models\\ratingnote.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACFFDEA1-1E10-4827-9896-1A411023D012}|Dal\\DAL.csproj|c:\\users\\user\\desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\main_back\\foirstein-1-back\\userloginbackend\\project\\dal\\models\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACFFDEA1-1E10-4827-9896-1A411023D012}|Dal\\DAL.csproj|solutionrelative:dal\\models\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACFFDEA1-1E10-4827-9896-1A411023D012}|Dal\\DAL.csproj|c:\\users\\user\\desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\main_back\\foirstein-1-back\\userloginbackend\\project\\dal\\interfaces\\iitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACFFDEA1-1E10-4827-9896-1A411023D012}|Dal\\DAL.csproj|solutionrelative:dal\\interfaces\\iitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACFFDEA1-1E10-4827-9896-1A411023D012}|Dal\\DAL.csproj|c:\\users\\user\\desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\main_back\\foirstein-1-back\\userloginbackend\\project\\dal\\functions\\logdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACFFDEA1-1E10-4827-9896-1A411023D012}|Dal\\DAL.csproj|solutionrelative:dal\\functions\\logdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACFFDEA1-1E10-4827-9896-1A411023D012}|Dal\\DAL.csproj|c:\\users\\user\\desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\main_back\\foirstein-1-back\\userloginbackend\\project\\dal\\functions\\itemdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACFFDEA1-1E10-4827-9896-1A411023D012}|Dal\\DAL.csproj|solutionrelative:dal\\functions\\itemdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86C3A150-6CDC-45B3-A042-12D3FF800219}|BL\\BLL.csproj|c:\\users\\user\\desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\main_back\\foirstein-1-back\\userloginbackend\\project\\bl\\models_bll\\ratingnote_bll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86C3A150-6CDC-45B3-A042-12D3FF800219}|BL\\BLL.csproj|solutionrelative:bl\\models_bll\\ratingnote_bll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86C3A150-6CDC-45B3-A042-12D3FF800219}|BL\\BLL.csproj|c:\\users\\user\\desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\main_back\\foirstein-1-back\\userloginbackend\\project\\bl\\models_bll\\item_bll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86C3A150-6CDC-45B3-A042-12D3FF800219}|BL\\BLL.csproj|solutionrelative:bl\\models_bll\\item_bll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86C3A150-6CDC-45B3-A042-12D3FF800219}|BL\\BLL.csproj|c:\\users\\user\\desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\main_back\\foirstein-1-back\\userloginbackend\\project\\bl\\interfaces\\iitem_bll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86C3A150-6CDC-45B3-A042-12D3FF800219}|BL\\BLL.csproj|solutionrelative:bl\\interfaces\\iitem_bll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACFFDEA1-1E10-4827-9896-1A411023D012}|Dal\\DAL.csproj|c:\\users\\user\\desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\main_back\\foirstein-1-back\\userloginbackend\\project\\dal\\models\\borrowapprovalrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACFFDEA1-1E10-4827-9896-1A411023D012}|Dal\\DAL.csproj|solutionrelative:dal\\models\\borrowapprovalrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACFFDEA1-1E10-4827-9896-1A411023D012}|Dal\\DAL.csproj|c:\\users\\user\\desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\main_back\\foirstein-1-back\\userloginbackend\\project\\dal\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACFFDEA1-1E10-4827-9896-1A411023D012}|Dal\\DAL.csproj|solutionrelative:dal\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACFFDEA1-1E10-4827-9896-1A411023D012}|Dal\\DAL.csproj|c:\\users\\user\\desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\main_back\\foirstein-1-back\\userloginbackend\\project\\dal\\functions\\ratingdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ACFFDEA1-1E10-4827-9896-1A411023D012}|Dal\\DAL.csproj|solutionrelative:dal\\functions\\ratingdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{86C3A150-6CDC-45B3-A042-12D3FF800219}|BL\\BLL.csproj|c:\\users\\mfr99\\onedrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\web\\foirstein-1-back\\userloginbackend\\project\\bl\\interfaces\\iratingnote_bll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{86C3A150-6CDC-45B3-A042-12D3FF800219}|BL\\BLL.csproj|c:\\users\\user\\desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\main_back\\foirstein-1-back\\userloginbackend\\project\\bl\\interfaces\\iratingnote_bll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{86C3A150-6CDC-45B3-A042-12D3FF800219}|BL\\BLL.csproj|solutionrelative:bl\\interfaces\\iratingnote_bll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E4091DBF-74C8-49E2-87E1-DB87EEC296A2}|Server\\userLoginBackend.csproj|c:\\users\\mfr99\\onedrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\web\\foirstein-1-back\\userloginbackend\\project\\server\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E4091DBF-74C8-49E2-87E1-DB87EEC296A2}|Server\\userLoginBackend.csproj|c:\\users\\user\\desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\main_back\\foirstein-1-back\\userloginbackend\\project\\server\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E4091DBF-74C8-49E2-87E1-DB87EEC296A2}|Server\\userLoginBackend.csproj|solutionrelative:server\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{86C3A150-6CDC-45B3-A042-12D3FF800219}|BL\\BLL.csproj|c:\\users\\mfr99\\onedrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\web\\foirstein-1-back\\userloginbackend\\project\\bl\\functions\\report_bll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{86C3A150-6CDC-45B3-A042-12D3FF800219}|BL\\BLL.csproj|c:\\users\\user\\desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\main_back\\foirstein-1-back\\userloginbackend\\project\\bl\\functions\\report_bll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{86C3A150-6CDC-45B3-A042-12D3FF800219}|BL\\BLL.csproj|solutionrelative:bl\\functions\\report_bll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{86C3A150-6CDC-45B3-A042-12D3FF800219}|BL\\BLL.csproj|c:\\users\\mfr99\\onedrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\web\\foirstein-1-back\\userloginbackend\\project\\bl\\functions\\activitylog_bll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{86C3A150-6CDC-45B3-A042-12D3FF800219}|BL\\BLL.csproj|c:\\users\\user\\desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\main_back\\foirstein-1-back\\userloginbackend\\project\\bl\\functions\\activitylog_bll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{86C3A150-6CDC-45B3-A042-12D3FF800219}|BL\\BLL.csproj|solutionrelative:bl\\functions\\activitylog_bll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{86C3A150-6CDC-45B3-A042-12D3FF800219}|BL\\BLL.csproj|c:\\users\\mfr99\\onedrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\web\\foirstein-1-back\\userloginbackend\\project\\bl\\interfaces\\iactivitylog_bll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{86C3A150-6CDC-45B3-A042-12D3FF800219}|BL\\BLL.csproj|c:\\users\\user\\desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\main_back\\foirstein-1-back\\userloginbackend\\project\\bl\\interfaces\\iactivitylog_bll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{86C3A150-6CDC-45B3-A042-12D3FF800219}|BL\\BLL.csproj|solutionrelative:bl\\interfaces\\iactivitylog_bll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -130,66 +138,67 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "User_modelBll.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\main_back\\foirstein-1-back\\userLoginBackend\\Project\\BL\\models_bll\\User_modelBll.cs",
+              "RelativeDocumentMoniker": "BL\\models_bll\\User_modelBll.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\main_back\\foirstein-1-back\\userLoginBackend\\Project\\BL\\models_bll\\User_modelBll.cs",
+              "RelativeToolTip": "BL\\models_bll\\User_modelBll.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-08T09:10:36.444Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Iuser.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\main_back\\foirstein-1-back\\userLoginBackend\\Project\\Dal\\Interfaces\\Iuser.cs",
+              "RelativeDocumentMoniker": "Dal\\Interfaces\\Iuser.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\main_back\\foirstein-1-back\\userLoginBackend\\Project\\Dal\\Interfaces\\Iuser.cs",
+              "RelativeToolTip": "Dal\\Interfaces\\Iuser.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-08T09:10:17.742Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "User_bll.cs",
-              "DocumentMoniker": "C:\\Users\\mfr99\\OneDrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\web\\foirstein-1-back\\userLoginBackend\\Project\\BL\\functions\\User_bll.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\main_back\\foirstein-1-back\\userLoginBackend\\Project\\BL\\functions\\User_bll.cs",
               "RelativeDocumentMoniker": "BL\\functions\\User_bll.cs",
-              "ToolTip": "C:\\Users\\mfr99\\OneDrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\web\\foirstein-1-back\\userLoginBackend\\Project\\BL\\functions\\User_bll.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\main_back\\foirstein-1-back\\userLoginBackend\\Project\\BL\\functions\\User_bll.cs",
               "RelativeToolTip": "BL\\functions\\User_bll.cs",
-              "ViewState": "AQIAAHwAAAAAAAAAAAAAAJAAAAAJAAAA",
+              "ViewState": "AQIAAGMAAAAAAAAAAAAuwDIAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-04T06:23:23.994Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AutoMapperProfile.cs",
-              "DocumentMoniker": "C:\\Users\\mfr99\\OneDrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\web\\foirstein-1-back\\userLoginBackend\\Project\\BL\\AutoMapper\\AutoMapperProfile.cs",
-              "RelativeDocumentMoniker": "BL\\AutoMapper\\AutoMapperProfile.cs",
-              "ToolTip": "C:\\Users\\mfr99\\OneDrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\web\\foirstein-1-back\\userLoginBackend\\Project\\BL\\AutoMapper\\AutoMapperProfile.cs",
-              "RelativeToolTip": "BL\\AutoMapper\\AutoMapperProfile.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAmwAwAAAAsAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-04T06:31:31.476Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "UsersController.cs",
-              "DocumentMoniker": "C:\\Users\\mfr99\\OneDrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\web\\foirstein-1-back\\userLoginBackend\\Project\\Server\\Controllers\\UsersController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\main_back\\foirstein-1-back\\userLoginBackend\\Project\\Server\\Controllers\\UsersController.cs",
               "RelativeDocumentMoniker": "Server\\Controllers\\UsersController.cs",
-              "ToolTip": "C:\\Users\\mfr99\\OneDrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\web\\foirstein-1-back\\userLoginBackend\\Project\\Server\\Controllers\\UsersController.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\main_back\\foirstein-1-back\\userLoginBackend\\Project\\Server\\Controllers\\UsersController.cs",
               "RelativeToolTip": "Server\\Controllers\\UsersController.cs",
-              "ViewState": "AQIAAE0AAAAAAAAAAAAAwEUAAABJAAAA",
+              "ViewState": "AQIAABMAAAAAAAAAAAAuwEUAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-04T08:41:57.172Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "IReport_bll.cs",
-              "DocumentMoniker": "C:\\Users\\mfr99\\OneDrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\web\\foirstein-1-back\\userLoginBackend\\Project\\BL\\interfaces\\IReport_bll.cs",
-              "RelativeDocumentMoniker": "BL\\interfaces\\IReport_bll.cs",
-              "ToolTip": "C:\\Users\\mfr99\\OneDrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\web\\foirstein-1-back\\userLoginBackend\\Project\\BL\\interfaces\\IReport_bll.cs",
-              "RelativeToolTip": "BL\\interfaces\\IReport_bll.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-04T06:26:41.823Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "Item_BLL.cs",
-              "DocumentMoniker": "C:\\Users\\mfr99\\OneDrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\web\\foirstein-1-back\\userLoginBackend\\Project\\BL\\functions\\Item_BLL.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\main_back\\foirstein-1-back\\userLoginBackend\\Project\\BL\\functions\\Item_BLL.cs",
               "RelativeDocumentMoniker": "BL\\functions\\Item_BLL.cs",
-              "ToolTip": "C:\\Users\\mfr99\\OneDrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\web\\foirstein-1-back\\userLoginBackend\\Project\\BL\\functions\\Item_BLL.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\main_back\\foirstein-1-back\\userLoginBackend\\Project\\BL\\functions\\Item_BLL.cs",
               "RelativeToolTip": "BL\\functions\\Item_BLL.cs",
               "ViewState": "AQIAAAoAAAAAAAAAAADwvx8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -197,11 +206,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "RatingNote_bll.cs",
-              "DocumentMoniker": "C:\\Users\\mfr99\\OneDrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\web\\foirstein-1-back\\userLoginBackend\\Project\\BL\\functions\\RatingNote_bll.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\main_back\\foirstein-1-back\\userLoginBackend\\Project\\BL\\functions\\RatingNote_bll.cs",
               "RelativeDocumentMoniker": "BL\\functions\\RatingNote_bll.cs",
-              "ToolTip": "C:\\Users\\mfr99\\OneDrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\web\\foirstein-1-back\\userLoginBackend\\Project\\BL\\functions\\RatingNote_bll.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\main_back\\foirstein-1-back\\userLoginBackend\\Project\\BL\\functions\\RatingNote_bll.cs",
               "RelativeToolTip": "BL\\functions\\RatingNote_bll.cs",
               "ViewState": "AQIAAAkAAAAAAAAAAADwvx4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -209,11 +218,61 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 1,
+              "Title": "Iuser_bll.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\main_back\\foirstein-1-back\\userLoginBackend\\Project\\BL\\interfaces\\Iuser_bll.cs",
+              "RelativeDocumentMoniker": "BL\\interfaces\\Iuser_bll.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\main_back\\foirstein-1-back\\userLoginBackend\\Project\\BL\\interfaces\\Iuser_bll.cs",
+              "RelativeToolTip": "BL\\interfaces\\Iuser_bll.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAcwA8AAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-04T06:26:39.176Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "IReport_bll.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\main_back\\foirstein-1-back\\userLoginBackend\\Project\\BL\\interfaces\\IReport_bll.cs",
+              "RelativeDocumentMoniker": "BL\\interfaces\\IReport_bll.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\main_back\\foirstein-1-back\\userLoginBackend\\Project\\BL\\interfaces\\IReport_bll.cs",
+              "RelativeToolTip": "BL\\interfaces\\IReport_bll.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-04T06:26:41.823Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "userDal.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\main_back\\foirstein-1-back\\userLoginBackend\\Project\\Dal\\functions\\userDal.cs",
+              "RelativeDocumentMoniker": "Dal\\functions\\userDal.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\main_back\\foirstein-1-back\\userLoginBackend\\Project\\Dal\\functions\\userDal.cs",
+              "RelativeToolTip": "Dal\\functions\\userDal.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAAAB0AAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-04T07:17:14.982Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AutoMapperProfile.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\main_back\\foirstein-1-back\\userLoginBackend\\Project\\BL\\AutoMapper\\AutoMapperProfile.cs",
+              "RelativeDocumentMoniker": "BL\\AutoMapper\\AutoMapperProfile.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\main_back\\foirstein-1-back\\userLoginBackend\\Project\\BL\\AutoMapper\\AutoMapperProfile.cs",
+              "RelativeToolTip": "BL\\AutoMapper\\AutoMapperProfile.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAmwAwAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-04T06:31:31.476Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "ReportController.cs",
-              "DocumentMoniker": "C:\\Users\\mfr99\\OneDrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\web\\foirstein-1-back\\userLoginBackend\\Project\\Server\\Controllers\\ReportController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\main_back\\foirstein-1-back\\userLoginBackend\\Project\\Server\\Controllers\\ReportController.cs",
               "RelativeDocumentMoniker": "Server\\Controllers\\ReportController.cs",
-              "ToolTip": "C:\\Users\\mfr99\\OneDrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\web\\foirstein-1-back\\userLoginBackend\\Project\\Server\\Controllers\\ReportController.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\main_back\\foirstein-1-back\\userLoginBackend\\Project\\Server\\Controllers\\ReportController.cs",
               "RelativeToolTip": "Server\\Controllers\\ReportController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -221,11 +280,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 13,
               "Title": "RatingNoteController.cs",
-              "DocumentMoniker": "C:\\Users\\mfr99\\OneDrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\web\\foirstein-1-back\\userLoginBackend\\Project\\Server\\Controllers\\RatingNoteController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\main_back\\foirstein-1-back\\userLoginBackend\\Project\\Server\\Controllers\\RatingNoteController.cs",
               "RelativeDocumentMoniker": "Server\\Controllers\\RatingNoteController.cs",
-              "ToolTip": "C:\\Users\\mfr99\\OneDrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\web\\foirstein-1-back\\userLoginBackend\\Project\\Server\\Controllers\\RatingNoteController.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\main_back\\foirstein-1-back\\userLoginBackend\\Project\\Server\\Controllers\\RatingNoteController.cs",
               "RelativeToolTip": "Server\\Controllers\\RatingNoteController.cs",
               "ViewState": "AQIAAAUAAAAAAAAAAAAAABEAAAAvAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -233,24 +292,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Iuser_bll.cs",
-              "DocumentMoniker": "C:\\Users\\mfr99\\OneDrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\web\\foirstein-1-back\\userLoginBackend\\Project\\BL\\interfaces\\Iuser_bll.cs",
-              "RelativeDocumentMoniker": "BL\\interfaces\\Iuser_bll.cs",
-              "ToolTip": "C:\\Users\\mfr99\\OneDrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\web\\foirstein-1-back\\userLoginBackend\\Project\\BL\\interfaces\\Iuser_bll.cs",
-              "RelativeToolTip": "BL\\interfaces\\Iuser_bll.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAAcwBcAAABHAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-04T06:26:39.176Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\mfr99\\OneDrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\web\\foirstein-1-back\\userLoginBackend\\Project\\Server\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\main_back\\foirstein-1-back\\userLoginBackend\\Project\\Server\\Program.cs",
               "RelativeDocumentMoniker": "Server\\Program.cs",
-              "ToolTip": "C:\\Users\\mfr99\\OneDrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\web\\foirstein-1-back\\userLoginBackend\\Project\\Server\\Program.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\main_back\\foirstein-1-back\\userLoginBackend\\Project\\Server\\Program.cs",
               "RelativeToolTip": "Server\\Program.cs",
               "ViewState": "AQIAADEAAAAAAAAAAAAUwEEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -258,11 +304,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "ApprovalRequest_bll.cs",
-              "DocumentMoniker": "C:\\Users\\mfr99\\OneDrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\web\\foirstein-1-back\\userLoginBackend\\Project\\BL\\functions\\ApprovalRequest_bll.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\main_back\\foirstein-1-back\\userLoginBackend\\Project\\BL\\functions\\ApprovalRequest_bll.cs",
               "RelativeDocumentMoniker": "BL\\functions\\ApprovalRequest_bll.cs",
-              "ToolTip": "C:\\Users\\mfr99\\OneDrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\web\\foirstein-1-back\\userLoginBackend\\Project\\BL\\functions\\ApprovalRequest_bll.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\main_back\\foirstein-1-back\\userLoginBackend\\Project\\BL\\functions\\ApprovalRequest_bll.cs",
               "RelativeToolTip": "BL\\functions\\ApprovalRequest_bll.cs",
               "ViewState": "AQIAAAkAAAAAAAAAAADwvx4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -270,11 +316,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 14,
               "Title": "ItemController.cs",
-              "DocumentMoniker": "C:\\Users\\mfr99\\OneDrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\web\\foirstein-1-back\\userLoginBackend\\Project\\Server\\Controllers\\ItemController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\main_back\\foirstein-1-back\\userLoginBackend\\Project\\Server\\Controllers\\ItemController.cs",
               "RelativeDocumentMoniker": "Server\\Controllers\\ItemController.cs",
-              "ToolTip": "C:\\Users\\mfr99\\OneDrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\web\\foirstein-1-back\\userLoginBackend\\Project\\Server\\Controllers\\ItemController.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\main_back\\foirstein-1-back\\userLoginBackend\\Project\\Server\\Controllers\\ItemController.cs",
               "RelativeToolTip": "Server\\Controllers\\ItemController.cs",
               "ViewState": "AQIAAAkAAAAAAAAAAAAwwBcAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -282,11 +328,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 15,
               "Title": "ApprovalRequestController.cs",
-              "DocumentMoniker": "C:\\Users\\mfr99\\OneDrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\web\\foirstein-1-back\\userLoginBackend\\Project\\Server\\Controllers\\ApprovalRequestController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\main_back\\foirstein-1-back\\userLoginBackend\\Project\\Server\\Controllers\\ApprovalRequestController.cs",
               "RelativeDocumentMoniker": "Server\\Controllers\\ApprovalRequestController.cs",
-              "ToolTip": "C:\\Users\\mfr99\\OneDrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\web\\foirstein-1-back\\userLoginBackend\\Project\\Server\\Controllers\\ApprovalRequestController.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\main_back\\foirstein-1-back\\userLoginBackend\\Project\\Server\\Controllers\\ApprovalRequestController.cs",
               "RelativeToolTip": "Server\\Controllers\\ApprovalRequestController.cs",
               "ViewState": "AQIAAAkAAAAAAAAAAAA9wBEAAAAzAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -294,11 +340,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 16,
               "Title": "RatingNote.cs",
-              "DocumentMoniker": "C:\\Users\\mfr99\\OneDrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\web\\foirstein-1-back\\userLoginBackend\\Project\\Dal\\models\\RatingNote.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\main_back\\foirstein-1-back\\userLoginBackend\\Project\\Dal\\models\\RatingNote.cs",
               "RelativeDocumentMoniker": "Dal\\models\\RatingNote.cs",
-              "ToolTip": "C:\\Users\\mfr99\\OneDrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\web\\foirstein-1-back\\userLoginBackend\\Project\\Dal\\models\\RatingNote.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\main_back\\foirstein-1-back\\userLoginBackend\\Project\\Dal\\models\\RatingNote.cs",
               "RelativeToolTip": "Dal\\models\\RatingNote.cs",
               "ViewState": "AQIAAAoAAAAAAAAAAAAcwBMAAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -306,11 +352,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 17,
               "Title": "Item.cs",
-              "DocumentMoniker": "C:\\Users\\mfr99\\OneDrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\web\\foirstein-1-back\\userLoginBackend\\Project\\Dal\\models\\Item.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\main_back\\foirstein-1-back\\userLoginBackend\\Project\\Dal\\models\\Item.cs",
               "RelativeDocumentMoniker": "Dal\\models\\Item.cs",
-              "ToolTip": "C:\\Users\\mfr99\\OneDrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\web\\foirstein-1-back\\userLoginBackend\\Project\\Dal\\models\\Item.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\main_back\\foirstein-1-back\\userLoginBackend\\Project\\Dal\\models\\Item.cs",
               "RelativeToolTip": "Dal\\models\\Item.cs",
               "ViewState": "AQIAABMAAAAAAAAAAAA7wB8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -318,11 +364,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 18,
               "Title": "Iitem.cs",
-              "DocumentMoniker": "C:\\Users\\mfr99\\OneDrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\web\\foirstein-1-back\\userLoginBackend\\Project\\Dal\\Interfaces\\Iitem.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\main_back\\foirstein-1-back\\userLoginBackend\\Project\\Dal\\Interfaces\\Iitem.cs",
               "RelativeDocumentMoniker": "Dal\\Interfaces\\Iitem.cs",
-              "ToolTip": "C:\\Users\\mfr99\\OneDrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\web\\foirstein-1-back\\userLoginBackend\\Project\\Dal\\Interfaces\\Iitem.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\main_back\\foirstein-1-back\\userLoginBackend\\Project\\Dal\\Interfaces\\Iitem.cs",
               "RelativeToolTip": "Dal\\Interfaces\\Iitem.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -330,11 +376,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 19,
               "Title": "logDal.cs",
-              "DocumentMoniker": "C:\\Users\\mfr99\\OneDrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\web\\foirstein-1-back\\userLoginBackend\\Project\\Dal\\functions\\logDal.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\main_back\\foirstein-1-back\\userLoginBackend\\Project\\Dal\\functions\\logDal.cs",
               "RelativeDocumentMoniker": "Dal\\functions\\logDal.cs",
-              "ToolTip": "C:\\Users\\mfr99\\OneDrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\web\\foirstein-1-back\\userLoginBackend\\Project\\Dal\\functions\\logDal.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\main_back\\foirstein-1-back\\userLoginBackend\\Project\\Dal\\functions\\logDal.cs",
               "RelativeToolTip": "Dal\\functions\\logDal.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -342,11 +388,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 20,
               "Title": "ItemDal.cs",
-              "DocumentMoniker": "C:\\Users\\mfr99\\OneDrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\web\\foirstein-1-back\\userLoginBackend\\Project\\Dal\\functions\\ItemDal.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\main_back\\foirstein-1-back\\userLoginBackend\\Project\\Dal\\functions\\ItemDal.cs",
               "RelativeDocumentMoniker": "Dal\\functions\\ItemDal.cs",
-              "ToolTip": "C:\\Users\\mfr99\\OneDrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\web\\foirstein-1-back\\userLoginBackend\\Project\\Dal\\functions\\ItemDal.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\main_back\\foirstein-1-back\\userLoginBackend\\Project\\Dal\\functions\\ItemDal.cs",
               "RelativeToolTip": "Dal\\functions\\ItemDal.cs",
               "ViewState": "AQIAAAoAAAAAAAAAAAAwwBgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -354,11 +400,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 21,
               "Title": "RatingNote_bll.cs",
-              "DocumentMoniker": "C:\\Users\\mfr99\\OneDrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\web\\foirstein-1-back\\userLoginBackend\\Project\\BL\\models_bll\\RatingNote_bll.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\main_back\\foirstein-1-back\\userLoginBackend\\Project\\BL\\models_bll\\RatingNote_bll.cs",
               "RelativeDocumentMoniker": "BL\\models_bll\\RatingNote_bll.cs",
-              "ToolTip": "C:\\Users\\mfr99\\OneDrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\web\\foirstein-1-back\\userLoginBackend\\Project\\BL\\models_bll\\RatingNote_bll.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\main_back\\foirstein-1-back\\userLoginBackend\\Project\\BL\\models_bll\\RatingNote_bll.cs",
               "RelativeToolTip": "BL\\models_bll\\RatingNote_bll.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -366,11 +412,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 22,
               "Title": "Item_bll.cs",
-              "DocumentMoniker": "C:\\Users\\mfr99\\OneDrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\web\\foirstein-1-back\\userLoginBackend\\Project\\BL\\models_bll\\Item_bll.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\main_back\\foirstein-1-back\\userLoginBackend\\Project\\BL\\models_bll\\Item_bll.cs",
               "RelativeDocumentMoniker": "BL\\models_bll\\Item_bll.cs",
-              "ToolTip": "C:\\Users\\mfr99\\OneDrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\web\\foirstein-1-back\\userLoginBackend\\Project\\BL\\models_bll\\Item_bll.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\main_back\\foirstein-1-back\\userLoginBackend\\Project\\BL\\models_bll\\Item_bll.cs",
               "RelativeToolTip": "BL\\models_bll\\Item_bll.cs",
               "ViewState": "AQIAABEAAAAAAAAAAAAowB0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -378,11 +424,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 23,
               "Title": "IItem_bll.cs",
-              "DocumentMoniker": "C:\\Users\\mfr99\\OneDrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\web\\foirstein-1-back\\userLoginBackend\\Project\\BL\\interfaces\\IItem_bll.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\main_back\\foirstein-1-back\\userLoginBackend\\Project\\BL\\interfaces\\IItem_bll.cs",
               "RelativeDocumentMoniker": "BL\\interfaces\\IItem_bll.cs",
-              "ToolTip": "C:\\Users\\mfr99\\OneDrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\web\\foirstein-1-back\\userLoginBackend\\Project\\BL\\interfaces\\IItem_bll.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\main_back\\foirstein-1-back\\userLoginBackend\\Project\\BL\\interfaces\\IItem_bll.cs",
               "RelativeToolTip": "BL\\interfaces\\IItem_bll.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -390,11 +436,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 24,
               "Title": "BorrowApprovalRequest.cs",
-              "DocumentMoniker": "C:\\Users\\mfr99\\OneDrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\web\\foirstein-1-back\\userLoginBackend\\Project\\Dal\\models\\BorrowApprovalRequest.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\main_back\\foirstein-1-back\\userLoginBackend\\Project\\Dal\\models\\BorrowApprovalRequest.cs",
               "RelativeDocumentMoniker": "Dal\\models\\BorrowApprovalRequest.cs",
-              "ToolTip": "C:\\Users\\mfr99\\OneDrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\web\\foirstein-1-back\\userLoginBackend\\Project\\Dal\\models\\BorrowApprovalRequest.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\main_back\\foirstein-1-back\\userLoginBackend\\Project\\Dal\\models\\BorrowApprovalRequest.cs",
               "RelativeToolTip": "Dal\\models\\BorrowApprovalRequest.cs",
               "ViewState": "AQIAAAoAAAAAAAAAAAAgwBMAAAATAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -402,11 +448,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 25,
               "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\mfr99\\OneDrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\web\\foirstein-1-back\\userLoginBackend\\Project\\Dal\\models\\User.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\main_back\\foirstein-1-back\\userLoginBackend\\Project\\Dal\\models\\User.cs",
               "RelativeDocumentMoniker": "Dal\\models\\User.cs",
-              "ToolTip": "C:\\Users\\mfr99\\OneDrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\web\\foirstein-1-back\\userLoginBackend\\Project\\Dal\\models\\User.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\main_back\\foirstein-1-back\\userLoginBackend\\Project\\Dal\\models\\User.cs",
               "RelativeToolTip": "Dal\\models\\User.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAuwAUAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -414,23 +460,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "userDal.cs",
-              "DocumentMoniker": "C:\\Users\\mfr99\\OneDrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\web\\foirstein-1-back\\userLoginBackend\\Project\\Dal\\functions\\userDal.cs",
-              "RelativeDocumentMoniker": "Dal\\functions\\userDal.cs",
-              "ToolTip": "C:\\Users\\mfr99\\OneDrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\web\\foirstein-1-back\\userLoginBackend\\Project\\Dal\\functions\\userDal.cs",
-              "RelativeToolTip": "Dal\\functions\\userDal.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAAAAsAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-04T07:17:14.982Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 26,
               "Title": "ratingDal.cs",
-              "DocumentMoniker": "C:\\Users\\mfr99\\OneDrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\web\\foirstein-1-back\\userLoginBackend\\Project\\Dal\\functions\\ratingDal.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\main_back\\foirstein-1-back\\userLoginBackend\\Project\\Dal\\functions\\ratingDal.cs",
               "RelativeDocumentMoniker": "Dal\\functions\\ratingDal.cs",
-              "ToolTip": "C:\\Users\\mfr99\\OneDrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\web\\foirstein-1-back\\userLoginBackend\\Project\\Dal\\functions\\ratingDal.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\main_back\\foirstein-1-back\\userLoginBackend\\Project\\Dal\\functions\\ratingDal.cs",
               "RelativeToolTip": "Dal\\functions\\ratingDal.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAAAowBMAAAAxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -438,11 +472,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 27,
               "Title": "IRatingNote_bll.cs",
-              "DocumentMoniker": "C:\\Users\\mfr99\\OneDrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\web\\foirstein-1-back\\userLoginBackend\\Project\\BL\\interfaces\\IRatingNote_bll.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\main_back\\foirstein-1-back\\userLoginBackend\\Project\\BL\\interfaces\\IRatingNote_bll.cs",
               "RelativeDocumentMoniker": "BL\\interfaces\\IRatingNote_bll.cs",
-              "ToolTip": "C:\\Users\\mfr99\\OneDrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\web\\foirstein-1-back\\userLoginBackend\\Project\\BL\\interfaces\\IRatingNote_bll.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\main_back\\foirstein-1-back\\userLoginBackend\\Project\\BL\\interfaces\\IRatingNote_bll.cs",
               "RelativeToolTip": "BL\\interfaces\\IRatingNote_bll.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -450,11 +484,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 28,
               "Title": "WeatherForecast.cs",
-              "DocumentMoniker": "C:\\Users\\mfr99\\OneDrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\web\\foirstein-1-back\\userLoginBackend\\Project\\Server\\WeatherForecast.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\main_back\\foirstein-1-back\\userLoginBackend\\Project\\Server\\WeatherForecast.cs",
               "RelativeDocumentMoniker": "Server\\WeatherForecast.cs",
-              "ToolTip": "C:\\Users\\mfr99\\OneDrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\web\\foirstein-1-back\\userLoginBackend\\Project\\Server\\WeatherForecast.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\main_back\\foirstein-1-back\\userLoginBackend\\Project\\Server\\WeatherForecast.cs",
               "RelativeToolTip": "Server\\WeatherForecast.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAiwAwAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -462,11 +496,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 30,
               "Title": "ActivityLog_bll.cs",
-              "DocumentMoniker": "C:\\Users\\mfr99\\OneDrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\web\\foirstein-1-back\\userLoginBackend\\Project\\BL\\functions\\ActivityLog_bll.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\main_back\\foirstein-1-back\\userLoginBackend\\Project\\BL\\functions\\ActivityLog_bll.cs",
               "RelativeDocumentMoniker": "BL\\functions\\ActivityLog_bll.cs",
-              "ToolTip": "C:\\Users\\mfr99\\OneDrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\web\\foirstein-1-back\\userLoginBackend\\Project\\BL\\functions\\ActivityLog_bll.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\main_back\\foirstein-1-back\\userLoginBackend\\Project\\BL\\functions\\ActivityLog_bll.cs",
               "RelativeToolTip": "BL\\functions\\ActivityLog_bll.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -474,11 +508,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 29,
               "Title": "Report_bll.cs",
-              "DocumentMoniker": "C:\\Users\\mfr99\\OneDrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\web\\foirstein-1-back\\userLoginBackend\\Project\\BL\\functions\\Report_bll.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\main_back\\foirstein-1-back\\userLoginBackend\\Project\\BL\\functions\\Report_bll.cs",
               "RelativeDocumentMoniker": "BL\\functions\\Report_bll.cs",
-              "ToolTip": "C:\\Users\\mfr99\\OneDrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\web\\foirstein-1-back\\userLoginBackend\\Project\\BL\\functions\\Report_bll.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\main_back\\foirstein-1-back\\userLoginBackend\\Project\\BL\\functions\\Report_bll.cs",
               "RelativeToolTip": "BL\\functions\\Report_bll.cs",
               "ViewState": "AQIAAA0AAAAAAAAAAAAowB4AAAAyAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -486,11 +520,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 31,
               "Title": "IActivityLog_bll.cs",
-              "DocumentMoniker": "C:\\Users\\mfr99\\OneDrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\web\\foirstein-1-back\\userLoginBackend\\Project\\BL\\interfaces\\IActivityLog_bll.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\main_back\\foirstein-1-back\\userLoginBackend\\Project\\BL\\interfaces\\IActivityLog_bll.cs",
               "RelativeDocumentMoniker": "BL\\interfaces\\IActivityLog_bll.cs",
-              "ToolTip": "C:\\Users\\mfr99\\OneDrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\web\\foirstein-1-back\\userLoginBackend\\Project\\BL\\interfaces\\IActivityLog_bll.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D8\u05D9\u05E7\u05D5\u05DD\\main_back\\foirstein-1-back\\userLoginBackend\\Project\\BL\\interfaces\\IActivityLog_bll.cs",
               "RelativeToolTip": "BL\\interfaces\\IActivityLog_bll.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
