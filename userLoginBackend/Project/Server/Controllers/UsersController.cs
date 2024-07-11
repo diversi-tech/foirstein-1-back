@@ -8,6 +8,7 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using BLL.models_bll;
 using static BLL.functions.User_bll;
 using Microsoft.AspNetCore.Authorization;
+using BLL.functions;
 
 namespace userLoginBackend.Controllers
 {
@@ -25,7 +26,16 @@ namespace userLoginBackend.Controllers
 
         public ActionResult<List<User_modelBll>> GetAll()
         {
+           
             return Ok(user.getall());
+
+        }
+        [HttpGet("password-recovery/{email}")]
+
+        public ActionResult<User> CheckEmail(string email)
+        {
+           return user.SendPasswordResetLink(email);
+            
 
         }
         [HttpPost("addUser")]

@@ -36,7 +36,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 // הגדרת EF Core עם SQL Server
-builder.Services.AddDbContext<DAL.models.LiberiansDbContext>(options => options.UseSqlServer("Server=localhost,1433;Database=liberiansDB;Trusted_Connection=True;TrustServerCertificate=True;"));
+builder.Services.AddDbContext<DAL.models.LiberiansDbContext>(options => options.UseSqlServer("Server=foirshtein_db,1433;Database=liberiansDB;Trusted_Connection=True;TrustServerCertificate=True;"));
 
 // הגדרת Cors
 builder.Services.AddCors(p => p.AddPolicy("corspolicy", builder =>
