@@ -1,1 +1,0 @@
-﻿Scaffold-DbContext 'Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename="C:\Project-SH-B\project C# amd server\Project\DB\NutritionInstitute.mdf";Integrated Security=True;Connect Timeout=30' Microsoft.EntityFrameworkCore.SqlServer –Context NutritionInstitute -OutputDir Models  -Force -NoOnConfiguring
