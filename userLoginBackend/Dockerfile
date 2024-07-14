@@ -4,9 +4,9 @@ WORKDIR /app
 
 # העתיקי את קובץ ה-solution והתקיני את התלויות
 COPY *.sln ./
-COPY Server/*.csproj ./Server/
-COPY Dal/*.csproj ./Dal/
-COPY BL/*.csproj ./BL/
+COPY Server/*.csproj ./Serve/
+COPY Dal/*.csproj .Dal/
+COPY BL/*.csproj .BL/
 RUN dotnet restore
 
 # העתיקי את שאר קבצי הפרויקט ובני את הפרויקט
