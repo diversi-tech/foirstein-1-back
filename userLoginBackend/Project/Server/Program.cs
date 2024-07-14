@@ -10,6 +10,7 @@ using AutoMapper;
 using BLL.AutoMapper;
 using System;
 using Npgsql;
+using Microsoft.AspNetCore.Hosting;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -46,6 +47,18 @@ builder.Services.AddCors(p => p.AddPolicy("corspolicy", builder =>
     .AllowAnyMethod()
     .AllowAnyHeader();
 }));
+
+// static void Main(string[] args)
+//{
+//    CreateHostBuilder(args).Build().Run();
+//}
+// static IHostBuilder CreateHostBuilder(string[] args) =>
+//        Host.CreateDefaultBuilder(args)
+//            .ConfigureWebHostDefaults(webBuilder =>
+//            {
+//                webBuilder.UseStartup<Startup>();
+//            });
+
 
 AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true);
 
