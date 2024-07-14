@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\Desktop\\פרטיקום\\backMain\\foirstein-1-back\\userLoginBackend\\Project\\Server\\userLoginBackend.csproj": {}
+    "C:\\Users\\User\\Desktop\\פרטיקום\\B\\foirstein-1-back\\userLoginBackend\\Project\\Server\\userLoginBackend.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\Desktop\\פרטיקום\\backMain\\foirstein-1-back\\userLoginBackend\\Project\\BL\\BLL.csproj": {
+    "C:\\Users\\User\\Desktop\\פרטיקום\\B\\foirstein-1-back\\userLoginBackend\\Project\\BL\\BLL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Desktop\\פרטיקום\\backMain\\foirstein-1-back\\userLoginBackend\\Project\\BL\\BLL.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Desktop\\פרטיקום\\B\\foirstein-1-back\\userLoginBackend\\Project\\BL\\BLL.csproj",
         "projectName": "BLL",
-        "projectPath": "C:\\Users\\User\\Desktop\\פרטיקום\\backMain\\foirstein-1-back\\userLoginBackend\\Project\\BL\\BLL.csproj",
+        "projectPath": "C:\\Users\\User\\Desktop\\פרטיקום\\B\\foirstein-1-back\\userLoginBackend\\Project\\BL\\BLL.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Desktop\\פרטיקום\\backMain\\foirstein-1-back\\userLoginBackend\\Project\\BL\\obj\\",
+        "outputPath": "C:\\Users\\User\\Desktop\\פרטיקום\\B\\foirstein-1-back\\userLoginBackend\\Project\\BL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -29,8 +29,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\User\\Desktop\\פרטיקום\\backMain\\foirstein-1-back\\userLoginBackend\\Project\\Dal\\DAL.csproj": {
-                "projectPath": "C:\\Users\\User\\Desktop\\פרטיקום\\backMain\\foirstein-1-back\\userLoginBackend\\Project\\Dal\\DAL.csproj"
+              "C:\\Users\\User\\Desktop\\פרטיקום\\B\\foirstein-1-back\\userLoginBackend\\Project\\Dal\\DAL.csproj": {
+                "projectPath": "C:\\Users\\User\\Desktop\\פרטיקום\\B\\foirstein-1-back\\userLoginBackend\\Project\\Dal\\DAL.csproj"
               }
             }
           }
@@ -89,14 +89,14 @@
         }
       }
     },
-    "C:\\Users\\User\\Desktop\\פרטיקום\\backMain\\foirstein-1-back\\userLoginBackend\\Project\\Dal\\DAL.csproj": {
+    "C:\\Users\\User\\Desktop\\פרטיקום\\B\\foirstein-1-back\\userLoginBackend\\Project\\Dal\\DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Desktop\\פרטיקום\\backMain\\foirstein-1-back\\userLoginBackend\\Project\\Dal\\DAL.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Desktop\\פרטיקום\\B\\foirstein-1-back\\userLoginBackend\\Project\\Dal\\DAL.csproj",
         "projectName": "DAL",
-        "projectPath": "C:\\Users\\User\\Desktop\\פרטיקום\\backMain\\foirstein-1-back\\userLoginBackend\\Project\\Dal\\DAL.csproj",
+        "projectPath": "C:\\Users\\User\\Desktop\\פרטיקום\\B\\foirstein-1-back\\userLoginBackend\\Project\\Dal\\DAL.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Desktop\\פרטיקום\\backMain\\foirstein-1-back\\userLoginBackend\\Project\\Dal\\obj\\",
+        "outputPath": "C:\\Users\\User\\Desktop\\פרטיקום\\B\\foirstein-1-back\\userLoginBackend\\Project\\Dal\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -186,14 +186,14 @@
         }
       }
     },
-    "C:\\Users\\User\\Desktop\\פרטיקום\\backMain\\foirstein-1-back\\userLoginBackend\\Project\\Server\\userLoginBackend.csproj": {
+    "C:\\Users\\User\\Desktop\\פרטיקום\\B\\foirstein-1-back\\userLoginBackend\\Project\\Server\\userLoginBackend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Desktop\\פרטיקום\\backMain\\foirstein-1-back\\userLoginBackend\\Project\\Server\\userLoginBackend.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Desktop\\פרטיקום\\B\\foirstein-1-back\\userLoginBackend\\Project\\Server\\userLoginBackend.csproj",
         "projectName": "userLoginBackend",
-        "projectPath": "C:\\Users\\User\\Desktop\\פרטיקום\\backMain\\foirstein-1-back\\userLoginBackend\\Project\\Server\\userLoginBackend.csproj",
+        "projectPath": "C:\\Users\\User\\Desktop\\פרטיקום\\B\\foirstein-1-back\\userLoginBackend\\Project\\Server\\userLoginBackend.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Desktop\\פרטיקום\\backMain\\foirstein-1-back\\userLoginBackend\\Project\\Server\\obj\\",
+        "outputPath": "C:\\Users\\User\\Desktop\\פרטיקום\\B\\foirstein-1-back\\userLoginBackend\\Project\\Server\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -211,8 +211,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\User\\Desktop\\פרטיקום\\backMain\\foirstein-1-back\\userLoginBackend\\Project\\BL\\BLL.csproj": {
-                "projectPath": "C:\\Users\\User\\Desktop\\פרטיקום\\backMain\\foirstein-1-back\\userLoginBackend\\Project\\BL\\BLL.csproj"
+              "C:\\Users\\User\\Desktop\\פרטיקום\\B\\foirstein-1-back\\userLoginBackend\\Project\\BL\\BLL.csproj": {
+                "projectPath": "C:\\Users\\User\\Desktop\\פרטיקום\\B\\foirstein-1-back\\userLoginBackend\\Project\\BL\\BLL.csproj"
               }
             }
           }

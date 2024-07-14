@@ -50,6 +50,9 @@ builder.Services.AddCors(p => p.AddPolicy("corspolicy", builder =>
 AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true);
 
 
+var port = Environment.GetEnvironmentVariable("PORT") ?? "8080";
+
+
 // הגדרת Authentication ו-JWT Bearer
 var key = Encoding.UTF8.GetBytes("YourSuperSecretKeyThatIsAtLeast32CharactersLong");
 
@@ -82,7 +85,8 @@ if (app.Environment.IsDevelopment())
 
 app.UseCors("corspolicy");
 app.UseHttpsRedirection();
-
+app.MapGet("/", () => "Welcome to Librarians API");
+app.Run($"http://0.0.0.0:{port}");
 app.UseAuthentication(); // הוסף את השורה הזו
 app.UseAuthorization();
 
