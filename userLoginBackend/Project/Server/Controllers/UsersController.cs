@@ -76,7 +76,7 @@ namespace userLoginBackend.Controllers
 
         public ActionResult<Response> getUser([FromBody] LoginInfo loginInfo)
         {
-            return Ok(user.ValidateUser(loginInfo.name, loginInfo.pass));
+            return Ok(user.ValidateUser(loginInfo.tz, loginInfo.pass));
         }
         [HttpPut("{userId}/role")]
  
@@ -93,15 +93,15 @@ namespace userLoginBackend.Controllers
             }
           
         }
-       //[HttpPost("validate-token")]
-  
-        //public ActionResult<TokenValidationResponse> validToken([FromBody] string token)
-        //{
-        //    return Ok(user.ValidateToken(token));
-        //}
+        [HttpPost("validate-token")]
+
+        public ActionResult<TokenValidationResponse> validToken([FromBody] string token)
+        {
+            return Ok(user.ValidateToken(token));
+        }
         public class LoginInfo
         {
-            public string name { get; set; }
+            public string tz { get; set; }
             public string pass { get; set; }
         }
 

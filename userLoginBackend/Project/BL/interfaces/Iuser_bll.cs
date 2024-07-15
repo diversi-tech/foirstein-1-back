@@ -21,10 +21,10 @@ namespace BLL.interfaces
 
         public User_modelBll ResetPassword(string IdNumber, string NewPassword);
 
-        public Response ValidateUser(string UserName, string password);
+        public Response ValidateUser(string Tz, string password);
 
         public bool UpdateUserRole(int userId, string newRole);
-        //public TokenValidationResponse ValidateToken(string token);
+        public TokenValidationResponse ValidateToken(string token);
 
     }
 }

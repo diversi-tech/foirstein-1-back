@@ -138,52 +138,52 @@ namespace BLL.functions
                 };
             }
         }
-        //public TokenValidationResponse ValidateToken(string token)
-        //{
-        //    var tokenHandler = new JwtSecurityTokenHandler();
-        //    var key = Encoding.UTF8.GetBytes("YourSuperSecretKeyThatIsAtLeast32CharactersLong");
-        //    try
-        //    {
-        //        tokenHandler.ValidateToken(token, new TokenValidationParameters
-        //        {
-        //            ValidateIssuerSigningKey = true,
-        //            IssuerSigningKey = new SymmetricSecurityKey(key),
-        //            ValidateIssuer = false,
-        //            ValidateAudience = false,
-        //            ClockSkew = TimeSpan.Zero
-        //        }, out SecurityToken validatedToken);
+        public TokenValidationResponse ValidateToken(string token)
+        {
+            var tokenHandler = new JwtSecurityTokenHandler();
+            var key = Encoding.UTF8.GetBytes("YourSuperSecretKeyThatIsAtLeast32CharactersLong");
+            try
+            {
+                tokenHandler.ValidateToken(token, new TokenValidationParameters
+                {
+                    ValidateIssuerSigningKey = true,
+                    IssuerSigningKey = new SymmetricSecurityKey(key),
+                    ValidateIssuer = false,
+                    ValidateAudience = false,
+                    ClockSkew = TimeSpan.Zero
+                }, out SecurityToken validatedToken);
 
-        //        var jwtToken = (JwtSecurityToken)validatedToken;
-        //        var userName = jwtToken.Claims.First(x => x.Type == JwtRegisteredClaimNames.Sub).Value;
-        //        var user = getall().FirstOrDefault(u => u.UserName == userName);
+                var jwtToken = (JwtSecurityToken)validatedToken;
+                var tz = jwtToken.Claims.First(x => x.Type == "tz").Value;
+                var user = getall().FirstOrDefault(u => u.Tz == tz);
 
-        //        if (user == null)
-        //        {
-        //            return new TokenValidationResponse
-        //            {
-        //                IsValid = false
-        //            };
-        //        }
+                if (user == null)
+                {
+                    return new TokenValidationResponse
+                    {
+                        IsValid = false
+                    };
+                }
 
-        //        return new TokenValidationResponse
-        //        {
-        //            IsValid = true,
-        //            User = new UserLogin
-        //            {
-        //                UserName = user.UserName,
-        //                Role = user.Role,
-        //                Tz = user.Tz
-        //            }
-        //        };
-        //    }
-        //    catch
-        //    {
-        //        return new TokenValidationResponse
-        //        {
-        //            IsValid = false
-        //        };
-        //    }
-        //}
+                return new TokenValidationResponse
+                {
+                    IsValid = true,
+                    User = new UserLogin
+                    {
+                        UserName = $"{user.Fname} {user.Sname}",
+                Role = user.Role,
+                        Tz = user.Tz
+                    }
+                };
+            }
+            catch
+            {
+                return new TokenValidationResponse
+                {
+                    IsValid = false
+                };
+            }
+        }
 
 
         private string GenerateJwtToken(User_modelBll user)
@@ -191,12 +191,13 @@ namespace BLL.functions
             var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("YourSuperSecretKeyThatIsAtLeast32CharactersLong"));
             var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);
 
+            var username = $"{user.Fname} {user.Sname}";
             var claims = new[]
             {
-       // new Claim(JwtRegisteredClaimNames.Sub, user.UserName),
+        new Claim(JwtRegisteredClaimNames.Sub, username),
         new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
         new Claim(ClaimTypes.Role, user.Role),
-        new Claim("tz", user.Tz)
+        new Claim("tz", user.Tz),
     };
 
             var token = new JwtSecurityToken(
