@@ -48,17 +48,6 @@ builder.Services.AddCors(p => p.AddPolicy("corspolicy", builder =>
     .AllowAnyHeader();
 }));
 
-// static void Main(string[] args)
-//{
-//    CreateHostBuilder(args).Build().Run();
-//}
-// static IHostBuilder CreateHostBuilder(string[] args) =>
-//        Host.CreateDefaultBuilder(args)
-//            .ConfigureWebHostDefaults(webBuilder =>
-//            {
-//                webBuilder.UseStartup<Startup>();
-//            });
-
 
 AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true);
 
@@ -98,10 +87,10 @@ if (app.Environment.IsDevelopment())
 
 app.UseCors("corspolicy");
 app.UseHttpsRedirection();
-app.MapGet("/", () => "Welcome to Librarians API");
-app.Run($"http://0.0.0.0:{port}");
+
 app.UseAuthentication(); // הוסף את השורה הזו
 app.UseAuthorization();
 
 app.MapControllers();
-app.Run();
+app.MapGet("/", () => "Welcome to Librarians API");
+app.Run($"http://0.0.0.0:{port}");
