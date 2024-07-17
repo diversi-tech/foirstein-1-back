@@ -27,6 +27,7 @@ namespace BLL.functions
         Iuser _Iuser;
         static IMapper mapper;
         private readonly GmailSMTP _gmailSmtpClient;
+       public string s="";
         public User_bll(Iuser iUser, IConfiguration configuration)
         {
             _Iuser = iUser;
@@ -196,79 +197,16 @@ namespace BLL.functions
                 };
             }
         }
-        private static string Encrypt(string text, string key)
-        {
-            var keyBytes = new byte[32];
-            var keyBytesSource = Encoding.UTF8.GetBytes(key);
-            Array.Copy(keyBytesSource, keyBytes, Math.Min(keyBytesSource.Length, keyBytes.Length));
-
-            using (var aesAlg = Aes.Create())
-            {
-                aesAlg.Key = keyBytes;
-                aesAlg.GenerateIV();
-                var iv = aesAlg.IV;
-
-                using (var encryptor = aesAlg.CreateEncryptor(aesAlg.Key, aesAlg.IV))
-                using (var msEncrypt = new MemoryStream())
-                {
-                    using (var csEncrypt = new CryptoStream(msEncrypt, encryptor, CryptoStreamMode.Write))
-                    using (var swEncrypt = new StreamWriter(csEncrypt))
-                    {
-                        swEncrypt.Write(text);
-                    }
-
-                    var encryptedContent = msEncrypt.ToArray();
-
-                    var result = new byte[iv.Length + encryptedContent.Length];
-                    Buffer.BlockCopy(iv, 0, result, 0, iv.Length);
-                    Buffer.BlockCopy(encryptedContent, 0, result, iv.Length, encryptedContent.Length);
-
-                    string encryptedString = Convert.ToBase64String(result);
-                    Console.WriteLine($"Encrypted UserID: {encryptedString}");
-                    return encryptedString;
-                }
-            }
-        }
-
-        private static string Decrypt(string cipherText, string key)
-        {
-            var fullCipher = Convert.FromBase64String(cipherText);
-
-            var iv = new byte[16];
-            var cipher = new byte[fullCipher.Length - iv.Length];
-
-            Array.Copy(fullCipher, 0, iv, 0, iv.Length);
-            Array.Copy(fullCipher, iv.Length, cipher, 0, cipher.Length);
-
-            var keyBytes = new byte[32];
-            var keyBytesSource = Encoding.UTF8.GetBytes(key);
-            Array.Copy(keyBytesSource, keyBytes, Math.Min(keyBytesSource.Length, keyBytes.Length));
-
-            using (var aesAlg = Aes.Create())
-            {
-                aesAlg.Key = keyBytes;
-                aesAlg.IV = iv;
-
-                var decryptor = aesAlg.CreateDecryptor(aesAlg.Key, aesAlg.IV);
-
-                using (var msDecrypt = new MemoryStream(cipher))
-                using (var csDecrypt = new CryptoStream(msDecrypt, decryptor, CryptoStreamMode.Read))
-                using (var srDecrypt = new StreamReader(csDecrypt))
-                {
-                    string decryptedString = srDecrypt.ReadToEnd();
-                    Console.WriteLine($"Decrypted UserID: {decryptedString}");
-                    return decryptedString;
-                }
-            }
-        }
+     
+      
 
         public User SendPasswordResetLink(string email)
         {
             User u = _Iuser.GetAll().FirstOrDefault(u => u.Email == email);
             if (u != null)
             {
-                string encryptionKey = "YourSecretKey12345678901234567890";
-                string encryptedUserId = Encrypt(u.UserId.ToString(), encryptionKey);
+                var userDtos = mapper.Map<User_modelBll>(u);
+                string token = GenerateJwtToken(userDtos);
                 string body = $@"
 <html>
 <head>
@@ -287,7 +225,7 @@ namespace BLL.functions
 <body>
     <p>משתמש יקר,</p>
     <p>הגשת בקשה לאיפוס סיסמה. אנא לחץ על הקישור הבא לאיפוס הסיסמה שלך:</p>
-    <p><a href='https://foirstein-1-front-aojx.onrender.com/#/reset-password?token={HttpUtility.UrlEncode(encryptedUserId)}'>אפס סיסמה</a></p>
+    <p><a href='https://foirstein-1-front-aojx.onrender.com/#/reset-password?token={HttpUtility.UrlEncode(token)}'>אפס סיסמה</a></p>
     <p>אם לא הגשת בקשה זו, תוכל להתעלם מהודעה זו בבטחה.</p>
     <p>בברכה,<br>צוות האתר שלך</p>
 </body>
