@@ -284,7 +284,7 @@ namespace BLL.functions
     <body>
         <p>משתמש יקר,</p>
         <p>הגשת בקשה לאיפוס סיסמה. אנא לחץ על הקישור הבא לאיפוס הסיסמה שלך:</p>
-        <p><a href='https://foirstein-1-front-aojx.onrender.com/#/reset-password?token={encryptedUserId}'>אפס סיסמה</a></p>
+        <p><a href='https://foirstein-1-front-aojx.onrender.com/#/reset-password?token={HttpUtility.UrlEncode(encryptedUserId)}'>אפס סיסמה</a></p>
         <p>אם לא הגשת בקשה זו, תוכל להתעלם מהודעה זו בבטחה.</p>
         <p>בברכה,<br>צוות האתר שלך</p>
     </body>
