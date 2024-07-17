@@ -223,19 +223,22 @@ namespace BLL.functions
                     Buffer.BlockCopy(iv, 0, result, 0, iv.Length);
                     Buffer.BlockCopy(encryptedContent, 0, result, iv.Length, encryptedContent.Length);
 
-                    return Convert.ToBase64String(result);
+                    string encryptedString = Convert.ToBase64String(result);
+                    Console.WriteLine($"Encrypted UserID: {encryptedString}");
+                    return encryptedString;
                 }
             }
         }
+
         private static string Decrypt(string cipherText, string key)
         {
             var fullCipher = Convert.FromBase64String(cipherText);
 
             var iv = new byte[16];
-            var cipher = new byte[16];
+            var cipher = new byte[fullCipher.Length - iv.Length];
 
             Array.Copy(fullCipher, 0, iv, 0, iv.Length);
-            Array.Copy(fullCipher, iv.Length, cipher, 0, iv.Length);
+            Array.Copy(fullCipher, iv.Length, cipher, 0, cipher.Length);
 
             var keyBytes = new byte[32];
             var keyBytesSource = Encoding.UTF8.GetBytes(key);
@@ -252,22 +255,20 @@ namespace BLL.functions
                 using (var csDecrypt = new CryptoStream(msDecrypt, decryptor, CryptoStreamMode.Read))
                 using (var srDecrypt = new StreamReader(csDecrypt))
                 {
-                    return srDecrypt.ReadToEnd();
+                    string decryptedString = srDecrypt.ReadToEnd();
+                    Console.WriteLine($"Decrypted UserID: {decryptedString}");
+                    return decryptedString;
                 }
             }
         }
 
         public User SendPasswordResetLink(string email)
         {
-            // מציאת המשתמש לפי כתובת המייל
             User u = _Iuser.GetAll().FirstOrDefault(u => u.Email == email);
-
-
-
             if (u != null)
             {
                 string encryptionKey = "YourSecretKey12345678901234567890";
-                string encryptedUserId = Encrypt(u.UserId.ToString(), encryptionKey);  // Add encryption of user id
+                string encryptedUserId = Encrypt(u.UserId.ToString(), encryptionKey);
                 string body = $@"
 <html>
 <head>
@@ -293,12 +294,11 @@ namespace BLL.functions
 </html>";
 
                 _gmailSmtpClient.SendEmail(email, "איפוס סיסמא", body);
-
-                // שליחת המייל עם קישור לאיפוס סיסמה
-
             }
             return u;
         }
+
+
 
 
 
