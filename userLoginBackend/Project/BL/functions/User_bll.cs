@@ -197,33 +197,65 @@ namespace BLL.functions
         }
         private static string Encrypt(string text, string key)
         {
-            var keyBytes = Encoding.UTF8.GetBytes(key);
+            var keyBytes = new byte[32];
+            var keyBytesSource = Encoding.UTF8.GetBytes(key);
+            Array.Copy(keyBytesSource, keyBytes, Math.Min(keyBytesSource.Length, keyBytes.Length));
+
             using (var aesAlg = Aes.Create())
             {
-                using (var encryptor = aesAlg.CreateEncryptor(keyBytes, aesAlg.IV))
+                aesAlg.Key = keyBytes;
+                aesAlg.GenerateIV();
+                var iv = aesAlg.IV;
+
+                using (var encryptor = aesAlg.CreateEncryptor(aesAlg.Key, aesAlg.IV))
+                using (var msEncrypt = new MemoryStream())
                 {
-                    using (var msEncrypt = new MemoryStream())
+                    using (var csEncrypt = new CryptoStream(msEncrypt, encryptor, CryptoStreamMode.Write))
+                    using (var swEncrypt = new StreamWriter(csEncrypt))
                     {
-                        using (var csEncrypt = new CryptoStream(msEncrypt, encryptor, CryptoStreamMode.Write))
-                        {
-                            using (var swEncrypt = new StreamWriter(csEncrypt))
-                            {
-                                swEncrypt.Write(text);
-                            }
-                        }
-
-                        var iv = aesAlg.IV;
-                        var decryptedContent = msEncrypt.ToArray();
-
-                        var result = new byte[iv.Length + decryptedContent.Length];
-                        Buffer.BlockCopy(iv, 0, result, 0, iv.Length);
-                        Buffer.BlockCopy(decryptedContent, 0, result, iv.Length, decryptedContent.Length);
-
-                        return Convert.ToBase64String(result);
+                        swEncrypt.Write(text);
                     }
+
+                    var encryptedContent = msEncrypt.ToArray();
+
+                    var result = new byte[iv.Length + encryptedContent.Length];
+                    Buffer.BlockCopy(iv, 0, result, 0, iv.Length);
+                    Buffer.BlockCopy(encryptedContent, 0, result, iv.Length, encryptedContent.Length);
+
+                    return Convert.ToBase64String(result);
                 }
             }
         }
+        private static string Decrypt(string cipherText, string key)
+        {
+            var fullCipher = Convert.FromBase64String(cipherText);
+
+            var iv = new byte[16];
+            var cipher = new byte[16];
+
+            Array.Copy(fullCipher, 0, iv, 0, iv.Length);
+            Array.Copy(fullCipher, iv.Length, cipher, 0, iv.Length);
+
+            var keyBytes = new byte[32];
+            var keyBytesSource = Encoding.UTF8.GetBytes(key);
+            Array.Copy(keyBytesSource, keyBytes, Math.Min(keyBytesSource.Length, keyBytes.Length));
+
+            using (var aesAlg = Aes.Create())
+            {
+                aesAlg.Key = keyBytes;
+                aesAlg.IV = iv;
+
+                var decryptor = aesAlg.CreateDecryptor(aesAlg.Key, aesAlg.IV);
+
+                using (var msDecrypt = new MemoryStream(cipher))
+                using (var csDecrypt = new CryptoStream(msDecrypt, decryptor, CryptoStreamMode.Read))
+                using (var srDecrypt = new StreamReader(csDecrypt))
+                {
+                    return srDecrypt.ReadToEnd();
+                }
+            }
+        }
+
         public User SendPasswordResetLink(string email)
         {
             // מציאת המשתמש לפי כתובת המייל
