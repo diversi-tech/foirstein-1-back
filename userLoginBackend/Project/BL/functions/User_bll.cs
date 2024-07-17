@@ -2,6 +2,7 @@
 using BLL.AutoMapper;
 using BLL.interfaces;
 using BLL.models_bll;
+using DAL.functions;
 using DAL.Interfaces;
 using DAL.models;
 using Microsoft.IdentityModel.Tokens;
@@ -9,9 +10,14 @@ using System;
 using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
+using System.Net.Mail;
+using System.Net;
 using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
+using Librarians.Repository.Repository;
+using Microsoft.Extensions.Configuration;
+using System.Security.Cryptography;
 
 namespace BLL.functions
 {
@@ -19,7 +25,8 @@ namespace BLL.functions
     {
         Iuser _Iuser;
         static IMapper mapper;
-        public User_bll(Iuser iUser)
+        private readonly GmailSMTP _gmailSmtpClient;
+        public User_bll(Iuser iUser, IConfiguration configuration)
         {
             _Iuser = iUser;
             var config = new MapperConfiguration(cfg =>
@@ -27,7 +34,11 @@ namespace BLL.functions
                 cfg.AddProfile<AutoMapperProfile>();
             });
             mapper = (IMapper)config.CreateMapper();
+            string gmailAddress = configuration["Gmail:Address"];
+            string gmailPassword = configuration["Gmail:Password"];
+            _gmailSmtpClient = new GmailSMTP(gmailAddress, gmailPassword);
         }
+
 
 
         public List<User_modelBll> getall()
@@ -184,6 +195,76 @@ namespace BLL.functions
                 };
             }
         }
+        private static string Encrypt(string text, string key)
+        {
+            var keyBytes = Encoding.UTF8.GetBytes(key);
+            using (var aesAlg = Aes.Create())
+            {
+                using (var encryptor = aesAlg.CreateEncryptor(keyBytes, aesAlg.IV))
+                {
+                    using (var msEncrypt = new MemoryStream())
+                    {
+                        using (var csEncrypt = new CryptoStream(msEncrypt, encryptor, CryptoStreamMode.Write))
+                        {
+                            using (var swEncrypt = new StreamWriter(csEncrypt))
+                            {
+                                swEncrypt.Write(text);
+                            }
+                        }
+
+                        var iv = aesAlg.IV;
+                        var decryptedContent = msEncrypt.ToArray();
+
+                        var result = new byte[iv.Length + decryptedContent.Length];
+                        Buffer.BlockCopy(iv, 0, result, 0, iv.Length);
+                        Buffer.BlockCopy(decryptedContent, 0, result, iv.Length, decryptedContent.Length);
+
+                        return Convert.ToBase64String(result);
+                    }
+                }
+            }
+        }
+        public User SendPasswordResetLink(string email)
+        {
+            // מציאת המשתמש לפי כתובת המייל
+            User u = _Iuser.GetAll().FirstOrDefault(u => u.Email == email);
+
+
+
+            if (u != null)
+            {
+                // יצירת טוקן ייחודי לאיפוס הסיסמה
+                string body = @"
+    <html>
+    <head>
+        <meta charset='UTF-8'>
+        <style>
+            body {
+                direction: rtl;
+                text-align: right;
+                font-size: 18px;
+            }
+            a {
+                font-size: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <p>משתמש יקר,</p>
+        <p>הגשת בקשה לאיפוס סיסמה. אנא לחץ על הקישור הבא לאיפוס הסיסמה שלך:</p>
+        <p><a href='https://foirstein-1-front-aojx.onrender.com/#/reset-password?token={encryptedUserId}'>אפס סיסמה</a></p>
+        <p>אם לא הגשת בקשה זו, תוכל להתעלם מהודעה זו בבטחה.</p>
+        <p>בברכה,<br>צוות האתר שלך</p>
+    </body>
+    </html>";
+
+                _gmailSmtpClient.SendEmail(email, "איפוס סיסמא", body);
+
+                // שליחת המייל עם קישור לאיפוס סיסמה
+
+            }
+            return u;
+        }
 
 
         private string GenerateJwtToken(User_modelBll user)
@@ -198,6 +279,7 @@ namespace BLL.functions
         new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
         new Claim(ClaimTypes.Role, user.Role),
         new Claim("tz", user.Tz),
+         new Claim("userId", user.UserId.ToString()),
     };
 
             var token = new JwtSecurityToken(

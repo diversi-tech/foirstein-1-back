@@ -64,6 +64,14 @@ namespace userLoginBackend.Controllers
             user.ResetPassword(request.IdNumber, request.NewPassword);
             return Ok(new { message = "Password reset successfully." });
         }
+        [HttpGet("password-recovery/{email}")]
+
+        public ActionResult<User> CheckEmail(string email)
+        {
+            return user.SendPasswordResetLink(email);
+
+
+        }
 
 
         [HttpGet("verify-security-questions")]
