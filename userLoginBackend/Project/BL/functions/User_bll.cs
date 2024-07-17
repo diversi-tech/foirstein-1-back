@@ -18,6 +18,7 @@ using System.Threading.Tasks;
 using Librarians.Repository.Repository;
 using Microsoft.Extensions.Configuration;
 using System.Security.Cryptography;
+using System.Web;
 
 namespace BLL.functions
 {
@@ -265,30 +266,31 @@ namespace BLL.functions
 
             if (u != null)
             {
-                // יצירת טוקן ייחודי לאיפוס הסיסמה
-                string body = @"
-    <html>
-    <head>
-        <meta charset='UTF-8'>
-        <style>
-            body {
-                direction: rtl;
-                text-align: right;
-                font-size: 18px;
-            }
-            a {
-                font-size: 20px;
-            }
-        </style>
-    </head>
-    <body>
-        <p>משתמש יקר,</p>
-        <p>הגשת בקשה לאיפוס סיסמה. אנא לחץ על הקישור הבא לאיפוס הסיסמה שלך:</p>
-        <p><a href='https://foirstein-1-front-aojx.onrender.com/#/reset-password?token={HttpUtility.UrlEncode(encryptedUserId)}'>אפס סיסמה</a></p>
-        <p>אם לא הגשת בקשה זו, תוכל להתעלם מהודעה זו בבטחה.</p>
-        <p>בברכה,<br>צוות האתר שלך</p>
-    </body>
-    </html>";
+                string encryptionKey = "YourSecretKey12345678901234567890";
+                string encryptedUserId = Encrypt(u.UserId.ToString(), encryptionKey);  // Add encryption of user id
+                string body = $@"
+<html>
+<head>
+    <meta charset='UTF-8'>
+    <style>
+        body {{
+            direction: rtl;
+            text-align: right;
+            font-size: 18px;
+        }}
+        a {{
+            font-size: 20px;
+        }}
+    </style>
+</head>
+<body>
+    <p>משתמש יקר,</p>
+    <p>הגשת בקשה לאיפוס סיסמה. אנא לחץ על הקישור הבא לאיפוס הסיסמה שלך:</p>
+    <p><a href='https://foirstein-1-front-aojx.onrender.com/#/reset-password?token={HttpUtility.UrlEncode(encryptedUserId)}'>אפס סיסמה</a></p>
+    <p>אם לא הגשת בקשה זו, תוכל להתעלם מהודעה זו בבטחה.</p>
+    <p>בברכה,<br>צוות האתר שלך</p>
+</body>
+</html>";
 
                 _gmailSmtpClient.SendEmail(email, "איפוס סיסמא", body);
 
@@ -297,6 +299,7 @@ namespace BLL.functions
             }
             return u;
         }
+
 
 
         private string GenerateJwtToken(User_modelBll user)
