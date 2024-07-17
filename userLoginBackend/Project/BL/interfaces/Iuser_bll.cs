@@ -19,7 +19,7 @@ namespace BLL.interfaces
         bool Delete(int userId);
         public User_modelBll VerifySecurityQuestions(string idNumber);
 
-        public User_modelBll ResetPassword(string IdNumber, string NewPassword);
+        public User_modelBll ResetPassword(int UserId, string NewPassword);
 
         public Response ValidateUser(string Tz, string password);
 

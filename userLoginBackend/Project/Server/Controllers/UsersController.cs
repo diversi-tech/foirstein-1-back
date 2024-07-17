@@ -58,10 +58,10 @@ namespace userLoginBackend.Controllers
         }
 
         [HttpPut("reset-password")]
-   
+
         public ActionResult ResetPassword([FromBody] ResetPasswordRequest request)
         {
-            user.ResetPassword(request.IdNumber, request.NewPassword);
+            user.ResetPassword(request.UserId, request.NewPassword);
             return Ok(new { message = "Password reset successfully." });
         }
         [HttpGet("password-recovery/{email}")]
@@ -120,7 +120,7 @@ namespace userLoginBackend.Controllers
         }
         public class ResetPasswordRequest
         {
-            public string IdNumber { get; set; }
+            public int UserId { get; set; }
             public string NewPassword { get; set; }
         }
 

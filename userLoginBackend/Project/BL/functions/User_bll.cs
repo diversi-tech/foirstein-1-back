@@ -88,9 +88,9 @@ namespace BLL.functions
             return null;
         }
 
-        public User_modelBll ResetPassword(string IdNumber, string NewPassword)
+        public User_modelBll ResetPassword(int UserId, string NewPassword)
         {
-            var user = _Iuser.GetAll().FirstOrDefault(u => u.Tz == IdNumber);
+            var user = _Iuser.GetAll().FirstOrDefault(u => u.UserId == UserId);
             if (user == null)
             {
                 throw new Exception("User not found");
