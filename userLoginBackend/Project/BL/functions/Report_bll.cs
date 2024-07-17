@@ -165,7 +165,7 @@ namespace BLL.functions
                           {
                               UserId1 = logGroup.Key,
                               ActivityCount = logGroup.Count(),
-                              //UserName = user.UserName
+                              UserName = user.Fname
                           })
                     .OrderByDescending(x => x.ActivityCount)
                     .ToList();
