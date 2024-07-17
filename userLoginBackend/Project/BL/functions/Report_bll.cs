@@ -148,13 +148,13 @@ namespace BLL.functions
             try
             {
                 var oneMonthAgo = DateTime.Now.AddMonths(-1);//תאריך הנוכחי
-                var logs = _Ilog.GetAll();//שליפת החיפושים
+                var logs = _ISearchLogBll.getall();//שליפת החיפושים
                 var users = _Iuser.GetAll();//שליפת המשתמשים
-                var filteredLogs = logs.Where(log => log.Timestamp >= oneMonthAgo).ToList();//סינון רק אלא של החודש
+                var filteredLogs = logs.Where(log => log.SearchDate >= oneMonthAgo).ToList();//סינון רק אלא של החודש
                 /////////////////////////////////////////////////////////
                 var groupedLogs = filteredLogs
-                    .Where(log => log.UserId1 != 0)
-                    .GroupBy(log => log.UserId1)
+                    .Where(log => log.UserId != 0)
+                    .GroupBy(log => log.UserId)
                     .ToList();
                 //////////////////////////////////////////////////////////
                 var result = groupedLogs
