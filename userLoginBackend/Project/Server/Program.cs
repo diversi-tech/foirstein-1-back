@@ -16,7 +16,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 
-// ùéøåúé äúìåúåú ùìê
+// Ã¹Ã©Ã¸Ã¥ÃºÃ© Ã¤ÃºÃ¬Ã¥ÃºÃ¥Ãº Ã¹Ã¬Ãª
 builder.Services.AddScoped<Iuser, userDal>();
 builder.Services.AddScoped<Ireport, reportDal>();
 builder.Services.AddScoped<Ilog, logDal>();
@@ -36,10 +36,10 @@ builder.Services.AddAutoMapper(typeof(AutoMapperProfile));
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-// äâãøú EF Core òí SQL Server
+// Ã¤Ã¢Ã£Ã¸Ãº EF Core Ã²Ã­ SQL Server
 builder.Services.AddDbContext<DAL.models.LiberiansDbContext>(options => options.UseNpgsql("Host=dpg-cq9oc8jv2p9s73cllde0-a.oregon-postgres.render.com;Database=librarydb_32cv;Username=foyershtein;Password=LISwmgiBi9NneNbBovnrfrZnEed2M38m;"));
 
-// äâãøú Cors
+// Ã¤Ã¢Ã£Ã¸Ãº Cors
 builder.Services.AddCors(p => p.AddPolicy("corspolicy", builder =>
 {
     builder
@@ -55,7 +55,7 @@ AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true);
 var port = Environment.GetEnvironmentVariable("PORT") ?? "8080";
 
 
-// äâãøú Authentication å-JWT Bearer
+// Ã¤Ã¢Ã£Ã¸Ãº Authentication Ã¥-JWT Bearer
 var key = Encoding.UTF8.GetBytes("YourSuperSecretKeyThatIsAtLeast32CharactersLong");
 
 builder.Services.AddAuthentication(options =>
@@ -88,11 +88,11 @@ if (app.Environment.IsDevelopment())
 app.UseCors("corspolicy");
 app.UseHttpsRedirection();
 
-app.UseAuthentication(); // äåñó àú äùåøä äæå
+app.UseAuthentication(); // Ã¤Ã¥Ã±Ã³ Ã Ãº Ã¤Ã¹Ã¥Ã¸Ã¤ Ã¤Ã¦Ã¥
 app.UseAuthorization();
 
 app.MapControllers();
 app.MapGet("/", () => "Welcome to Librarians API");
-//app.Run($"http://0.0.0.0:{port}");
-app.Run();
+app.Run($"http://0.0.0.0:{port}");
+//app.Run();
 
