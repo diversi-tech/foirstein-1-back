@@ -213,81 +213,56 @@ namespace BLL.functions
                         }
 
                         var iv = aesAlg.IV;
-                        var encryptedContent = msEncrypt.ToArray();
+                        var decryptedContent = msEncrypt.ToArray();
 
-                        var result = new byte[iv.Length + encryptedContent.Length];
+                        var result = new byte[iv.Length + decryptedContent.Length];
                         Buffer.BlockCopy(iv, 0, result, 0, iv.Length);
-                        Buffer.BlockCopy(encryptedContent, 0, result, iv.Length, encryptedContent.Length);
+                        Buffer.BlockCopy(decryptedContent, 0, result, iv.Length, decryptedContent.Length);
 
                         return Convert.ToBase64String(result);
                     }
                 }
             }
         }
-
-        private static string Decrypt(string encryptedText, string key)
-        {
-            var fullCipher = Convert.FromBase64String(encryptedText);
-            var iv = new byte[16];
-            var cipher = new byte[16];
-
-            Buffer.BlockCopy(fullCipher, 0, iv, 0, iv.Length);
-            Buffer.BlockCopy(fullCipher, iv.Length, cipher, 0, iv.Length);
-
-            var keyBytes = Encoding.UTF8.GetBytes(key);
-            using (var aesAlg = Aes.Create())
-            {
-                using (var decryptor = aesAlg.CreateDecryptor(keyBytes, iv))
-                {
-                    using (var msDecrypt = new MemoryStream(cipher))
-                    {
-                        using (var csDecrypt = new CryptoStream(msDecrypt, decryptor, CryptoStreamMode.Read))
-                        {
-                            using (var srDecrypt = new StreamReader(csDecrypt))
-                            {
-                                return srDecrypt.ReadToEnd();
-                            }
-                        }
-                    }
-                }
-            }
-        }
-
         public User SendPasswordResetLink(string email)
         {
+            // מציאת המשתמש לפי כתובת המייל
             User u = _Iuser.GetAll().FirstOrDefault(u => u.Email == email);
+
+
 
             if (u != null)
             {
-                string encryptedUserId = Encrypt(u.UserId.ToString(), "your-encryption-key");
-
-                string body = $@"
-        <html>
-        <head>
-            <meta charset='UTF-8'>
-            <style>
-                body {{
-                    direction: rtl;
-                    text-align: right;
-                    font-size: 18px;
-                }}
-                a {{
-                    font-size: 20px;
-                }}
-            </style>
-        </head>
-        <body>
-            <p>משתמש יקר,</p>
-            <p>הגשת בקשה לאיפוס סיסמה. אנא לחץ על הקישור הבא לאיפוס הסיסמה שלך:</p>
-            <p><a href='https://foirstein-1-front-aojx.onrender.com/#/reset-password?token={encryptedUserId}'>אפס סיסמה</a></p>
-            <p>אם לא הגשת בקשה זו, תוכל להתעלם מהודעה זו בבטחה.</p>
-            <p>בברכה,<br>צוות האתר שלך</p>
-        </body>
-        </html>";
+                // יצירת טוקן ייחודי לאיפוס הסיסמה
+                string body = @"
+    <html>
+    <head>
+        <meta charset='UTF-8'>
+        <style>
+            body {
+                direction: rtl;
+                text-align: right;
+                font-size: 18px;
+            }
+            a {
+                font-size: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <p>משתמש יקר,</p>
+        <p>הגשת בקשה לאיפוס סיסמה. אנא לחץ על הקישור הבא לאיפוס הסיסמה שלך:</p>
+        <p><a href='https://foirstein-1-front-aojx.onrender.com/#/reset-password?token={encryptedUserId}'>אפס סיסמה</a></p>
+        <p>אם לא הגשת בקשה זו, תוכל להתעלם מהודעה זו בבטחה.</p>
+        <p>בברכה,<br>צוות האתר שלך</p>
+    </body>
+    </html>";
 
                 _gmailSmtpClient.SendEmail(email, "איפוס סיסמא", body);
-            }
 
+                // שליחת המייל עם קישור לאיפוס סיסמה
+
+            }
             return u;
         }
 
