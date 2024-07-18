@@ -27,8 +27,7 @@ namespace BLL.functions
         Iuser _Iuser;
         static IMapper mapper;
         private readonly GmailSMTP _gmailSmtpClient;
-        private readonly TokenManager _tokenManager;
-        public string s="";
+       public string s="";
         public User_bll(Iuser iUser, IConfiguration configuration)
         {
             _Iuser = iUser;
@@ -152,51 +151,6 @@ namespace BLL.functions
                 };
             }
         }
-        public string GenerateJwtToken(User_modelBll user)
-        {
-            var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("YourSuperSecretKeyThatIsAtLeast32CharactersLong"));
-            var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);
-
-            var username = $"{user.Fname} {user.Sname}";
-            var claims = new[]
-            {
-        new Claim(JwtRegisteredClaimNames.Sub, username),
-        new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
-        new Claim(ClaimTypes.Role, user.Role),
-        new Claim("tz", user.Tz),
-         new Claim("userId", user.UserId.ToString()),
-    };
-
-            var token = new JwtSecurityToken(
-                issuer: "yourdomain.com",
-                audience: "yourdomain.com",
-                claims: claims,
-                expires: DateTime.Now.AddHours(1),
-                signingCredentials: credentials
-            );
-
-            return new JwtSecurityTokenHandler().WriteToken(token);
-        }
-        public string GenerateShortJwtToken(int userId)
-        {
-            var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("YourSuperSecretKeyThatIsAtLeast32CharactersLong"));
-            var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);
-
-            var claims = new[]
-            {
-        new Claim("userId", userId.ToString())
-    };
-
-            var token = new JwtSecurityToken(
-                issuer: "yourdomain.com",
-                audience: "yourdomain.com",
-                claims: claims,
-                expires: DateTime.Now.AddHours(1),
-                signingCredentials: credentials
-            );
-
-            return new JwtSecurityTokenHandler().WriteToken(token);
-        }
         public TokenValidationResponse ValidateToken(string token)
         {
             var tokenHandler = new JwtSecurityTokenHandler();
@@ -251,8 +205,8 @@ namespace BLL.functions
             User u = _Iuser.GetAll().FirstOrDefault(u => u.Email == email);
             if (u != null)
             {
-               
-                string token = GenerateShortJwtToken(u.UserId);
+                var userDtos = mapper.Map<User_modelBll>(u);
+                string token = GenerateJwtToken(userDtos);
                 string body = $@"
 <html>
 <head>
@@ -286,7 +240,31 @@ namespace BLL.functions
 
 
 
-    
+        private string GenerateJwtToken(User_modelBll user)
+        {
+            var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("YourSuperSecretKeyThatIsAtLeast32CharactersLong"));
+            var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);
+
+            var username = $"{user.Fname} {user.Sname}";
+            var claims = new[]
+            {
+        new Claim(JwtRegisteredClaimNames.Sub, username),
+        new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
+        new Claim(ClaimTypes.Role, user.Role),
+        new Claim("tz", user.Tz),
+         new Claim("userId", user.UserId.ToString()),
+    };
+
+            var token = new JwtSecurityToken(
+                issuer: "yourdomain.com",
+                audience: "yourdomain.com",
+                claims: claims,
+                expires: DateTime.Now.AddHours(1),
+                signingCredentials: credentials
+            );
+
+            return new JwtSecurityTokenHandler().WriteToken(token);
+        }
         public class UserLogin
         {
             public string Tz { get; set; }
