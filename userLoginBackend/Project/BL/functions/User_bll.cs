@@ -221,9 +221,6 @@ namespace BLL.functions
         a {{
             font-size: 20px;
         }}
-        p {{
-            margin: 0 0 10px 0;
-        }}
     </style>
 </head>
 <body>
@@ -241,6 +238,7 @@ namespace BLL.functions
             }
             return u;
         }
+
 
 
 
