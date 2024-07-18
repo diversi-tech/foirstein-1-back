@@ -126,7 +126,7 @@ namespace BLL.functions
             }
             if (user.PasswordHash == password)
             {
-                var token = _tokenManager.GenerateJwtToken(user);
+                var token = GenerateJwtToken(user);
                 return new Response
                 {
                     token = token,
@@ -151,6 +151,51 @@ namespace BLL.functions
                     }
                 };
             }
+        }
+        public string GenerateJwtToken(User_modelBll user)
+        {
+            var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("YourSuperSecretKeyThatIsAtLeast32CharactersLong"));
+            var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);
+
+            var username = $"{user.Fname} {user.Sname}";
+            var claims = new[]
+            {
+        new Claim(JwtRegisteredClaimNames.Sub, username),
+        new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
+        new Claim(ClaimTypes.Role, user.Role),
+        new Claim("tz", user.Tz),
+         new Claim("userId", user.UserId.ToString()),
+    };
+
+            var token = new JwtSecurityToken(
+                issuer: "yourdomain.com",
+                audience: "yourdomain.com",
+                claims: claims,
+                expires: DateTime.Now.AddHours(1),
+                signingCredentials: credentials
+            );
+
+            return new JwtSecurityTokenHandler().WriteToken(token);
+        }
+        public string GenerateShortJwtToken(int userId)
+        {
+            var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("YourSuperSecretKeyThatIsAtLeast32CharactersLong"));
+            var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);
+
+            var claims = new[]
+            {
+        new Claim("userId", userId.ToString())
+    };
+
+            var token = new JwtSecurityToken(
+                issuer: "yourdomain.com",
+                audience: "yourdomain.com",
+                claims: claims,
+                expires: DateTime.Now.AddHours(1),
+                signingCredentials: credentials
+            );
+
+            return new JwtSecurityTokenHandler().WriteToken(token);
         }
         public TokenValidationResponse ValidateToken(string token)
         {
@@ -207,7 +252,7 @@ namespace BLL.functions
             if (u != null)
             {
                
-                string token = _tokenManager.GenerateShortJwtToken(u.UserId);
+                string token = GenerateShortJwtToken(u.UserId);
                 string body = $@"
 <html>
 <head>
