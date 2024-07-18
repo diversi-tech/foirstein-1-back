@@ -22,6 +22,7 @@ namespace Librarians.Repository.Repository
             message.From.Add(new MailboxAddress("", gmailAddress));
             message.To.Add(new MailboxAddress("", toAddress));
             message.Subject = subject;
+            message.ReplyTo.Add(new MailboxAddress("", "no-reply@yourdomain.com")); // הוספת שדה Reply-To
             var bodyBuilder = new BodyBuilder { HtmlBody = isBodyHtml ? body : null, TextBody = !isBodyHtml ? body : null };
             message.Body = bodyBuilder.ToMessageBody();
             try

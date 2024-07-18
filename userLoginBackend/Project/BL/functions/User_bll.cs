@@ -197,8 +197,8 @@ namespace BLL.functions
                 };
             }
         }
-     
-      
+
+
 
         public User SendPasswordResetLink(string email)
         {
@@ -228,6 +228,8 @@ namespace BLL.functions
     <p><a href='https://foirstein-1-front-aojx.onrender.com/#/reset-password?token={HttpUtility.UrlEncode(token)}'>אפס סיסמה</a></p>
     <p>אם לא הגשת בקשה זו, תוכל להתעלם מהודעה זו בבטחה.</p>
     <p>בברכה,<br>צוות האתר שלך</p>
+    <hr>
+    <p>הודעה זו נשלחה ממערכת אוטומטית. אין להשיב על הודעה זו.</p>
 </body>
 </html>";
 
@@ -235,6 +237,7 @@ namespace BLL.functions
             }
             return u;
         }
+
 
 
 
