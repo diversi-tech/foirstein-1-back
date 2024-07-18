@@ -203,6 +203,7 @@ namespace BLL.functions
         public User SendPasswordResetLink(string email)
         {
             User u = _Iuser.GetAll().FirstOrDefault(u => u.Email == email);
+            var UserName = $"{u.Fname} {u.Sname}";
             if (u != null)
             {
                 var userDtos = mapper.Map<User_modelBll>(u);
@@ -223,7 +224,7 @@ namespace BLL.functions
     </style>
 </head>
 <body>
-    <p>משתמש יקר,</p>
+    <p>{UserName},</p>
     <p>הגשת בקשה לאיפוס סיסמה. אנא לחץ על הקישור הבא לאיפוס הסיסמה שלך:</p>
     <p><a href='https://foirstein-1-front-aojx.onrender.com/#/reset-password?token={HttpUtility.UrlEncode(token)}'>אפס סיסמה</a></p>
     <p>אם לא הגשת בקשה זו, תוכל להתעלם מהודעה זו בבטחה.</p>
