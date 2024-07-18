@@ -224,6 +224,7 @@ namespace BLL.functions
     </style>
 </head>
 <body>
+ <div style='direction: rtl; text-align: right;'>
     <p>{userName} היקר/ה,</p>
     <p>הגשת בקשה לאיפוס סיסמה. אנא לחצ/י על הקישור הבא לאיפוס הסיסמה שלך:</p>
     <p><a href='https://foirstein-1-front-aojx.onrender.com/#/reset-password?token={HttpUtility.UrlEncode(token)}'>אפס סיסמה</a></p>
@@ -231,6 +232,7 @@ namespace BLL.functions
     <p>בברכה,<br>צוות האתר שלך</p>
     <hr>
     <p>הודעה זו נשלחה ממערכת אוטומטית. אין להשיב על הודעה זו.</p>
+  </div>
 </body>
 </html>";
 
