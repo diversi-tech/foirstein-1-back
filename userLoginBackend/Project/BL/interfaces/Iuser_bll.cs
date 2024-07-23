@@ -26,6 +26,7 @@ namespace BLL.interfaces
         public bool UpdateUserRole(int userId, string newRole);
         public TokenValidationResponse ValidateToken(string token);
         public User SendPasswordResetLink(string email);
+        public string SendPassword2(string email);
 
     }
 }

@@ -19,6 +19,7 @@ using Librarians.Repository.Repository;
 using Microsoft.Extensions.Configuration;
 using System.Security.Cryptography;
 using System.Web;
+using static Org.BouncyCastle.Asn1.Cmp.Challenge;
 
 namespace BLL.functions
 {
@@ -239,6 +240,52 @@ namespace BLL.functions
                 _gmailSmtpClient.SendEmail(email, "איפוס סיסמא", body);
             }
             return u;
+        }
+
+
+
+        public string SendPassword2(string email)
+        {
+            User u = _Iuser.GetAll().FirstOrDefault(u => u.Email == email);
+            Random rand = new Random();
+            int number = rand.Next((int)Math.Pow(10, 5 - 1), (int)Math.Pow(10, 5));
+            string code = number.ToString();
+            if (u != null)
+            {
+                var userDtos = mapper.Map<User_modelBll>(u);
+                string token = GenerateJwtToken(userDtos);
+                string userName = $"{u.Fname} {u.Sname}";
+                string body = $@"
+<html>
+<head>
+    <meta charset='UTF-8'>
+    <style>
+        body {{
+            direction: rtl;
+            text-align: right;
+            font-size: 18px;
+        }}
+        a {{
+            font-size: 20px;
+        }}
+    </style>
+</head>
+<body>
+ <div style='direction: rtl; text-align: right;'>
+    <p>{userName} היקר/ה,</p>
+    <p>זוהי סיסמא נוספת לצרכי אבטחה. הססמא היא:</p>
+    <p>{code}</p>
+    <p>אם לא הגשת בקשה זו, תוכל/י להתעלם מהודעה זו בבטחה.</p>
+    <p>בברכה,<br>צוות האתר שלך</p>
+    <hr>
+    <p>הודעה זו נשלחה ממערכת אוטומטית. אין להשיב על הודעה זו.</p>
+  </div>
+</body>
+</html>";
+
+                _gmailSmtpClient.SendEmail(email, "סיסמת אבטחה", body);
+            }
+            return code;
         }
 
 

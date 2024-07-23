@@ -8,6 +8,8 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using BLL.models_bll;
 using static BLL.functions.User_bll;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.Extensions.Configuration;
+
 
 namespace userLoginBackend.Controllers
 {
@@ -17,9 +19,12 @@ namespace userLoginBackend.Controllers
     public class UsersController : ControllerBase
     {
         Iuser_bll user;
-        public UsersController(Iuser_bll user)
+        private readonly IConfiguration _configuration;
+
+        public UsersController(Iuser_bll user, IConfiguration configuration)
         {
             this.user = user;
+            _configuration = configuration;
         }
         [HttpGet("getUsers")]
 
@@ -69,6 +74,14 @@ namespace userLoginBackend.Controllers
         public ActionResult<User> CheckEmail(string email)
         {
             return user.SendPasswordResetLink(email);
+
+
+        }
+        [HttpGet("password2/{email}")]
+
+        public string SendEmail(string email)
+        {
+            return user.SendPassword2(email);
 
 
         }
@@ -123,6 +136,20 @@ namespace userLoginBackend.Controllers
             public int UserId { get; set; }
             public string NewPassword { get; set; }
         }
+        //[HttpGet("gmail-credentials")]
+        //public ActionResult<GmailCredentials> GetGmailCredentials()
+        //{
+        //    string gmailAddress = _configuration["Gmail:Address"];
+        //    string gmailPassword = _configuration["Gmail:Password"];
+        //    return Ok(new GmailCredentials { Address = gmailAddress, Password = gmailPassword });
+        //}
+
+        public class GmailCredentials
+        {
+            public string Address { get; set; }
+            public string Password { get; set; }
+        }
+
 
 
     }
