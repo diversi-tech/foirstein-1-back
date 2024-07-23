@@ -341,3 +341,17 @@ C:\Users\This User\Desktop\הנדסאים\פרקטיקום\ענן back חדשש�
 C:\Users\This User\Desktop\הנדסאים\פרקטיקום\ענן back חדשששששש\foirstein-1-back\userLoginBackend\Project\Dal\obj\Debug\net7.0\DAL.pdb
 C:\Users\This User\Desktop\הנדסאים\פרקטיקום\ענן back חדשששששש\foirstein-1-back\userLoginBackend\Project\Dal\obj\Debug\net7.0\DAL.genruntimeconfig.cache
 C:\Users\This User\Desktop\הנדסאים\פרקטיקום\ענן back חדשששששש\foirstein-1-back\userLoginBackend\Project\Dal\obj\Debug\net7.0\ref\DAL.dll
+C:\Users\משתמש\Desktop\פרויקט מהענן\back\foirstein-1-back\userLoginBackend\Project\Dal\bin\Debug\net7.0\DAL.deps.json
+C:\Users\משתמש\Desktop\פרויקט מהענן\back\foirstein-1-back\userLoginBackend\Project\Dal\bin\Debug\net7.0\DAL.runtimeconfig.json
+C:\Users\משתמש\Desktop\פרויקט מהענן\back\foirstein-1-back\userLoginBackend\Project\Dal\bin\Debug\net7.0\DAL.dll
+C:\Users\משתמש\Desktop\פרויקט מהענן\back\foirstein-1-back\userLoginBackend\Project\Dal\bin\Debug\net7.0\DAL.pdb
+C:\Users\משתמש\Desktop\פרויקט מהענן\back\foirstein-1-back\userLoginBackend\Project\Dal\obj\Debug\net7.0\DAL.csproj.AssemblyReference.cache
+C:\Users\משתמש\Desktop\פרויקט מהענן\back\foirstein-1-back\userLoginBackend\Project\Dal\obj\Debug\net7.0\DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\משתמש\Desktop\פרויקט מהענן\back\foirstein-1-back\userLoginBackend\Project\Dal\obj\Debug\net7.0\DAL.AssemblyInfoInputs.cache
+C:\Users\משתמש\Desktop\פרויקט מהענן\back\foirstein-1-back\userLoginBackend\Project\Dal\obj\Debug\net7.0\DAL.AssemblyInfo.cs
+C:\Users\משתמש\Desktop\פרויקט מהענן\back\foirstein-1-back\userLoginBackend\Project\Dal\obj\Debug\net7.0\DAL.csproj.CoreCompileInputs.cache
+C:\Users\משתמש\Desktop\פרויקט מהענן\back\foirstein-1-back\userLoginBackend\Project\Dal\obj\Debug\net7.0\DAL.dll
+C:\Users\משתמש\Desktop\פרויקט מהענן\back\foirstein-1-back\userLoginBackend\Project\Dal\obj\Debug\net7.0\refint\DAL.dll
+C:\Users\משתמש\Desktop\פרויקט מהענן\back\foirstein-1-back\userLoginBackend\Project\Dal\obj\Debug\net7.0\DAL.pdb
+C:\Users\משתמש\Desktop\פרויקט מהענן\back\foirstein-1-back\userLoginBackend\Project\Dal\obj\Debug\net7.0\DAL.genruntimeconfig.cache
+C:\Users\משתמש\Desktop\פרויקט מהענן\back\foirstein-1-back\userLoginBackend\Project\Dal\obj\Debug\net7.0\ref\DAL.dll

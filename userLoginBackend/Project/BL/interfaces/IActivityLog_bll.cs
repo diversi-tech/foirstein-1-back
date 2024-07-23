@@ -10,6 +10,6 @@ namespace BLL.interfaces
     public interface IActivityLog_bll
     {
         List<ActivityLog_modelBll> getall();
-
+        int Add(ActivityLog_modelBll activity);
     }
 }

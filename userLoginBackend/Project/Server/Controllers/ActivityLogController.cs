@@ -27,5 +27,11 @@ namespace userLoginBackend.Controllers
         {
             return Ok(_IActivityLog_bll.getall());
         }
+
+        [HttpPost("addActivity")]
+        public ActionResult<bool> add1(ActivityLog_modelBll activity)
+        {
+            return Ok(_IActivityLog_bll.Add(activity));
+        }
     }
 }

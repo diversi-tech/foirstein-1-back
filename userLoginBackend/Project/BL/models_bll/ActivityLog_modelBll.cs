@@ -17,5 +17,7 @@ namespace BLL.models_bll
         public DateTime? Timestamp { get; set; }
 
         public int? UserId1 { get; set; }
+        public int UserId1NavigationUserId { get; set; }
+
     }
 }

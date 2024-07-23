@@ -6,6 +6,7 @@ using DAL.Interfaces;
 using DAL.models;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -36,6 +37,20 @@ namespace BLL.functions
             return mapper.Map<List<ActivityLog_modelBll>>(activityLogs);
         }
 
+        public int Add(ActivityLog_modelBll activity)
+        {
+            try
+            {
+
+                ActivityLog a = _Ilog.Add(mapper.Map<ActivityLog_modelBll, ActivityLog>(activity));
+                return a.LogId;
+
+            }
+            catch
+            {
+                return -1;
+            }
+        }
     }
 
 

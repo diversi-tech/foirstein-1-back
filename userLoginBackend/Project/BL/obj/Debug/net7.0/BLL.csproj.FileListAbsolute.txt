@@ -230,3 +230,18 @@ C:\Users\This User\Desktop\הנדסאים\פרקטיקום\ענן back חדשש�
 C:\Users\This User\Desktop\הנדסאים\פרקטיקום\ענן back חדשששששש\foirstein-1-back\userLoginBackend\Project\BL\obj\Debug\net7.0\refint\BLL.dll
 C:\Users\This User\Desktop\הנדסאים\פרקטיקום\ענן back חדשששששש\foirstein-1-back\userLoginBackend\Project\BL\obj\Debug\net7.0\BLL.pdb
 C:\Users\This User\Desktop\הנדסאים\פרקטיקום\ענן back חדשששששש\foirstein-1-back\userLoginBackend\Project\BL\obj\Debug\net7.0\ref\BLL.dll
+C:\Users\משתמש\Desktop\פרויקט מהענן\back\foirstein-1-back\userLoginBackend\Project\BL\bin\Debug\net7.0\BLL.deps.json
+C:\Users\משתמש\Desktop\פרויקט מהענן\back\foirstein-1-back\userLoginBackend\Project\BL\bin\Debug\net7.0\BLL.dll
+C:\Users\משתמש\Desktop\פרויקט מהענן\back\foirstein-1-back\userLoginBackend\Project\BL\bin\Debug\net7.0\BLL.pdb
+C:\Users\משתמש\Desktop\פרויקט מהענן\back\foirstein-1-back\userLoginBackend\Project\BL\bin\Debug\net7.0\DAL.dll
+C:\Users\משתמש\Desktop\פרויקט מהענן\back\foirstein-1-back\userLoginBackend\Project\BL\bin\Debug\net7.0\DAL.pdb
+C:\Users\משתמש\Desktop\פרויקט מהענן\back\foirstein-1-back\userLoginBackend\Project\BL\obj\Debug\net7.0\BLL.csproj.AssemblyReference.cache
+C:\Users\משתמש\Desktop\פרויקט מהענן\back\foirstein-1-back\userLoginBackend\Project\BL\obj\Debug\net7.0\BLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\משתמש\Desktop\פרויקט מהענן\back\foirstein-1-back\userLoginBackend\Project\BL\obj\Debug\net7.0\BLL.AssemblyInfoInputs.cache
+C:\Users\משתמש\Desktop\פרויקט מהענן\back\foirstein-1-back\userLoginBackend\Project\BL\obj\Debug\net7.0\BLL.AssemblyInfo.cs
+C:\Users\משתמש\Desktop\פרויקט מהענן\back\foirstein-1-back\userLoginBackend\Project\BL\obj\Debug\net7.0\BLL.csproj.CoreCompileInputs.cache
+C:\Users\משתמש\Desktop\פרויקט מהענן\back\foirstein-1-back\userLoginBackend\Project\BL\obj\Debug\net7.0\BLL.csproj.CopyComplete
+C:\Users\משתמש\Desktop\פרויקט מהענן\back\foirstein-1-back\userLoginBackend\Project\BL\obj\Debug\net7.0\BLL.dll
+C:\Users\משתמש\Desktop\פרויקט מהענן\back\foirstein-1-back\userLoginBackend\Project\BL\obj\Debug\net7.0\refint\BLL.dll
+C:\Users\משתמש\Desktop\פרויקט מהענן\back\foirstein-1-back\userLoginBackend\Project\BL\obj\Debug\net7.0\BLL.pdb
+C:\Users\משתמש\Desktop\פרויקט מהענן\back\foirstein-1-back\userLoginBackend\Project\BL\obj\Debug\net7.0\ref\BLL.dll

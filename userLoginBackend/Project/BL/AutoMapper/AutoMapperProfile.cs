@@ -33,10 +33,10 @@ namespace BLL.AutoMapper
 
             // המרה בין ActivityLog ו-ActivityLog_bll
             CreateMap<ActivityLog, ActivityLog_modelBll>()
-             .ForMember(dest => dest.UserId1, opt => opt.MapFrom(src => src.UserId1NavigationUser.UserId))
-             .ForMember(dest => dest.UserId, opt => opt.MapFrom(src => src.UserId1NavigationUser.Tz))
+             .ForMember(dest => dest.UserId1NavigationUserId, opt => opt.MapFrom(src => src.UserId1NavigationUser.UserId))
+             //.ForMember(dest => dest.UserId, opt => opt.MapFrom(src => src.UserId1NavigationUser.Tz))
              .ReverseMap();
-
+            CreateMap<ActivityLog_modelBll, ActivityLog>();
             CreateMap<SearchLog, searchLogModelBll>()
               .ForMember(dest => dest.UserId, opt => opt.MapFrom(src => src.User.UserId))
               .ReverseMap();
