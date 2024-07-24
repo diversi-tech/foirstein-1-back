@@ -9,7 +9,6 @@ namespace BLL.models_bll
 {
     public class User_modelBll
     {
-
         public int UserId { get; set; }
 
         public string Tz { get; set; }

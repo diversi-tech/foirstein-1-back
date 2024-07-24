@@ -23,7 +23,7 @@ public partial class Item
 
     public DateTime UpdatedAt { get; set; }
 
-    public DateOnly PublishingYear { get; set; }
+    public int PublishingYear { get; set; }
 
     public virtual ICollection<BorrowRequest> BorrowRequests { get; set; } = new List<BorrowRequest>();
 

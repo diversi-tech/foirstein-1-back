@@ -11,6 +11,8 @@ public partial class User
 
     public string Sname { get; set; }
 
+    public string Fname { get; set; }
+
     public string PasswordHash { get; set; }
 
     public string Email { get; set; }
@@ -26,8 +28,6 @@ public partial class User
     public DateTime UserDob { get; set; }
 
     public string PhoneNumber { get; set; }
-
-    public string Fname { get; set; }
 
     public string Megama { get; set; }
 

@@ -25,6 +25,8 @@ public partial class Librarydb32cvContext : DbContext
 
     public virtual DbSet<ItemTag> ItemTags { get; set; }
 
+    public virtual DbSet<LibrarianPermission> LibrarianPermissions { get; set; }
+
     public virtual DbSet<RatingNote> RatingNotes { get; set; }
 
     public virtual DbSet<Report> Reports { get; set; }
@@ -41,6 +43,10 @@ public partial class Librarydb32cvContext : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
+        modelBuilder
+            .HasPostgresEnum("itemtype_enum", new[] { "Book", "File", "Physical" })
+            .HasPostgresEnum("role_enum", new[] { "Student", "Librarian", "Admin" });
+
         modelBuilder.Entity<ActivityLog>(entity =>
         {
             entity.HasKey(e => e.LogId);
@@ -82,11 +88,12 @@ public partial class Librarydb32cvContext : DbContext
 
         modelBuilder.Entity<Item>(entity =>
         {
+            entity.HasIndex(e => e.Id, "IX_Items_Id");
+
             entity.Property(e => e.Author).IsRequired();
             entity.Property(e => e.CreatedAt).HasColumnType("timestamp without time zone");
             entity.Property(e => e.Description).IsRequired();
             entity.Property(e => e.FilePath).IsRequired();
-            entity.Property(e => e.PublishingYear).HasDefaultValueSql("'-infinity'::date");
             entity.Property(e => e.Title).IsRequired();
             entity.Property(e => e.UpdatedAt).HasColumnType("timestamp without time zone");
         });
@@ -97,11 +104,27 @@ public partial class Librarydb32cvContext : DbContext
 
             entity.HasIndex(e => e.ItemId, "IX_ItemTag_ItemId");
 
+            entity.HasIndex(e => new { e.ItemId, e.TagId }, "IX_ItemTag_ItemId_TagId");
+
             entity.HasIndex(e => e.TagId, "IX_ItemTag_TagId");
 
             entity.HasOne(d => d.Item).WithMany(p => p.ItemTags).HasForeignKey(d => d.ItemId);
 
             entity.HasOne(d => d.Tag).WithMany(p => p.ItemTags).HasForeignKey(d => d.TagId);
+        });
+
+        modelBuilder.Entity<LibrarianPermission>(entity =>
+        {
+            entity
+                .HasNoKey()
+                .ToTable("librarian_permissions");
+
+            entity.Property(e => e.UserId).HasColumnName("user_id");
+
+            entity.HasOne(d => d.User).WithMany()
+                .HasForeignKey(d => d.UserId)
+                .OnDelete(DeleteBehavior.Cascade)
+                .HasConstraintName("librarian_permissions_user_id_fkey");
         });
 
         modelBuilder.Entity<RatingNote>(entity =>
@@ -147,15 +170,13 @@ public partial class Librarydb32cvContext : DbContext
 
         modelBuilder.Entity<User>(entity =>
         {
-            entity.Property(e => e.Fname)
-                .IsRequired()
-                .HasDefaultValueSql("''::text");
-            entity.Property(e => e.Megama)
-                .IsRequired()
-                .HasDefaultValueSql("''::text");
+            entity.Property(e => e.Fname).IsRequired();
+            entity.Property(e => e.Megama).IsRequired();
             entity.Property(e => e.PasswordHash).IsRequired();
             entity.Property(e => e.PhoneNumber).IsRequired();
-            entity.Property(e => e.Role).IsRequired();
+            entity.Property(e => e.Role)
+                .IsRequired()
+                .HasMaxLength(50);
             entity.Property(e => e.Sname).IsRequired();
             entity.Property(e => e.Tz)
                 .IsRequired()

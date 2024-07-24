@@ -17,5 +17,7 @@ public partial class BorrowApprovalRequest
 
     public DateTime? ApprovalDate { get; set; }
 
+    public int LibrariansId { get; set; }
+
     public virtual User User { get; set; }
 }
