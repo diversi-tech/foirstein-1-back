@@ -228,7 +228,7 @@ namespace BLL.functions
  <div style='direction: rtl; text-align: right;'>
     <p>{userName} היקר/ה,</p>
     <p>הגשת בקשה לאיפוס סיסמה. אנא לחצ/י על הקישור הבא לאיפוס הסיסמה שלך:</p>
-    <p><a href='https://foirstein-1-front-aojx.onrender.com/#/reset-password?token={HttpUtility.UrlEncode(token)}'>אפס סיסמה</a></p>
+    <p><a href='https://login.foirstein.diversitech.co.il/#/reset-password?token={HttpUtility.UrlEncode(token)}'>אפס סיסמה</a></p>
     <p>אם לא הגשת בקשה זו, תוכל/י להתעלם מהודעה זו בבטחה.</p>
     <p>בברכה,<br>צוות האתר שלך</p>
     <hr>
