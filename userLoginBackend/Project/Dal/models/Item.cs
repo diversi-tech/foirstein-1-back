@@ -25,7 +25,27 @@ public partial class Item
 
     public int PublishingYear { get; set; }
 
+    public string Edition { get; set; }
+
+    public string Series { get; set; }
+
+    public int NumOfSeries { get; set; }
+
+    public string Language { get; set; }
+
+    public string Note { get; set; }
+
+    public string AccompanyingMaterial { get; set; }
+
+    public int ItemLevel { get; set; }
+
+    public string HebrewPublicationYear { get; set; }
+
+    public int NumberOfDaysOfQuestion { get; set; }
+
     public virtual ICollection<BorrowRequest> BorrowRequests { get; set; } = new List<BorrowRequest>();
+
+    public virtual ICollection<Borrowing> Borrowings { get; set; } = new List<Borrowing>();
 
     public virtual ICollection<ItemTag> ItemTags { get; set; } = new List<ItemTag>();
 

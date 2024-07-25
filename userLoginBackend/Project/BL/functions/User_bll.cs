@@ -301,14 +301,25 @@ namespace BLL.functions
             var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);
 
             var username = $"{user.Fname} {user.Sname}";
-            var claims = new[]
+            var claims = new List<Claim>
+{
+    new Claim(JwtRegisteredClaimNames.Sub, username),
+    new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
+    new Claim(ClaimTypes.Role, user.Role),
+    new Claim("tz", user.Tz),
+    new Claim("userId", user.UserId.ToString()),
+};
+            if (user.Role == "Librarian")
             {
-        new Claim(JwtRegisteredClaimNames.Sub, username),
-        new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
-        new Claim(ClaimTypes.Role, user.Role),
-        new Claim("tz", user.Tz),
-         new Claim("userId", user.UserId.ToString()),
-    };
+                var permissions = _Iuser.getPermissionForLibrarian(user.UserId).Permissions;
+                if (permissions != null)
+                {
+                    foreach (var permission in permissions)
+                    {
+                        claims.Add(new Claim("permission", permission.ToString()));
+                    }
+                }
+            }
 
             var token = new JwtSecurityToken(
                 issuer: "yourdomain.com",

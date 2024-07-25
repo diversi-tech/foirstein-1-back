@@ -37,6 +37,10 @@ public partial class User
 
     public virtual ICollection<BorrowRequest> BorrowRequests { get; set; } = new List<BorrowRequest>();
 
+    public virtual ICollection<Borrowing> BorrowingLibrarians { get; set; } = new List<Borrowing>();
+
+    public virtual ICollection<Borrowing> BorrowingStudents { get; set; } = new List<Borrowing>();
+
     public virtual ICollection<RatingNote> RatingNotes { get; set; } = new List<RatingNote>();
 
     public virtual ICollection<Report> Reports { get; set; } = new List<Report>();

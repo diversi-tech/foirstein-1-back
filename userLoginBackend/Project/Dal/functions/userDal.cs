@@ -86,6 +86,11 @@ namespace DAL.functions
             return existingUser;
 
         }
+
+        public LibrarianPermission getPermissionForLibrarian(int id)
+        {
+            return LiberiansDbContext.LibrarianPermissions.FirstOrDefault(p => p.UserId == id);
+        }
     }
 }
 
