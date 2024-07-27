@@ -91,6 +91,11 @@ namespace DAL.functions
         {
             return LiberiansDbContext.LibrarianPermissions.FirstOrDefault(p => p.UserId == id);
         }
+
+        public List<LibrarianPermission> GetAllPermissions()
+        {
+            return LiberiansDbContext.LibrarianPermissions.ToList();
+        }
     }
 }
 

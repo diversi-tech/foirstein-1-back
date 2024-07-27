@@ -133,7 +133,7 @@ namespace BLL.functions
                     User = new UserLogin
                     {
                         Role = user.Role,
-                       // UserName = user.UserName,
+                        UserName = $"{user.Fname} {user.Sname}",
                         Tz = user.Tz
                     }
                 };
@@ -146,7 +146,7 @@ namespace BLL.functions
                     User = new UserLogin
                     {
                         Role = user.Role,
-                       // UserName = user.UserName,
+                        UserName = $"{user.Fname} {user.Sname}",
                         Tz = user.Tz
                     }
                 };
@@ -331,6 +331,13 @@ namespace BLL.functions
 
             return new JwtSecurityTokenHandler().WriteToken(token);
         }
+
+        public List<LibrarianPermissionBll> GetPermissions()
+        {
+           List<LibrarianPermission> librarianPermissions = _Iuser.GetAllPermissions();
+            return mapper.Map<List<LibrarianPermissionBll>>(librarianPermissions);
+        }
+
         public class UserLogin
         {
             public string Tz { get; set; }

@@ -2970,11 +2970,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\This User\\Desktop\\הנדסאים\\פרקטיקום\\ענן ענן back חדש חדש חדש\\foirstein-1-back\\userLoginBackend\\Project\\Dal\\DAL.csproj",
+      "projectUniqueName": "C:\\Users\\This User\\Desktop\\הנדסאים\\פרקטיקום\\סופי ענן Back\\foirstein-1-back\\userLoginBackend\\Project\\Dal\\DAL.csproj",
       "projectName": "DAL",
-      "projectPath": "C:\\Users\\This User\\Desktop\\הנדסאים\\פרקטיקום\\ענן ענן back חדש חדש חדש\\foirstein-1-back\\userLoginBackend\\Project\\Dal\\DAL.csproj",
+      "projectPath": "C:\\Users\\This User\\Desktop\\הנדסאים\\פרקטיקום\\סופי ענן Back\\foirstein-1-back\\userLoginBackend\\Project\\Dal\\DAL.csproj",
       "packagesPath": "C:\\Users\\This User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\This User\\Desktop\\הנדסאים\\פרקטיקום\\ענן ענן back חדש חדש חדש\\foirstein-1-back\\userLoginBackend\\Project\\Dal\\obj\\",
+      "outputPath": "C:\\Users\\This User\\Desktop\\הנדסאים\\פרקטיקום\\סופי ענן Back\\foirstein-1-back\\userLoginBackend\\Project\\Dal\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -10,6 +10,7 @@ namespace DAL.Interfaces
     public interface Iuser
     {
         List<User> GetAll();
+        List<LibrarianPermission> GetAllPermissions();
         LibrarianPermission getPermissionForLibrarian(int id);
         User Add(User user);
         User Update(User user);

@@ -33,6 +33,13 @@ namespace userLoginBackend.Controllers
             return Ok(user.getall());
 
         }
+        [HttpGet("getPermissions")]
+
+        public ActionResult<List<LibrarianPermissionBll>> GetAllPermissions()
+        {
+            return Ok(user.GetPermissions());
+
+        }
         [HttpPost("addUser")]
      
         public ActionResult<User_modelBll> add([FromForm] User_modelBll u)

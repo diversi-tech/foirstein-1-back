@@ -56,6 +56,10 @@ namespace BLL.AutoMapper
               .ReverseMap()
               .ForMember(dest => dest.User, opt => opt.Ignore())
               .ForMember(dest => dest.Item, opt => opt.Ignore());
+
+            CreateMap<LibrarianPermission, LibrarianPermissionBll>()
+       .ReverseMap();
+    
         }
     }
 

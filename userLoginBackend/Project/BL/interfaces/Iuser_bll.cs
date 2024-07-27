@@ -14,7 +14,7 @@ namespace BLL.interfaces
     public interface Iuser_bll
     {
         List<User_modelBll> getall();
-       
+        List<LibrarianPermissionBll> GetPermissions();
         User_modelBll Add(User_modelBll user);
        User_modelBll Update(User_modelBll user);
         bool Delete(int userId);

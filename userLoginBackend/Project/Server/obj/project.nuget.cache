@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "QIKMZorQw+PQmMGrgeXp8YCNUQlmUwmrjg5TfjkOON9lK0uVW13IhJWVIwLXC4HbYRC3aNfYF5h6eaaKclfbhQ==",
+  "dgSpecHash": "B8vA7jVeNZKU9VnqxUTZagcZcqc2I/ZdNAGSqeTKEqaUs8XuZB7bELW7+rXM7AGYr03qAFiuyQjZEsGJhIMcUw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\This User\\Desktop\\הנדסאים\\פרקטיקום\\ענן ענן back חדש חדש חדש\\foirstein-1-back\\userLoginBackend\\Project\\Server\\userLoginBackend.csproj",
+  "projectFilePath": "C:\\Users\\This User\\Desktop\\הנדסאים\\פרקטיקום\\סופי ענן Back\\foirstein-1-back\\userLoginBackend\\Project\\Server\\userLoginBackend.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\This User\\.nuget\\packages\\automapper\\9.0.0\\automapper.9.0.0.nupkg.sha512",
     "C:\\Users\\This User\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\7.0.0\\automapper.extensions.microsoft.dependencyinjection.7.0.0.nupkg.sha512",
