@@ -46,10 +46,10 @@ namespace BLL.functions
         }
         #endregion
         #region GetSearchLogsBorrowRequests
-        public List<SearchLogBorrowRequestDto> GetSearchLogsBorrowRequests(string reportName, string type1)
+        public List<SearchLogBorrowRequestDto> GetSearchLogsBorrowRequests(string reportName, string type1, int userid)
         {
             try
-            {
+            {   var users=_Iuser.GetAll();
                 var logs = _ISearchLogBll.getall(); // שליפת החיפושים
                 var requests = _IBorrowApprovalRequestsBll.getall(); // שליפת הבקשות
                 var query = logs
@@ -74,7 +74,9 @@ namespace BLL.functions
                 {
                     ReportName = reportName,
                     ReportData = ConvertToCustomFormat(query, type1),
-                    GeneratedAt = DateTime.Now
+                    GeneratedAt = DateTime.Now,
+                    GeneratedByNavigationUserId = userid,
+                    GeneratedBy = users.Find(x => x.UserId == userid).Fname
                 };
                 _Ireport.Add(newReport);
                 return query;
@@ -87,7 +89,7 @@ namespace BLL.functions
         }
         #endregion
         #region getCountByDate
-        public List<UserCount> getCountByDate(string reportName, string type)
+        public List<UserCount> getCountByDate(string reportName, string type, int userid)
         {
             var users = _Iuser.GetAll();
             var result = users
@@ -102,7 +104,9 @@ namespace BLL.functions
             {
                 ReportName = reportName,
                 ReportData = ConvertToCustomFormat(result, type),
-                GeneratedAt = DateTime.Now
+                GeneratedAt = DateTime.Now,
+                GeneratedByNavigationUserId = userid,
+                GeneratedBy = users.Find(x => x.UserId == userid).Fname
             };
             _Ireport.Add(newReport);
             return result;
@@ -143,7 +147,7 @@ namespace BLL.functions
             return sb.ToString();
         }
         #endregion
-        public List<UserActivityCount> GetActivityLogs(string reportName, string type)
+        public List<UserActivityCount> GetActivityLogs(string reportName, string type, int userid)
         {
             try
             {
@@ -165,7 +169,7 @@ namespace BLL.functions
                           {
                               UserId1 = logGroup.Key,
                               ActivityCount = logGroup.Count(),
-                              //UserName = user.UserName
+                              UserName = users.Find(x => x.UserId == logGroup.Key ).Fname
                           })
                     .OrderByDescending(x => x.ActivityCount)
                     .ToList();
@@ -174,7 +178,11 @@ namespace BLL.functions
                 {
                     ReportName = reportName,
                     ReportData = ConvertToCustomFormat(result, type),
-                    GeneratedAt = DateTime.Now
+                    GeneratedAt = DateTime.Now,
+                    GeneratedByNavigationUserId = userid,
+                    GeneratedBy = users.Find(x => x.UserId == userid).Fname
+                   
+
                 };
                 _Ireport.Add(newReport);
                 return result;

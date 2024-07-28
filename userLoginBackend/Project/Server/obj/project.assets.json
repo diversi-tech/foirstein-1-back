@@ -4217,23 +4217,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\This User\\.nuget\\packages\\": {},
+    "C:\\Users\\משתמש\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\This User\\Desktop\\הנדסאים\\פרקטיקום\\סופי ענן Back\\foirstein-1-back\\userLoginBackend\\Project\\Server\\userLoginBackend.csproj",
+      "projectUniqueName": "C:\\Users\\משתמש\\Desktop\\הורדת פרויקט 28.07\\foirstein-1-back\\userLoginBackend\\Project\\Server\\userLoginBackend.csproj",
       "projectName": "userLoginBackend",
-      "projectPath": "C:\\Users\\This User\\Desktop\\הנדסאים\\פרקטיקום\\סופי ענן Back\\foirstein-1-back\\userLoginBackend\\Project\\Server\\userLoginBackend.csproj",
-      "packagesPath": "C:\\Users\\This User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\This User\\Desktop\\הנדסאים\\פרקטיקום\\סופי ענן Back\\foirstein-1-back\\userLoginBackend\\Project\\Server\\obj\\",
+      "projectPath": "C:\\Users\\משתמש\\Desktop\\הורדת פרויקט 28.07\\foirstein-1-back\\userLoginBackend\\Project\\Server\\userLoginBackend.csproj",
+      "packagesPath": "C:\\Users\\משתמש\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\משתמש\\Desktop\\הורדת פרויקט 28.07\\foirstein-1-back\\userLoginBackend\\Project\\Server\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\This User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\משתמש\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -4243,15 +4243,14 @@
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "C:\\Program Files\\dotnet\\library-packs": {},
-        "C:\\Program Files\\dotnet\\sdk\\7.0.304\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\This User\\Desktop\\הנדסאים\\פרקטיקום\\סופי ענן Back\\foirstein-1-back\\userLoginBackend\\Project\\BL\\BLL.csproj": {
-              "projectPath": "C:\\Users\\This User\\Desktop\\הנדסאים\\פרקטיקום\\סופי ענן Back\\foirstein-1-back\\userLoginBackend\\Project\\BL\\BLL.csproj"
+            "C:\\Users\\משתמש\\Desktop\\הורדת פרויקט 28.07\\foirstein-1-back\\userLoginBackend\\Project\\BL\\BLL.csproj": {
+              "projectPath": "C:\\Users\\משתמש\\Desktop\\הורדת פרויקט 28.07\\foirstein-1-back\\userLoginBackend\\Project\\BL\\BLL.csproj"
             }
           }
         }
@@ -4316,7 +4315,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }

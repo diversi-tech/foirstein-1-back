@@ -22,21 +22,21 @@ namespace userLoginBackend.Controllers
             return Ok(_IReport_bll.getall());
         }
         [HttpGet("GetSearchLogsBorrowRequests")]
-        public ActionResult<List<SearchLogBorrowRequestDto>> GetSearchLogsBorrowRequests([FromQuery] string reportName, [FromQuery] string type)
+        public ActionResult<List<SearchLogBorrowRequestDto>> GetSearchLogsBorrowRequests([FromQuery] string reportName, [FromQuery] string type, [FromQuery] int userId)
         {
-            var result = _IReport_bll.GetSearchLogsBorrowRequests(reportName, type);
+            var result = _IReport_bll.GetSearchLogsBorrowRequests(reportName, type, userId);
             return Ok(result);
         }
         [HttpGet("getCountByDate")]
-        public ActionResult<List<UserCount>> getCountByDate([FromQuery] string reportName, [FromQuery] string type)
+        public ActionResult<List<UserCount>> getCountByDate([FromQuery] string reportName, [FromQuery] string type, [FromQuery] int userId)
         {
-            var result = _IReport_bll.getCountByDate(reportName, type);
+            var result = _IReport_bll.getCountByDate(reportName, type,userId);
             return Ok(result);
         }
         [HttpGet("activity-report")]
-        public ActionResult<List<UserActivityCount>> GetActivityLogs([FromQuery] string reportName, [FromQuery] string type)
+        public ActionResult<List<UserActivityCount>> GetActivityLogs([FromQuery] string reportName, [FromQuery] string type, [FromQuery] int userId)
         {
-            var activityLogs = _IReport_bll.GetActivityLogs(reportName, type);
+            var activityLogs = _IReport_bll.GetActivityLogs(reportName, type, userId);
             return Ok(activityLogs);
         }
     }
