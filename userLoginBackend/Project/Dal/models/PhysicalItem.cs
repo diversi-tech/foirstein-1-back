@@ -3,13 +3,17 @@ using System.Collections.Generic;
 
 namespace DAL.models;
 
-public partial class Tag
+public partial class PhysicalItem
 {
     public int Id { get; set; }
 
-    public string Name { get; set; }
+    public string Title { get; set; }
 
-    public virtual ICollection<ItemTag> ItemTags { get; set; } = new List<ItemTag>();
+    public string Description { get; set; }
+
+    public string Category { get; set; }
+
+    public int? Amount { get; set; }
 
     public virtual ICollection<PhysicalItemTag> PhysicalItemTags { get; set; } = new List<PhysicalItemTag>();
 }

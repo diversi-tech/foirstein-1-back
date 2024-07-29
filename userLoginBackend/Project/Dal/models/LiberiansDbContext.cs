@@ -29,6 +29,10 @@ public partial class LiberiansDbContext : DbContext
 
     public virtual DbSet<LibrarianPermission> LibrarianPermissions { get; set; }
 
+    public virtual DbSet<PhysicalItem> PhysicalItems { get; set; }
+
+    public virtual DbSet<PhysicalItemTag> PhysicalItemTags { get; set; }
+
     public virtual DbSet<RatingNote> RatingNotes { get; set; }
 
     public virtual DbSet<Report> Reports { get; set; }
@@ -65,6 +69,9 @@ public partial class LiberiansDbContext : DbContext
             entity.ToTable("Borrow_Approval_Requests");
 
             entity.HasIndex(e => e.UserId, "IX_Borrow_Approval_Requests_UserId");
+
+            entity.Property(e => e.FromDate).HasColumnType("timestamp without time zone");
+            entity.Property(e => e.UntilDate).HasColumnType("timestamp without time zone");
 
             entity.HasOne(d => d.User).WithMany(p => p.BorrowApprovalRequests).HasForeignKey(d => d.UserId);
         });
@@ -115,6 +122,7 @@ public partial class LiberiansDbContext : DbContext
             entity.Property(e => e.FilePath).IsRequired();
             entity.Property(e => e.HebrewPublicationYear).IsRequired();
             entity.Property(e => e.Language).IsRequired();
+            entity.Property(e => e.LoanDatelLimit).HasColumnName("LoanDatelLimit ");
             entity.Property(e => e.Note)
                 .IsRequired()
                 .HasMaxLength(225);
@@ -144,6 +152,9 @@ public partial class LiberiansDbContext : DbContext
                 .HasNoKey()
                 .ToTable("librarian_permissions");
 
+            entity.Property(e => e.Id)
+                .ValueGeneratedOnAdd()
+                .HasColumnName("id");
             entity.Property(e => e.Permissions)
                 .IsRequired()
                 .HasColumnName("permissions");
@@ -152,6 +163,38 @@ public partial class LiberiansDbContext : DbContext
                 .HasForeignKey(d => d.UserId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("FK_UserId");
+        });
+
+        modelBuilder.Entity<PhysicalItem>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("physicalitem_pkey");
+
+            entity.ToTable("PhysicalItem");
+
+            entity.Property(e => e.Id).HasDefaultValueSql("nextval('physicalitem_id_seq'::regclass)");
+            entity.Property(e => e.Category).HasMaxLength(255);
+            entity.Property(e => e.Title)
+                .IsRequired()
+                .HasMaxLength(255);
+        });
+
+        modelBuilder.Entity<PhysicalItemTag>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("physicalitemtag_pkey");
+
+            entity.ToTable("PhysicalItemTag");
+
+            entity.Property(e => e.Id).HasDefaultValueSql("nextval('physicalitemtag_id_seq'::regclass)");
+
+            entity.HasOne(d => d.PhysicalItem).WithMany(p => p.PhysicalItemTags)
+                .HasForeignKey(d => d.PhysicalItemId)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("physicalitemtag_physicalitemid_fkey");
+
+            entity.HasOne(d => d.Tag).WithMany(p => p.PhysicalItemTags)
+                .HasForeignKey(d => d.TagId)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("physicalitemtag_tagid_fkey");
         });
 
         modelBuilder.Entity<RatingNote>(entity =>
@@ -197,6 +240,7 @@ public partial class LiberiansDbContext : DbContext
 
         modelBuilder.Entity<User>(entity =>
         {
+            entity.Property(e => e.Activity).HasDefaultValueSql("true");
             entity.Property(e => e.Fname).IsRequired();
             entity.Property(e => e.Megama).IsRequired();
             entity.Property(e => e.PasswordHash).IsRequired();

@@ -31,6 +31,8 @@ public partial class User
 
     public string Megama { get; set; }
 
+    public bool? Activity { get; set; }
+
     public virtual ICollection<ActivityLog> ActivityLogs { get; set; } = new List<ActivityLog>();
 
     public virtual ICollection<BorrowApprovalRequest> BorrowApprovalRequests { get; set; } = new List<BorrowApprovalRequest>();

@@ -27,6 +27,7 @@ namespace DAL.functions
         {
             user.CreatedAt = DateTime.Now;
             user.UpdatedAt = DateTime.Now;
+            user.Activity = true;
             LiberiansDbContext.Users.Add(user);
             LiberiansDbContext.SaveChanges();
             return user;
@@ -52,7 +53,7 @@ namespace DAL.functions
             existingUser.UserDob = user.UserDob != default ? user.UserDob : existingUser.UserDob;
             existingUser.PhoneNumber = user.PhoneNumber ?? existingUser.PhoneNumber;
             existingUser.Megama = user.Megama ?? existingUser.Megama;
-
+            existingUser.Activity = user.Activity ?? existingUser.Activity;
 
             // עדכני תכונות נוספות לפי הצורך
 
@@ -68,7 +69,8 @@ namespace DAL.functions
             {
                 return false;
             }
-            LiberiansDbContext.Users.Remove(existingUser);
+            existingUser.Activity=false;
+            LiberiansDbContext.Users.Update(existingUser);
             LiberiansDbContext.SaveChanges();
             return true;
         }

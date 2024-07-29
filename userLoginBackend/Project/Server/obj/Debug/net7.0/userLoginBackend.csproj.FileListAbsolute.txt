@@ -1999,3 +1999,9 @@ C:\Users\משתמש\Desktop\הורדת פרויקט 28.07\foirstein-1-back\userL
 C:\Users\משתמש\Desktop\הורדת פרויקט 28.07\foirstein-1-back\userLoginBackend\Project\Server\obj\Debug\net7.0\userLoginBackend.pdb
 C:\Users\משתמש\Desktop\הורדת פרויקט 28.07\foirstein-1-back\userLoginBackend\Project\Server\obj\Debug\net7.0\userLoginBackend.genruntimeconfig.cache
 C:\Users\משתמש\Desktop\הורדת פרויקט 28.07\foirstein-1-back\userLoginBackend\Project\Server\obj\Debug\net7.0\ref\userLoginBackend.dll
+C:\Users\User\Desktop\פרטיקום\עותק\foirstein-1-back\userLoginBackend\Project\Server\bin\Debug\net7.0\BouncyCastle.Cryptography.dll
+C:\Users\User\Desktop\פרטיקום\עותק\foirstein-1-back\userLoginBackend\Project\Server\bin\Debug\net7.0\MailKit.dll
+C:\Users\User\Desktop\פרטיקום\עותק\foirstein-1-back\userLoginBackend\Project\Server\bin\Debug\net7.0\MimeKit.dll
+C:\Users\User\Desktop\פרטיקום\עותק\foirstein-1-back\userLoginBackend\Project\Server\bin\Debug\net7.0\System.Formats.Asn1.dll
+C:\Users\User\Desktop\פרטיקום\עותק\foirstein-1-back\userLoginBackend\Project\Server\bin\Debug\net7.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\User\Desktop\פרטיקום\עותק\foirstein-1-back\userLoginBackend\Project\Server\bin\Debug\net7.0\runtimes\win\lib\net7.0\System.Security.Cryptography.Pkcs.dll

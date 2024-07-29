@@ -34,6 +34,8 @@ namespace BLL.models_bll
         public string Fname { get; set; }
 
         public string Megama { get; set; }
+        public bool? Activity { get; set; }
+
     }
 
 

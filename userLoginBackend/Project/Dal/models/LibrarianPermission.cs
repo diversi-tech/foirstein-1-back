@@ -9,5 +9,7 @@ public partial class LibrarianPermission
 
     public string[] Permissions { get; set; }
 
+    public int Id { get; set; }
+
     public virtual User User { get; set; }
 }

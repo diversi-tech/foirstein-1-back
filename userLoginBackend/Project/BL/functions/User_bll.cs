@@ -28,7 +28,7 @@ namespace BLL.functions
         Iuser _Iuser;
         static IMapper mapper;
         private readonly GmailSMTP _gmailSmtpClient;
-       public string s="";
+        public string s="";
         public User_bll(Iuser iUser, IConfiguration configuration)
         {
             _Iuser = iUser;
