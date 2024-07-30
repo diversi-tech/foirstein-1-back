@@ -19,12 +19,14 @@ builder.Services.AddControllers();
 // ùéøåúé äúìåúåú ùìê
 builder.Services.AddScoped<Iuser, userDal>();
 builder.Services.AddScoped<Ireport, reportDal>();
+builder.Services.AddScoped<ILibrarianPermissions, LibrarianPermissionsDal>();
 builder.Services.AddScoped<Ilog, logDal>();
 builder.Services.AddScoped<IActivityLog_bll, ActivityLog_bll>();
 builder.Services.AddScoped<IReport_bll, Report_bll>();
 builder.Services.AddScoped<Iuser_bll, User_bll>();
 builder.Services.AddScoped<IsearchLog, searchLogDal>();
 builder.Services.AddScoped<ISearchLogBll, SearchLogBll>();
+builder.Services.AddScoped<ILibrarianPermissionsBll, LibrarianPermissionsBll>();
 builder.Services.AddScoped<IBorrowApprovalRequestsBll, BorrowApprovalRequestBll>();
 builder.Services.AddScoped<IBorrowApprovalRequests, BorrowApprovalRequestsDal>();
 builder.Services.AddScoped<Iitem, ItemDal>();

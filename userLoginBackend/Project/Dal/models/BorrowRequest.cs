@@ -21,6 +21,8 @@ public partial class BorrowRequest
 
     public decimal? TotalPrice { get; set; }
 
+    public bool? IsWaiting { get; set; }
+
     public virtual Item Item { get; set; }
 
     public virtual User User { get; set; }

@@ -484,3 +484,17 @@ C:\Users\mfr99\OneDrive\שולחן העבודה\באק חדש ענן\foirstein-1
 C:\Users\mfr99\OneDrive\שולחן העבודה\באק חדש ענן\foirstein-1-back\userLoginBackend\Project\Dal\obj\Debug\net7.0\DAL.pdb
 C:\Users\mfr99\OneDrive\שולחן העבודה\באק חדש ענן\foirstein-1-back\userLoginBackend\Project\Dal\obj\Debug\net7.0\DAL.genruntimeconfig.cache
 C:\Users\mfr99\OneDrive\שולחן העבודה\באק חדש ענן\foirstein-1-back\userLoginBackend\Project\Dal\obj\Debug\net7.0\ref\DAL.dll
+C:\Users\This User\Desktop\הנדסאים\פרקטיקום\כב תמוז בק\foirstein-1-back\userLoginBackend\Project\Dal\bin\Debug\net7.0\DAL.deps.json
+C:\Users\This User\Desktop\הנדסאים\פרקטיקום\כב תמוז בק\foirstein-1-back\userLoginBackend\Project\Dal\bin\Debug\net7.0\DAL.runtimeconfig.json
+C:\Users\This User\Desktop\הנדסאים\פרקטיקום\כב תמוז בק\foirstein-1-back\userLoginBackend\Project\Dal\bin\Debug\net7.0\DAL.dll
+C:\Users\This User\Desktop\הנדסאים\פרקטיקום\כב תמוז בק\foirstein-1-back\userLoginBackend\Project\Dal\bin\Debug\net7.0\DAL.pdb
+C:\Users\This User\Desktop\הנדסאים\פרקטיקום\כב תמוז בק\foirstein-1-back\userLoginBackend\Project\Dal\obj\Debug\net7.0\DAL.csproj.AssemblyReference.cache
+C:\Users\This User\Desktop\הנדסאים\פרקטיקום\כב תמוז בק\foirstein-1-back\userLoginBackend\Project\Dal\obj\Debug\net7.0\DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\This User\Desktop\הנדסאים\פרקטיקום\כב תמוז בק\foirstein-1-back\userLoginBackend\Project\Dal\obj\Debug\net7.0\DAL.AssemblyInfoInputs.cache
+C:\Users\This User\Desktop\הנדסאים\פרקטיקום\כב תמוז בק\foirstein-1-back\userLoginBackend\Project\Dal\obj\Debug\net7.0\DAL.AssemblyInfo.cs
+C:\Users\This User\Desktop\הנדסאים\פרקטיקום\כב תמוז בק\foirstein-1-back\userLoginBackend\Project\Dal\obj\Debug\net7.0\DAL.csproj.CoreCompileInputs.cache
+C:\Users\This User\Desktop\הנדסאים\פרקטיקום\כב תמוז בק\foirstein-1-back\userLoginBackend\Project\Dal\obj\Debug\net7.0\DAL.dll
+C:\Users\This User\Desktop\הנדסאים\פרקטיקום\כב תמוז בק\foirstein-1-back\userLoginBackend\Project\Dal\obj\Debug\net7.0\refint\DAL.dll
+C:\Users\This User\Desktop\הנדסאים\פרקטיקום\כב תמוז בק\foirstein-1-back\userLoginBackend\Project\Dal\obj\Debug\net7.0\DAL.pdb
+C:\Users\This User\Desktop\הנדסאים\פרקטיקום\כב תמוז בק\foirstein-1-back\userLoginBackend\Project\Dal\obj\Debug\net7.0\DAL.genruntimeconfig.cache
+C:\Users\This User\Desktop\הנדסאים\פרקטיקום\כב תמוז בק\foirstein-1-back\userLoginBackend\Project\Dal\obj\Debug\net7.0\ref\DAL.dll

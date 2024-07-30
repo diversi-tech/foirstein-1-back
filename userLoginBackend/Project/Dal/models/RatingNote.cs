@@ -15,6 +15,8 @@ public partial class RatingNote
 
     public int? Rating { get; set; }
 
+    public bool SavedItem { get; set; }
+
     public virtual Item Item { get; set; }
 
     public virtual User User { get; set; }

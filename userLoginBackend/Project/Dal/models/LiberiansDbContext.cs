@@ -17,11 +17,15 @@ public partial class LiberiansDbContext : DbContext
 
     public virtual DbSet<ActivityLog> ActivityLogs { get; set; }
 
+    public virtual DbSet<AddNewRequest> AddNewRequests { get; set; }
+
     public virtual DbSet<BorrowApprovalRequest> BorrowApprovalRequests { get; set; }
 
     public virtual DbSet<BorrowRequest> BorrowRequests { get; set; }
 
     public virtual DbSet<Borrowing> Borrowings { get; set; }
+
+    public virtual DbSet<Conversation> Conversations { get; set; }
 
     public virtual DbSet<Item> Items { get; set; }
 
@@ -60,6 +64,24 @@ public partial class LiberiansDbContext : DbContext
             entity.Property(e => e.Activity).IsRequired();
 
             entity.HasOne(d => d.UserId1NavigationUser).WithMany(p => p.ActivityLogs).HasForeignKey(d => d.UserId1NavigationUserId);
+        });
+
+        modelBuilder.Entity<AddNewRequest>(entity =>
+        {
+            entity.Property(e => e.AccompanyingMaterial).IsRequired();
+            entity.Property(e => e.Author).IsRequired();
+            entity.Property(e => e.Category).IsRequired();
+            entity.Property(e => e.CreatedAt).HasColumnType("timestamp without time zone");
+            entity.Property(e => e.Description).IsRequired();
+            entity.Property(e => e.Edition).IsRequired();
+            entity.Property(e => e.HebrewPublicationYear).IsRequired();
+            entity.Property(e => e.Language).IsRequired();
+            entity.Property(e => e.Note)
+                .IsRequired()
+                .HasMaxLength(225);
+            entity.Property(e => e.Series).IsRequired();
+            entity.Property(e => e.Title).IsRequired();
+            entity.Property(e => e.UpdatedAt).HasColumnType("timestamp without time zone");
         });
 
         modelBuilder.Entity<BorrowApprovalRequest>(entity =>
@@ -110,22 +132,35 @@ public partial class LiberiansDbContext : DbContext
             entity.HasOne(d => d.Student).WithMany(p => p.BorrowingStudents).HasForeignKey(d => d.StudentId);
         });
 
+        modelBuilder.Entity<Conversation>(entity =>
+        {
+            entity.HasKey(e => e.ConversationId).HasName("pk_convesetion");
+
+            entity.ToTable("Conversation");
+
+            entity.HasIndex(e => e.UserId2, "fki_UserId2");
+
+            entity.Property(e => e.Text).IsRequired();
+            entity.Property(e => e.Time).HasColumnType("timestamp without time zone");
+
+            entity.HasOne(d => d.UserId1Navigation).WithMany(p => p.ConversationUserId1Navigations)
+                .HasForeignKey(d => d.UserId1)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("fk_user1");
+
+            entity.HasOne(d => d.UserId2Navigation).WithMany(p => p.ConversationUserId2Navigations)
+                .HasForeignKey(d => d.UserId2)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("fk_userid2");
+        });
+
         modelBuilder.Entity<Item>(entity =>
         {
-            entity.HasIndex(e => e.Id, "IX_Items_Id");
-
-            entity.Property(e => e.AccompanyingMaterial).IsRequired();
             entity.Property(e => e.Author).IsRequired();
             entity.Property(e => e.CreatedAt).HasColumnType("timestamp without time zone");
             entity.Property(e => e.Description).IsRequired();
-            entity.Property(e => e.Edition).IsRequired();
             entity.Property(e => e.FilePath).IsRequired();
-            entity.Property(e => e.HebrewPublicationYear).IsRequired();
-            entity.Property(e => e.Language).IsRequired();
-            entity.Property(e => e.Note)
-                .IsRequired()
-                .HasMaxLength(225);
-            entity.Property(e => e.Series).IsRequired();
+            entity.Property(e => e.Note).HasMaxLength(225);
             entity.Property(e => e.Title).IsRequired();
             entity.Property(e => e.UpdatedAt).HasColumnType("timestamp without time zone");
         });
@@ -134,12 +169,6 @@ public partial class LiberiansDbContext : DbContext
         {
             entity.ToTable("ItemTag");
 
-            entity.HasIndex(e => e.ItemId, "IX_ItemTag_ItemId");
-
-            entity.HasIndex(e => new { e.ItemId, e.TagId }, "IX_ItemTag_ItemId_TagId");
-
-            entity.HasIndex(e => e.TagId, "IX_ItemTag_TagId");
-
             entity.HasOne(d => d.Item).WithMany(p => p.ItemTags).HasForeignKey(d => d.ItemId);
 
             entity.HasOne(d => d.Tag).WithMany(p => p.ItemTags).HasForeignKey(d => d.TagId);
@@ -147,18 +176,16 @@ public partial class LiberiansDbContext : DbContext
 
         modelBuilder.Entity<LibrarianPermission>(entity =>
         {
-            entity
-                .HasNoKey()
-                .ToTable("librarian_permissions");
+            entity.HasKey(e => e.Id).HasName("librarian_permissions_pkey");
 
-            entity.Property(e => e.Id)
-                .ValueGeneratedOnAdd()
-                .HasColumnName("id");
+            entity.ToTable("librarian_permissions");
+
+            entity.Property(e => e.Id).HasColumnName("id");
             entity.Property(e => e.Permissions)
                 .IsRequired()
                 .HasColumnName("permissions");
 
-            entity.HasOne(d => d.User).WithMany()
+            entity.HasOne(d => d.User).WithMany(p => p.LibrarianPermissions)
                 .HasForeignKey(d => d.UserId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("FK_UserId");
@@ -251,6 +278,7 @@ public partial class LiberiansDbContext : DbContext
                 .HasMaxLength(9)
                 .HasColumnName("tz");
         });
+        modelBuilder.HasSequence("librarian_permissions_id_seq");
 
         OnModelCreatingPartial(modelBuilder);
     }

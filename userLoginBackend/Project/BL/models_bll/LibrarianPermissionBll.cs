@@ -11,5 +11,6 @@ namespace BLL.models_bll
         public int UserId { get; set; }
 
         public string[] Permissions { get; set; }
+        public int Id { get; set; }
     }
 }
