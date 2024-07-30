@@ -5,7 +5,9 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace userLoginBackend.Controllers
 {
-    public class LibrarianPermissionsController
+    [Route("api/[controller]")]
+    [ApiController]
+    public class LibrarianPermissionsController : ControllerBase
     {
         private readonly ILibrarianPermissionsBll I_bllService;
 
@@ -15,15 +17,23 @@ namespace userLoginBackend.Controllers
         }
 
         [HttpPut("updatePermissions")]
-        public ActionResult<LibrarianPermissionBll> UpdatePermissions(libper l)
+        public ActionResult UpdatePermissions([FromBody] libper l)
         {
-            return I_bllService.UpdatePermission(l.UserId,l.P);
-           
+            var result = I_bllService.UpdatePermission(l.UserId, l.P);
+            if (result != null)
+            {
+                return Ok(new { success = true });
+            }
+            else
+            {
+                return BadRequest(new { success = false });
+            }
         }
+
         public class libper
         {
             public int UserId { get; set; }
-            public string [] P { get; set; }
+            public string[] P { get; set; }
         }
     }
 }
