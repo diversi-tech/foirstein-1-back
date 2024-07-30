@@ -35,7 +35,7 @@ public partial class Item
 
     public string Note { get; set; }
 
-    public string AccompanyingMaterial { get; set; }
+    public string? AccompanyingMaterial { get; set; }
 
     public int ItemLevel { get; set; }
 
@@ -44,12 +44,6 @@ public partial class Item
     public int NumberOfDaysOfQuestion { get; set; }
 
     public bool? Recommended { get; set; }
-
-    public decimal? Price { get; set; }
-
-    public DateOnly? LoanDatelLimit { get; set; }
-
-    public decimal? Fine { get; set; }
 
     public virtual ICollection<BorrowRequest> BorrowRequests { get; set; } = new List<BorrowRequest>();
 

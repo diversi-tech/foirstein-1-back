@@ -122,7 +122,6 @@ public partial class LiberiansDbContext : DbContext
             entity.Property(e => e.FilePath).IsRequired();
             entity.Property(e => e.HebrewPublicationYear).IsRequired();
             entity.Property(e => e.Language).IsRequired();
-            entity.Property(e => e.LoanDatelLimit).HasColumnName("LoanDatelLimit ");
             entity.Property(e => e.Note)
                 .IsRequired()
                 .HasMaxLength(225);
