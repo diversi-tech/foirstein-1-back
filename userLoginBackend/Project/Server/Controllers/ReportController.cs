@@ -30,9 +30,18 @@ namespace userLoginBackend.Controllers
         [HttpGet("getCountByDate")]
         public ActionResult<List<UserCount>> getCountByDate([FromQuery] string reportName, [FromQuery] string type, [FromQuery] int userId)
         {
-            var result = _IReport_bll.getCountByDate(reportName, type,userId);
+            var result = _IReport_bll.getCountByDate(reportName, type, userId);
             return Ok(result);
         }
+
+        [HttpGet("aaa")]
+        public ActionResult<List<UserLoginReport>> aaa([FromQuery] DateTime loginDate, [FromQuery] string reportName, [FromQuery] string type, [FromQuery] int userId)
+        {
+            var result = _IReport_bll.GetLoginActivityReport(loginDate, reportName, type, userId);
+            return Ok(result);
+        }
+
+
         [HttpGet("activity-report")]
         public ActionResult<List<UserActivityCount>> GetActivityLogs([FromQuery] string reportName, [FromQuery] string type, [FromQuery] int userId)
         {

@@ -22,9 +22,11 @@ namespace BLL.functions
         Ireport _Ireport;
         static IMapper mapper;
         ISearchLogBll _ISearchLogBll;
+        IActivityLog_bll _ActivityLogBll;
         IBorrowApprovalRequestsBll _IBorrowApprovalRequestsBll;
-        public Report_bll(Ireport Ireport, ISearchLogBll ISearchLogBll, IBorrowApprovalRequestsBll IBorrowApprovalRequestsBll, Iuser iuser, Ilog ilog)
+        public Report_bll(Ireport Ireport, ISearchLogBll ISearchLogBll, IBorrowApprovalRequestsBll IBorrowApprovalRequestsBll, Iuser iuser, Ilog ilog, IActivityLog_bll activityLogBll)
         {
+            _ActivityLogBll = activityLogBll;
             _Ilog = ilog;
             _Iuser = iuser;
             _Ireport = Ireport;
@@ -36,6 +38,7 @@ namespace BLL.functions
             });
             mapper = (IMapper)config.CreateMapper();
             _Ilog = ilog;
+            _ActivityLogBll = activityLogBll;
         }
         #endregion
         #region getall
@@ -49,7 +52,8 @@ namespace BLL.functions
         public List<SearchLogBorrowRequestDto> GetSearchLogsBorrowRequests(string reportName, string type1, int userid)
         {
             try
-            {   var users=_Iuser.GetAll();
+            {
+                var users = _Iuser.GetAll();
                 var logs = _ISearchLogBll.getall(); // שליפת החיפושים
                 var requests = _IBorrowApprovalRequestsBll.getall(); // שליפת הבקשות
                 var query = logs
@@ -146,6 +150,15 @@ namespace BLL.functions
             }
             return sb.ToString();
         }
+        private string ConvertToCustomFormat(List<UserLoginReport> query, string type1)
+        {
+            var sb = new System.Text.StringBuilder();
+            foreach (var item in query)
+            {
+                sb.AppendLine($"name: {item.UserName},lastName: {item.UserSurname},hour: {item.LoginTime.Value.TimeOfDay},type: {type1}");
+            }
+            return sb.ToString();
+        }
         #endregion
         public List<UserActivityCount> GetActivityLogs(string reportName, string type, int userid)
         {
@@ -169,7 +182,7 @@ namespace BLL.functions
                           {
                               UserId1 = logGroup.Key,
                               ActivityCount = logGroup.Count(),
-                              UserName = users.Find(x => x.UserId == logGroup.Key ).Fname
+                              UserName = users.Find(x => x.UserId == logGroup.Key).Fname
                           })
                     .OrderByDescending(x => x.ActivityCount)
                     .ToList();
@@ -181,7 +194,7 @@ namespace BLL.functions
                     GeneratedAt = DateTime.Now,
                     GeneratedByNavigationUserId = userid,
                     GeneratedBy = users.Find(x => x.UserId == userid).Fname
-                   
+
 
                 };
                 _Ireport.Add(newReport);
@@ -193,6 +206,56 @@ namespace BLL.functions
                 throw;
             }
         }
+
+        public List<UserLoginReport> GetLoginActivityReport(DateTime loginDate, string reportName, string type, int userId)
+        {
+            try
+            {
+                var logs = _ActivityLogBll.getall();
+                var users = _Iuser.GetAll();
+                var filteredLogs = logs
+                    .Where(log => log.Activity == "התחברות" && log.Timestamp.HasValue && log.Timestamp.Value.Date == loginDate.Date)
+                    .ToList();
+
+                var result = filteredLogs
+                      .Join(users,
+                            log => log.UserId1NavigationUserId,
+                            user => user.UserId,
+                            (log, user) => new UserLoginReport
+                            {
+                                UserName = user.Fname,
+                                UserSurname = user.Sname,
+                                LoginTime = log.Timestamp
+                            })
+                      .OrderByDescending(x => x.UserName)
+                      .ToList();
+
+                var newReport = new Report
+                {
+                    ReportName = reportName,
+                    ReportData = ConvertToCustomFormat(result, type),
+                    GeneratedAt = DateTime.Now,
+                    GeneratedByNavigationUserId = userId,
+                    GeneratedBy = users.Find(x => x.UserId == userId).Fname
+                };
+
+                _Ireport.Add(newReport);
+                return result;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error: " + ex.Message);
+                throw;
+            }
+        }
+
+        public class UserLoginReport
+        {
+            public string UserName { get; set; }
+            public string UserSurname { get; set; }
+            public DateTime? LoginTime { get; set; }
+        }
+
         private string ConvertToCustomFormat(List<UserActivityCount> result, string type)
         {
             // כאן אפשר להמיר את הרשימה לפורמט טקסטואלי לפי הצורך שלך

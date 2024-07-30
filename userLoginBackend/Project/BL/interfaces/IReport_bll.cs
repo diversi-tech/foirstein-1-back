@@ -11,8 +11,9 @@ namespace BLL.interfaces
     public interface IReport_bll
     {
         List<Report_modelBll> getall();
-        public List<SearchLogBorrowRequestDto> GetSearchLogsBorrowRequests(string reportName, string type,int userid);
+        public List<SearchLogBorrowRequestDto> GetSearchLogsBorrowRequests(string reportName, string type, int userid);
         public List<UserCount> getCountByDate(string reportName, string type1, int userid);
         public List<UserActivityCount> GetActivityLogs(string reportName, string type, int userid);
+        public List<UserLoginReport> GetLoginActivityReport(DateTime loginDate, string reportName, string type, int userid);
     }
 }
