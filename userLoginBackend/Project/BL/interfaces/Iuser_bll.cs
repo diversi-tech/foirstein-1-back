@@ -28,6 +28,8 @@ namespace BLL.interfaces
         public TokenValidationResponse ValidateToken(string token);
         public User SendPasswordResetLink(string email);
         public string SendPassword2(string email);
+        public User AdminPerrmisionLink(int id);
+
 
     }
 }

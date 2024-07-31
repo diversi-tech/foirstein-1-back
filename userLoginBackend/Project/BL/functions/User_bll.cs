@@ -290,6 +290,50 @@ namespace BLL.functions
 
 
 
+        public User AdminPerrmisionLink(int id)
+        {
+            User user = _Iuser.GetAll().FirstOrDefault(u => u.UserId == id);
+            List<User> AdminEmails = _Iuser.GetAll().FindAll(u => u.Role == "Admin");
+            if (user != null)
+            {
+                var userDtos = mapper.Map<User_modelBll>(user);
+                string token = GenerateJwtToken(userDtos);
+                string userName = $"{user.Fname} {user.Sname}";
+                string body = $@"
+<html>
+<head>
+    <meta charset='UTF-8'>
+    <style>
+        body {{
+            direction: rtl;
+            text-align: right;
+            font-size: 18px;
+        }}
+        a {{
+            font-size: 20px;
+        }}
+    </style>
+</head>
+<body>
+ <div style='direction: rtl; text-align: right;'>
+    <p>מנהל יקר/ה</p>
+    <p>משתמש חדש בשם {userName} נרשם למערכת</p>
+<p>אם ברצונך להופכו לספרנית, לחץ על הקישור הבא:</p>
+    <p><a href='https://login.foirstein.diversitech.co.il/#/changePermission?token={HttpUtility.UrlEncode(token)}'>שינוי הרשאה</a></p>
+    <p>אם לא הגשת בקשה זו, תוכל/י להתעלם מהודעה זו בבטחה.</p>
+    <p>בברכה,<br>צוות האתר שלך</p>
+    <hr>
+    <p>הודעה זו נשלחה ממערכת אוטומטית. אין להשיב על הודעה זו.</p>
+  </div>
+</body>
+</html>";
+                foreach (var adminEmail in AdminEmails)
+                {
+                    _gmailSmtpClient.SendEmail(adminEmail.Email, "שינוי הרשאה", body);
+                }
+            }
+            return user;
+        }
 
 
 

@@ -92,7 +92,12 @@ namespace userLoginBackend.Controllers
 
 
         }
+        [HttpGet("AdminMail/{id}")]
 
+        public User AdminEmail(int id)
+        {
+            return user.AdminPerrmisionLink(id);
+        }
 
         [HttpGet("verify-security-questions")]
    
