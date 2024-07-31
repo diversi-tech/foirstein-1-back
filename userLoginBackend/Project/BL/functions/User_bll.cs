@@ -340,7 +340,7 @@ namespace BLL.functions
 
 
 
-        private string GenerateJwtToken(User_modelBll user)
+        public string GenerateJwtToken(User_modelBll user)
         {
             var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("YourSuperSecretKeyThatIsAtLeast32CharactersLong"));
             var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);

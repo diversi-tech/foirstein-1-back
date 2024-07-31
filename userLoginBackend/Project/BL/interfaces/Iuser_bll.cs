@@ -29,7 +29,7 @@ namespace BLL.interfaces
         public User SendPasswordResetLink(string email);
         public string SendPassword2(string email);
         public User AdminPerrmisionLink(int id);
-
+        public string GenerateJwtToken(User_modelBll user);
 
     }
 }

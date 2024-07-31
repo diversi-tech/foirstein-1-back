@@ -112,19 +112,20 @@ namespace userLoginBackend.Controllers
             return Ok(user.ValidateUser(loginInfo.tz, loginInfo.pass));
         }
         [HttpPut("{userId}/role")]
- 
+
         public IActionResult UpdateUserRole(int userId, [FromBody] User_modelBll userDto)
         {
-            var succes = user.UpdateUserRole(userId, userDto.Role);
-            if (succes)
+            var success = user.UpdateUserRole(userId, userDto.Role);
+            if (success)
             {
-                return Ok(new { succes = true });
+                string newToken = user.GenerateJwtToken(userDto);
+
+                return Ok(new { success = true, token = newToken });
             }
             else
             {
                 return BadRequest(new { success = false, message = "Failed to update user role." });
             }
-          
         }
         [HttpPost("validate-token")]
 
