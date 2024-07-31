@@ -18,7 +18,7 @@ public class LibrarianPermissionsController : ControllerBase
     {
         try
         {
-            await _librarianPermissionsBll.UpdatePermissionsAsync(libper.UserId, libper.P);
+            await _librarianPermissionsBll.UpdatePermissionsAsync(libper.UserId, libper.Permissions);
             return Ok(new { success = true });
         }
         catch (Exception ex)
@@ -30,6 +30,6 @@ public class LibrarianPermissionsController : ControllerBase
     public class libper
     {
         public int UserId { get; set; }
-        public String [] P { get; set; }
+        public String [] Permissions { get; set; }
     }
 }
