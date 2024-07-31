@@ -118,7 +118,7 @@ namespace userLoginBackend.Controllers
             var success = user.UpdateUserRole(userId, userDto.Role);
             if (success)
             {
-                string newToken = user.GenerateJwtToken(userDto);
+                string newToken = user.GenerateJwtToken(user.getall().FirstOrDefault(u=>u.UserId==userId));
 
                 return Ok(new { success = true, token = newToken });
             }
