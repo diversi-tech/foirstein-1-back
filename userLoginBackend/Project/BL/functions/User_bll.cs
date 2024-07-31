@@ -294,9 +294,11 @@ namespace BLL.functions
         {
             User user = _Iuser.GetAll().FirstOrDefault(u => u.UserId == id);
             List<User> AdminEmails = _Iuser.GetAll().FindAll(u => u.Role == "Admin");
-            if (user != null)
+            foreach (var admins in AdminEmails)
+            { 
+                if (admins != null)
             {
-                var userDtos = mapper.Map<User_modelBll>(user);
+                var userDtos = mapper.Map<User_modelBll>(admins);
                 string token = GenerateJwtToken(userDtos);
                 string userName = $"{user.Fname} {user.Sname}";
                 string body = $@"
@@ -327,9 +329,8 @@ namespace BLL.functions
   </div>
 </body>
 </html>";
-                foreach (var adminEmail in AdminEmails)
-                {
-                    _gmailSmtpClient.SendEmail(adminEmail.Email, "שינוי הרשאה", body);
+                
+                    _gmailSmtpClient.SendEmail(admins.Email, "שינוי הרשאה", body);
                 }
             }
             return user;
