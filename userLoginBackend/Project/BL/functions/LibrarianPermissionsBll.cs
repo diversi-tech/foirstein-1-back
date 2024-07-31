@@ -28,10 +28,9 @@ namespace BLL.functions
             mapper = (IMapper)config.CreateMapper();
         }
 
-        public LibrarianPermissionBll UpdatePermission(int userId, String[] p)
+        public async Task UpdatePermissionsAsync(int userId, string[] permissions)
         {
-            LibrarianPermission lp= _dal.UpdatePermissions(userId, p);
-            return mapper.Map<LibrarianPermissionBll>(lp);
+            await _dal.UpdatePermissionsAsync(userId,permissions);
         }
     }
 }

@@ -10,6 +10,6 @@ namespace BLL.interfaces
 {
     public interface ILibrarianPermissionsBll
     {
-        public LibrarianPermissionBll UpdatePermission(int userId,String[] p);
+        Task UpdatePermissionsAsync(int userId, string[] permissions);
     } 
 }

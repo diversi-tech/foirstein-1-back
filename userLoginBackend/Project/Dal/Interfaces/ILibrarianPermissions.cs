@@ -9,6 +9,6 @@ namespace DAL.Interfaces
 {
     public interface ILibrarianPermissions
     {
-        LibrarianPermission UpdatePermissions(int userId,String[] p);
-     }
+        Task UpdatePermissionsAsync(int userId, string[] permissions);
+    }
 }

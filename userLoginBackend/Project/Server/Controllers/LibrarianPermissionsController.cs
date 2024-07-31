@@ -1,39 +1,35 @@
-﻿using BLL.functions;
-using BLL.interfaces;
-using BLL.models_bll;
+﻿using BLL.interfaces;
+using DAL.models;
 using Microsoft.AspNetCore.Mvc;
 
-namespace userLoginBackend.Controllers
+[ApiController]
+[Route("api/[controller]")]
+public class LibrarianPermissionsController : ControllerBase
 {
-    [Route("api/[controller]")]
-    [ApiController]
-    public class LibrarianPermissionsController : ControllerBase
+    private readonly ILibrarianPermissionsBll _librarianPermissionsBll;
+
+    public LibrarianPermissionsController(ILibrarianPermissionsBll librarianPermissionsBll)
     {
-        private readonly ILibrarianPermissionsBll I_bllService;
+        _librarianPermissionsBll = librarianPermissionsBll;
+    }
 
-        public LibrarianPermissionsController(ILibrarianPermissionsBll bllService)
+    [HttpPut("updatePermissions")]
+    public async Task<IActionResult> UpdatePermissions(libper libper)
+    {
+        try
         {
-            I_bllService = bllService;
+            await _librarianPermissionsBll.UpdatePermissionsAsync(libper.UserId, libper.P);
+            return Ok(new { success = true });
         }
-
-        [HttpPut("updatePermissions")]
-        public ActionResult UpdatePermissions([FromBody] libper l)
+        catch (Exception ex)
         {
-            var result = I_bllService.UpdatePermission(l.UserId, l.P);
-            if (result != null)
-            {
-                return Ok(new { success = true });
-            }
-            else
-            {
-                return BadRequest(new { success = false });
-            }
+            // הוסיפי לוגיקה של טיפול בשגיאות
+            return StatusCode(500, new { success = false, message = "Internal Server Error", details = ex.Message });
         }
-
-        public class libper
-        {
-            public int UserId { get; set; }
-            public string[] P { get; set; }
-        }
+    }
+    public class libper
+    {
+        public int UserId { get; set; }
+        public String [] P { get; set; }
     }
 }

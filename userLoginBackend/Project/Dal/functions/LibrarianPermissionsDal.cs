@@ -17,31 +17,19 @@ namespace DAL.functions
             this.LiberiansDbContext = LiberiansDbContext;
         }
 
-        public LibrarianPermission UpdatePermissions(int userId, string[] p)
+        public async Task UpdatePermissionsAsync(int userId, string[] permissions)
         {
-            LibrarianPermission userPermissions = LiberiansDbContext.LibrarianPermissions.FirstOrDefault(up => up.UserId == userId);
+            // אינסטנס חדש של DbContext עבור כל פעולה
+            using var context = new LiberiansDbContext();
 
-            if (userPermissions == null)
+            var librarianPermission = await context.LibrarianPermissions.FirstOrDefaultAsync(lp => lp.UserId == userId);
+            if (librarianPermission != null)
             {
-                // אפשר להחזיר שגיאה או לזרוק חריגה
-                throw new Exception("User not found");
-            }
-
-            // הקצאת מערך חדש בגודל מתאים
-            userPermissions.Permissions = new string[p.Length];
-
-            // הוספת ההרשאות החדשות
-            for (int i = 0; i < p.Length; i++)
-            {
-                userPermissions.Permissions[i] = p[i];
-            }
-
-
-            LiberiansDbContext.SaveChangesAsync();
-            var a = LiberiansDbContext.LibrarianPermissions.FirstOrDefault(lp => lp.UserId == userId);
-
-            return a;
+                librarianPermission.Permissions = permissions;
+                await context.SaveChangesAsync();
             }
         }
+
     }
+}
 
