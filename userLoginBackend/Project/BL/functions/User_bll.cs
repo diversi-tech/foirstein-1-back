@@ -155,7 +155,7 @@ namespace BLL.functions
         public TokenValidationResponse ValidateToken(string token)
         {
             var tokenHandler = new JwtSecurityTokenHandler();
-            var key = Encoding.UTF8.GetBytes("YourSuperSecretKeyThatIsAtLeast32CharactersLong");
+            var key = Encoding.UTF8.GetBytes(Environment.GetEnvironmentVariable("JWT_SECRET_KEY") ?? "DefaultSecretKeyThatIsAtLeast32CharactersLong");
             try
             {
                 tokenHandler.ValidateToken(token, new TokenValidationParameters
