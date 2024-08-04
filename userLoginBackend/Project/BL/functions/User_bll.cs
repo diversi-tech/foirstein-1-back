@@ -342,7 +342,13 @@ namespace BLL.functions
 
         public string GenerateJwtToken(User_modelBll user)
         {
-            var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("YourSuperSecretKeyThatIsAtLeast32CharactersLong"));
+            var key = Encoding.UTF8.GetBytes(Environment.GetEnvironmentVariable("JWT_SECRET_KEY") ?? "DefaultSecretKeyThatIsAtLeast32CharactersLong");
+
+
+            // יצירת אובייקט של SymmetricSecurityKey
+            var securityKey = new SymmetricSecurityKey(key);
+
+            // יצירת Credentials עם ה-SymmetricSecurityKey
             var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);
 
             var username = $"{user.Fname} {user.Sname}";
