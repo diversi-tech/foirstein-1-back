@@ -9,7 +9,7 @@ using BLL.models_bll;
 using static BLL.functions.User_bll;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.Extensions.Configuration;
-using System.Diagnostics;
+
 
 namespace userLoginBackend.Controllers
 {
@@ -30,25 +30,8 @@ namespace userLoginBackend.Controllers
 
         public ActionResult<List<User_modelBll>> GetAll()
         {
-            var secretKey = Environment.GetEnvironmentVariable("JWT_SECRET_KEY");
-            if (secretKey == null)
-            {
-                Debug.WriteLine("JWT_SECRET_KEY is not defined, using default key.");
-            }
-            else
-            {
-                Debug.WriteLine(
-"JWT_SECRET_KEY found: " + secretKey);
-                }
+            return Ok(user.getall());
 
-                return Ok(user.getall());
-
-        }
-        [HttpGet("get-secret-key")]
-        public IActionResult GetSecretKey()
-        {
-            var key = Environment.GetEnvironmentVariable("JWT_SECRET_KEY") ?? "DefaultSecretKey";
-            return Ok(new { key });
         }
         [HttpGet("getPermissions")]
 
