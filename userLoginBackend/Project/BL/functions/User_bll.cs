@@ -347,12 +347,11 @@ namespace BLL.functions
         {
             var key = Encoding.UTF8.GetBytes(_configuration["Token:SecurityKey"]);
 
-
-            // יצירת אובייקט של SymmetricSecurityKey
             var securityKey = new SymmetricSecurityKey(key);
 
-            // יצירת Credentials עם ה-SymmetricSecurityKey
+    
             var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);
+          
 
             var username = $"{user.Fname} {user.Sname}";
             var claims = new List<Claim>
@@ -375,13 +374,13 @@ namespace BLL.functions
                 }
             }
 
-            var token = new JwtSecurityToken(
-                issuer: "yourdomain.com",
-                audience: "yourdomain.com",
+            var token = new JwtSecurityToken(issuer: "https://login.foirstein.diversitech.co.il",
+                audience: "https://librarian.foirstein.diversitech.co.il",
                 claims: claims,
                 expires: DateTime.Now.AddHours(1),
-                signingCredentials: credentials
-            );
+                signingCredentials: credentials);
+
+            token.Header["kid"] = "uniqueKeyId";
 
             return new JwtSecurityTokenHandler().WriteToken(token);
         }
