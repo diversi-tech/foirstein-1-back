@@ -346,13 +346,8 @@ namespace BLL.functions
         public string GenerateJwtToken(User_modelBll user)
         {
             var key = Encoding.UTF8.GetBytes(_configuration["Token:SecurityKey"]);
-
             var securityKey = new SymmetricSecurityKey(key);
-
-    
             var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);
-          
-
             var username = $"{user.Fname} {user.Sname}";
             var claims = new List<Claim>
 {
@@ -361,21 +356,17 @@ namespace BLL.functions
     new Claim(ClaimTypes.Role, user.Role),
     new Claim("tz", user.Tz),
     new Claim("userId", user.UserId.ToString()),
-};
-            if (user.Role == "Librarian")
-            {
-                var permissions = _Iuser.getPermissionForLibrarian(user.UserId).Permissions;
-                if (permissions != null)
-                {
-                    foreach (var permission in permissions)
-                    {
+}; if (user.Role == "Librarian") 
+            { var permissions = _Iuser.getPermissionForLibrarian(user.UserId).Permissions;
+                if (permissions != null)  {
+                    foreach (var permission in permissions){
                         claims.Add(new Claim("permission", permission.ToString()));
                     }
                 }
             }
-
-            var token = new JwtSecurityToken(issuer: "https://login.foirstein.diversitech.co.il",
-                audience: "https://librarian.foirstein.diversitech.co.il",
+         
+            var token = new JwtSecurityToken(issuer: _configuration["Token:Issuer"],
+                audience: _configuration["Token:Audience"],
                 claims: claims,
                 expires: DateTime.Now.AddHours(1),
                 signingCredentials: credentials);
