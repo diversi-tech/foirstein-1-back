@@ -112,7 +112,7 @@ namespace userLoginBackend.Controllers
         {
             return Ok(user.ValidateUser(loginInfo.tz, loginInfo.pass));
         }
-        [Authorize]
+       
         [HttpPut("{userId}/role")]
 
         public IActionResult UpdateUserRole(int userId, [FromBody] User_modelBll userDto)
