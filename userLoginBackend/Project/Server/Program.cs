@@ -90,7 +90,6 @@ if (app.Environment.IsDevelopment())
 app.UseCors("corspolicy");
 app.UseHttpsRedirection();
 
-app.UseAuthentication(); // äåñó àú äùåøä äæå
 app.UseAuthorization();
 
 app.MapControllers();

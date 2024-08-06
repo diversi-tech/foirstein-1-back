@@ -26,6 +26,7 @@ namespace userLoginBackend.Controllers
             this.user = user;
             _configuration = configuration;
         }
+
         [HttpGet("getUsers")]
 
         public ActionResult<List<User_modelBll>> GetAll()

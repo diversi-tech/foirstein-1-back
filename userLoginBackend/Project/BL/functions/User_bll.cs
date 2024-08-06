@@ -27,11 +27,13 @@ namespace BLL.functions
     {
         Iuser _Iuser;
         static IMapper mapper;
+        private readonly IConfiguration _configuration;
         private readonly GmailSMTP _gmailSmtpClient;
         public string s="";
         public User_bll(Iuser iUser, IConfiguration configuration)
         {
             _Iuser = iUser;
+            _configuration = configuration;
             var config = new MapperConfiguration(cfg =>
             {
                 cfg.AddProfile<AutoMapperProfile>();
@@ -39,6 +41,7 @@ namespace BLL.functions
             mapper = (IMapper)config.CreateMapper();
             string gmailAddress = configuration["Gmail:Address"];
             string gmailPassword = configuration["Gmail:Password"];
+
             _gmailSmtpClient = new GmailSMTP(gmailAddress, gmailPassword);
         }
 
@@ -155,7 +158,7 @@ namespace BLL.functions
         public TokenValidationResponse ValidateToken(string token)
         {
             var tokenHandler = new JwtSecurityTokenHandler();
-            var key = Encoding.UTF8.GetBytes(Environment.GetEnvironmentVariable("JWT_SECRET_KEY") ?? "DefaultSecretKeyThatIsAtLeast32CharactersLong");
+            var key = Encoding.UTF8.GetBytes(_configuration["Token:SecurityKey"]);
             try
             {
                 tokenHandler.ValidateToken(token, new TokenValidationParameters
@@ -342,7 +345,7 @@ namespace BLL.functions
 
         public string GenerateJwtToken(User_modelBll user)
         {
-            var key = Encoding.UTF8.GetBytes(Environment.GetEnvironmentVariable("JWT_SECRET_KEY") ?? "DefaultSecretKeyThatIsAtLeast32CharactersLong");
+            var key = Encoding.UTF8.GetBytes(_configuration["Token:SecurityKey"]);
 
 
             // יצירת אובייקט של SymmetricSecurityKey
