@@ -324,7 +324,7 @@ namespace BLL.functions
     <p>מנהל יקר/ה</p>
     <p>משתמש חדש בשם {userName} נרשם למערכת</p>
 <p>אם ברצונך להופכו לספרנית, לחץ על הקישור הבא:</p>
-    <p><a href='https://login.foirstein.diversitech.co.il/#/changePermission?token={HttpUtility.UrlEncode(token)}'>שינוי הרשאה</a></p>
+    <p><a href='https://login.foirstein.diversitech.co.il/#/changePermission?tz={user.Tz}'>שינוי הרשאה</a></p>
     <p>אם לא הגשת בקשה זו, תוכל/י להתעלם מהודעה זו בבטחה.</p>
     <p>בברכה,<br>צוות האתר שלך</p>
     <hr>
